@@ -4,7 +4,7 @@ FROM python:3.8-slim-buster
 RUN useradd -ms /bin/bash backenduser
 USER backenduser
 WORKDIR /home/backenduser
-RUN cd /home/backenduser && mkdir back-end && mkdir back-end/src
+RUN cd /home/backenduser && mkdir src
 
 WORKDIR /home/backenduser/src
 
