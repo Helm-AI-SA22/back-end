@@ -8,5 +8,10 @@ RUN cd /home/backenduser && mkdir workdir
 
 WORKDIR /home/backenduser/workdir
 
-COPY requirements.txt requirements.txt
+COPY . .
+
+RUN pip3 install --upgrade pip
 RUN pip3 install -r requirements.txt
+
+# Start the app
+CMD [ "python", "app.py" ]
