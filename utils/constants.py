@@ -5,3 +5,9 @@ SCOPUS_HEADERS = 'apiKey=' + SCOPUS_API_KEY + '&httpAccept=application/json'
 IEEE_API_KEY = '5tn9eufwb5f2j8wm3ed9esaj'
 IEEE_SITE = 'https://ieeexploreapi.ieee.org/api/v1/search/articles'
 IEEE_HEADERS = 'apikey=' + IEEE_API_KEY
+
+AI_URL_DEPLOY = "helmai"
+AI_PORT_DEPLOY = 5000
+
+AI_URL = "http://localhost"
+AI_PORT = 5001

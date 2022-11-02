@@ -1,5 +1,5 @@
-from constants import *
 import requests
+from utils.constants import *
 
 
 def compose_request(q_str):
