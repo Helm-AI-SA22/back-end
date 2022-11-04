@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_restful import Resource, Api
-from utils.scopus_api import make_request
+from utils.scopus_api import make_scopus_request
 from utils.AI_request import make_post_request_to_AI
 
 
@@ -22,7 +22,7 @@ class Aggregator(Resource):
     def get(self):
         query_string = request.args.get("query_string")
         
-        scopus_response = make_request(query_string)
+        scopus_response = make_scopus_request(query_string)
 
         print(scopus_response)
 
@@ -36,7 +36,19 @@ class Aggregator(Resource):
         return make_post_request_to_AI(scopus_response)
 
     def post(self):
-        # Non serve
+        # retrieve field "keyword" from the request
+        req_json = request.get_json()
+
+        # concatenate keywords
+        query_string = req_json['keywords'][0]
+        for keyword in req_json['keywords'][1:]:
+            query_string = query_string + ' AND ' + keyword
+
+        scopus_response = make_scopus_request(query_string)
+
+        return make_post_request_to_AI(scopus_response)
+
+
         pass
 
 
