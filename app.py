@@ -26,14 +26,15 @@ class Aggregator(Resource):
     def get(self):
         query_string = request.args.get("query_string")
         
-        # search query_string on Scopus and return the results in a JSON format
-        scopus_results = make_scopus_request(query_string)
+        #scopus_results = make_scopus_request(query_string)
 
-        print(scopus_results)
+        # print(scopus_results)
 
-        # ieee_results = make_ieee_request(query_string)
+        ieee_results = make_ieee_request(query_string)
 
-        return jsonify(scopus_results)
+        print(ieee_results.keys())
+
+        return jsonify(ieee_results)
 
     def post(self):
         # retrieve field "keyword" from the request
