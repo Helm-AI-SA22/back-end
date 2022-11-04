@@ -1,7 +1,10 @@
+from crypt import methods
+import json
 from flask import Flask, request, jsonify
 from flask_restful import Resource, Api
 from utils.scopus_api import make_scopus_request
 from utils.AI_request import make_post_request_to_AI
+import os
 
 
 class MockAI(Resource):
@@ -20,37 +23,24 @@ class MockAI(Resource):
 class Aggregator(Resource):
 
     def get(self):
-        pass
-        # non serve, il front end invia una post request
-
-        # query_string = request.args.get("query_string")
+        query_string = request.args.get("query_string")
         
-        # scopus_response = make_scopus_request(query_string)
+        scopus_response = make_request(query_string)
 
-        # print(scopus_response)
+        print(scopus_response)
 
-        # # search query_string on Scopus and return the results in a JSON format
+        # search query_string on Scopus and return the results in a JSON format
 
-        # # elaborate front-end request
+        # elaborate front-end request
 
-        # # make request to scopus / ieee and merge
-
-        # # make post to ai server
-
-        # return make_post_request_to_AI(scopus_response)
-
-    def post(self):
-        # retrieve field "keyword" from the request
-        req_json = request.get_json()
-
-        # concatenate keywords
-        query_string = '"' + req_json['keywords'][0] + '"'
-        for keyword in req_json['keywords'][1:]:
-            query_string = query_string + ' AND ' + '"' + keyword + '"'
-
-        scopus_response = make_scopus_request(query_string)
+        # make request to scopus / ieee and merge
+        # make post to ai server
 
         return make_post_request_to_AI(scopus_response)
+
+    def post(self):
+        # Non serve
+        pass
 
 
 class Home(Resource):
@@ -63,6 +53,25 @@ class Home(Resource):
 
         return "HOME in POST"
 
+class FrontEndRequest(Resource):
+
+    def get(self):
+        
+        with open('BE_respto_FE.json', "r") as json_file:
+            data = json.load(json_file)
+        
+        json_file.close()
+
+        return data
+
+
+    def post(self):
+
+        with open('BE_respto_FE.json', "r") as json_file:
+            data = json.load(json_file)
+        
+        json_file.close()
+        return data
 
 if __name__ == "__main__":
     app = Flask(__name__)
@@ -72,6 +81,7 @@ if __name__ == "__main__":
     api.add_resource(Home, "/")
     api.add_resource(MockAI, "/mock_ai")
     api.add_resource(Aggregator, "/aggregator")
+    api.add_resource(FrontEndRequest, "/front_end_request")
     
     # set host to gateway to handle route
     app.run(host = "0.0.0.0")
