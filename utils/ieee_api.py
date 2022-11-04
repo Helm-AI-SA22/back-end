@@ -1,6 +1,5 @@
 from utils.constants import *
 import requests
-import json
 
 
 # define ieee request for api

@@ -49,9 +49,6 @@ class Aggregator(Resource):
         return make_post_request_to_AI(scopus_response)
 
 
-        pass
-
-
 class Home(Resource):
 
     def get(self):
