@@ -1,11 +1,13 @@
-from crypt import methods
 import json
 from flask import Flask, request, jsonify
 from flask_restful import Resource, Api
 from utils.scopus_api import make_scopus_request
 from utils.ieee_api import make_ieee_request
-from utils.AI_request import make_post_request_to_AI
-import os
+
+def aggregator(ieee_results):
+
+    with open("aggregation_features.json") as f:
+        aggregation_features = json.load(f)
 
 
 class MockAI(Resource):
@@ -32,7 +34,7 @@ class Aggregator(Resource):
 
         ieee_results = make_ieee_request(query_string)
 
-        print(ieee_results.keys())
+        aggregated_results = aggregator(ieee_results)
 
         return jsonify(ieee_results)
 

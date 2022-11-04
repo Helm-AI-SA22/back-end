@@ -1,6 +1,8 @@
 from utils.constants import *
 import requests
 import json
+from collections import defaultdict
+
 
 # define ieee request for api
 def compose_ieee_request(q_str):
@@ -14,4 +16,14 @@ def make_ieee_request(q_str):
     with open("ieee.json") as f:
         ieee_response = json.load(f)
 
-    return ieee_response
+    # transform ieee response in a list of papers, with relative infoes
+
+    transfomed_ieee_response = defaultdict(dict)
+
+    for feature_key, feature_values_dict in ieee_response.items():
+        for key, value in feature_values_dict.items():
+            transfomed_ieee_response[key][feature_key] = value
+
+    transfomed_ieee_response = list(transfomed_ieee_response.values())
+
+    return transfomed_ieee_response
