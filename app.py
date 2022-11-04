@@ -3,6 +3,7 @@ import json
 from flask import Flask, request, jsonify
 from flask_restful import Resource, Api
 from utils.scopus_api import make_scopus_request
+from utils.ieee_api import make_ieee_request
 from utils.AI_request import make_post_request_to_AI
 import os
 
@@ -25,22 +26,27 @@ class Aggregator(Resource):
     def get(self):
         query_string = request.args.get("query_string")
         
-        scopus_response = make_request(query_string)
-
-        print(scopus_response)
-
         # search query_string on Scopus and return the results in a JSON format
+        scopus_results = make_scopus_request(query_string)
 
-        # elaborate front-end request
+        print(scopus_results)
 
-        # make request to scopus / ieee and merge
-        # make post to ai server
+        # ieee_results = make_ieee_request(query_string)
 
-        return make_post_request_to_AI(scopus_response)
+        return jsonify(scopus_results)
 
     def post(self):
-        # Non serve
-        pass
+        # retrieve field "keyword" from the request
+        req_json = request.get_json()
+
+        # concatenate keywords
+        query_string = req_json['keywords'][0]
+        for keyword in req_json['keywords'][1:]:
+            query_string = query_string + ' AND ' + keyword
+
+        scopus_response = make_scopus_request(query_string)
+
+        return scopus_response
 
 
 class Home(Resource):
