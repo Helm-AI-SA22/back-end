@@ -64,7 +64,7 @@ class FrontEndRequest(Resource):
 
     def get(self):
         
-        with open('BE_respto_FE.json', "r") as json_file:
+        with open('mocks/BE_respto_FE.json', "r") as json_file:
             data = json.load(json_file)
         
         json_file.close()
@@ -74,7 +74,7 @@ class FrontEndRequest(Resource):
 
     def post(self):
 
-        with open('BE_respto_FE.json', "r") as json_file:
+        with open('mocks/BE_respto_FE.json', "r") as json_file:
             data = json.load(json_file)
         
         json_file.close()
