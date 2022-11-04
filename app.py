@@ -20,29 +20,33 @@ class MockAI(Resource):
 class Aggregator(Resource):
 
     def get(self):
-        query_string = request.args.get("query_string")
+        pass
+        # non serve, il front end invia una post request
+
+        # query_string = request.args.get("query_string")
         
-        scopus_response = make_scopus_request(query_string)
+        # scopus_response = make_scopus_request(query_string)
 
-        print(scopus_response)
+        # print(scopus_response)
 
-        # search query_string on Scopus and return the results in a JSON format
+        # # search query_string on Scopus and return the results in a JSON format
 
-        # elaborate front-end request
+        # # elaborate front-end request
 
-        # make request to scopus / ieee and merge
-        # make post to ai server
+        # # make request to scopus / ieee and merge
 
-        return make_post_request_to_AI(scopus_response)
+        # # make post to ai server
+
+        # return make_post_request_to_AI(scopus_response)
 
     def post(self):
         # retrieve field "keyword" from the request
         req_json = request.get_json()
 
         # concatenate keywords
-        query_string = req_json['keywords'][0]
+        query_string = '"' + req_json['keywords'][0] + '"'
         for keyword in req_json['keywords'][1:]:
-            query_string = query_string + ' AND ' + keyword
+            query_string = query_string + ' AND ' + '"' + keyword + '"'
 
         scopus_response = make_scopus_request(query_string)
 
