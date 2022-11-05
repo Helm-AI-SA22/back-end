@@ -9,8 +9,10 @@ from flask_cors import CORS
 
 def add_topic_paper(topics, papers, doi):
     for paper in papers:
-        if paper["doi"] == doi:
+        if paper["doi"] == str(doi):
             paper["topics"] = topics
+
+    return papers
 
 
 def process_ai_result(ai_result, list_papers):
@@ -18,7 +20,7 @@ def process_ai_result(ai_result, list_papers):
 
     for doc in documents_result_ai:
         doi = doc["id"]
-        add_topic_paper(doc["topics"], list_papers, doi)
+        list_papers = add_topic_paper(doc["topics"], list_papers, doi)
 
     ai_result["documents"] = list_papers
 
@@ -90,9 +92,40 @@ class MockAI(Resource):
         return jsonify(return_json)
 
 
+def execute_aggregation_topic_modeling(query_string, topic_modeling):
+    ieee_results = make_ieee_request(query_string)
+
+    scopus_results = make_scopus_request(query_string)
+
+    aggregated_results = aggregator(ieee_results, scopus_results)
+
+    with open("aggregation_features.json") as f:
+        aggregation_features = json.load(f)
+
+    # call AI module
+    data_to_ai = format_data_ai(aggregated_results, [aggregation_features["aggregated_key"], aggregation_features["aggregated_abstract"]])
+
+    ai_result = make_post_request_to_AI(data_to_ai, topic_modeling)
+
+    processed_result = process_ai_result(ai_result, aggregated_results)
+
+    return jsonify(processed_result)
+
+
 class Aggregator(Resource):
 
+    def get(self):
+
+        keywords = request.args.get("keywords").split(";")
+
+        topic_modeling = request.args.get("type")
+
+        query_string = " AND ".join(keywords)
+        
+        return execute_aggregation_topic_modeling(query_string, topic_modeling)
+
     def post(self):
+
         data = request.get_json()
 
         keywords = data["keywords"]
@@ -101,23 +134,7 @@ class Aggregator(Resource):
 
         query_string = " AND ".join(keywords)
         
-        ieee_results = make_ieee_request(query_string)
-
-        scopus_results = make_scopus_request(query_string)
-
-        aggregated_results = aggregator(ieee_results, scopus_results)
-
-        with open("aggregation_features.json") as f:
-            aggregation_features = json.load(f)
-
-        # call AI module
-        data_to_ai = format_data_ai(aggregated_results, [aggregation_features["aggregated_key"], aggregation_features["aggregated_abstract"]])
-
-        ai_result = make_post_request_to_AI(data_to_ai, topic_modeling)
-
-        processed_result = process_ai_result(ai_result, aggregated_results)
-
-        return jsonify(processed_result)
+        return execute_aggregation_topic_modeling(query_string, topic_modeling)
 
 
 class Home(Resource):

@@ -39,12 +39,18 @@ def compose_scopus_request(q_str, start=0):
 
 
 def make_scopus_request(q_str):
+    
+    #  TODO : ERRORE CON VIEW COMPLETE, capire perchè
+
     """
+    
     result = list()
 
     while len(result) < 20:
         try:
             scopus_request = compose_scopus_request(q_str, len(result))
+
+            print(scopus_request)
 
             scopus_response = requests.get(scopus_request).json()
 
@@ -59,8 +65,11 @@ def make_scopus_request(q_str):
             
             result += scopus_entries
 
+            # print(len(result))
+
         except Exception as e:
             print(e)
+
     """
 
     with open("scopus_try.json") as f:
