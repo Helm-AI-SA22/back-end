@@ -1,5 +1,6 @@
 {
-    "scopus_features": ["author", "dc:title", "prism:coverDate", "citedby-count", "prism:doi", "link", "dc:description"],
-    "ieee_features": ["Authors", "Document Title", "Publication Year", "Article Citation Count", "DOI", "PDF Link", "Abstract"],
-    "aggregated_features": ["autors", "title", "publication-year", "citation-count", "doi", "pdf-link", "abstract"]
+    "scopus": ["author", "dc:title", "prism:coverDate", "citedby-count", "prism:doi", "link", "dc:description"],
+    "ieee": ["Authors", "Document Title", "Publication Year", "Article Citation Count", "DOI", "PDF Link", "Abstract"],
+    "aggregated": ["autors", "title", "publication-year", "citation-count", "doi", "pdf-link", "abstract"],
+    "aggregated_key":  "doi"
 }

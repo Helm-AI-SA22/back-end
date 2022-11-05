@@ -4,10 +4,41 @@ from flask_restful import Resource, Api
 from utils.scopus_api import make_scopus_request
 from utils.ieee_api import make_ieee_request
 
-def aggregator(ieee_results):
+def remove_duplicated(results, key):
+    memo = set()
+    transformed_results = list()
+    
+    for res in results:
+        if not res[key] in memo and not res[key] is None:
+            transformed_results.append(res)
+            memo.add(res[key])
+
+    return transformed_results
+
+def mapping_feature_names(results, start_features, end_features):
+
+    transformed_results = list()
+
+    for res in results:
+        transformed_results.append({end_features[i]: res[k] for i, k in enumerate(start_features)})
+    
+    return transformed_results
+
+
+def aggregator(ieee_results, scopus_results):
 
     with open("aggregation_features.json") as f:
         aggregation_features = json.load(f)
+
+    ieee_transformed_results = mapping_feature_names(ieee_results, aggregation_features["ieee"], aggregation_features["aggregated"])
+    scopus_transformed_results = mapping_feature_names(scopus_results, aggregation_features["scopus"], aggregation_features["aggregated"])
+
+    results = ieee_transformed_results + scopus_transformed_results
+
+    # remove duplicate
+    transformed_results = remove_duplicated(results, aggregation_features["aggregated_key"])
+
+    return transformed_results
 
 
 class MockAI(Resource):
@@ -28,15 +59,13 @@ class Aggregator(Resource):
     def get(self):
         query_string = request.args.get("query_string")
         
-        #scopus_results = make_scopus_request(query_string)
-
-        # print(scopus_results)
-
         ieee_results = make_ieee_request(query_string)
 
-        aggregated_results = aggregator(ieee_results)
+        scopus_results = make_scopus_request(query_string)
 
-        return jsonify(ieee_results)
+        aggregated_results = aggregator(ieee_results, scopus_results)
+
+        return jsonify(aggregated_results)
 
     def post(self):
         # retrieve field "keyword" from the request
