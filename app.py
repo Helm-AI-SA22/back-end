@@ -93,7 +93,13 @@ class MockAI(Resource):
 class Aggregator(Resource):
 
     def post(self):
-        query_string = request.args.get("query_string")
+        data = request.get_json()
+
+        keywords = data["keywords"]
+
+        topic_modeling = data["type"]
+
+        query_string = " AND ".join(keywords)
         
         ieee_results = make_ieee_request(query_string)
 
@@ -107,7 +113,7 @@ class Aggregator(Resource):
         # call AI module
         data_to_ai = format_data_ai(aggregated_results, [aggregation_features["aggregated_key"], aggregation_features["aggregated_abstract"]])
 
-        ai_result = make_post_request_to_AI(data_to_ai)
+        ai_result = make_post_request_to_AI(data_to_ai, topic_modeling)
 
         processed_result = process_ai_result(ai_result, aggregated_results)
 
