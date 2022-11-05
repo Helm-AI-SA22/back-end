@@ -3,6 +3,27 @@ from flask import Flask, request, jsonify
 from flask_restful import Resource, Api
 from utils.scopus_api import make_scopus_request
 from utils.ieee_api import make_ieee_request
+from utils.AI_request import make_post_request_to_AI
+
+
+def process_ai_result(ai_result, list_papers):
+    pass
+
+
+def format_data_ai(list_papers, return_keys):
+    return_list = list()
+    
+    for paper in list_papers:
+
+        formatted_paper = dict()
+
+        for k in return_keys:
+            formatted_paper[k] = paper[k]
+
+        return_list.append(formatted_paper)
+    
+    return return_list
+
 
 def remove_duplicated(results, key):
     memo = set()
@@ -65,7 +86,17 @@ class Aggregator(Resource):
 
         aggregated_results = aggregator(ieee_results, scopus_results)
 
-        return jsonify(aggregated_results)
+        with open("aggregation_features.json") as f:
+            aggregation_features = json.load(f)
+
+        # call AI module
+        data_to_ai = format_data_ai(aggregated_results, [aggregation_features["aggregated_key"], aggregation_features["aggregated_abstract"]])
+
+        ai_result = make_post_request_to_AI(data_to_ai)
+
+        processed_result = process_ai_result(ai_result, aggregated_results)
+
+        return jsonify(processed_result)
 
     def post(self):
         # retrieve field "keyword" from the request
