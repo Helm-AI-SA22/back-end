@@ -7,8 +7,22 @@ from utils.AI_request import make_post_request_to_AI
 from flask_cors import CORS
 
 
+def add_topic_paper(topics, papers, doi):
+    for paper in papers:
+        if paper["doi"] == doi:
+            paper["topics"] = topics
+
+
 def process_ai_result(ai_result, list_papers):
-    pass
+    documents_result_ai = ai_result.pop("documents")
+
+    for doc in documents_result_ai:
+        doi = doc["id"]
+        add_topic_paper(doc["topics"], list_papers, doi)
+
+    ai_result["documents"] = list_papers
+
+    return ai_result
 
 
 def format_data_ai(list_papers, return_keys):
@@ -31,7 +45,7 @@ def remove_duplicated(results, key):
     transformed_results = list()
     
     for res in results:
-        if not res[key] in memo and not res[key] is None:
+        if not res[key] in memo:
             transformed_results.append(res)
             memo.add(res[key])
 
@@ -78,7 +92,7 @@ class MockAI(Resource):
 
 class Aggregator(Resource):
 
-    def get(self):
+    def post(self):
         query_string = request.args.get("query_string")
         
         ieee_results = make_ieee_request(query_string)
@@ -98,19 +112,6 @@ class Aggregator(Resource):
         processed_result = process_ai_result(ai_result, aggregated_results)
 
         return jsonify(processed_result)
-
-    def post(self):
-        # retrieve field "keyword" from the request
-        req_json = request.get_json()
-
-        # concatenate keywords
-        query_string = req_json['keywords'][0]
-        for keyword in req_json['keywords'][1:]:
-            query_string = query_string + ' AND ' + keyword
-
-        scopus_response = make_scopus_request(query_string)
-
-        return scopus_response
 
 
 class Home(Resource):

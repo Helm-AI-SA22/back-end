@@ -4,6 +4,15 @@ import json
 from collections import defaultdict
 
 
+def remove_nodoi(list_papers):
+    return_list = list()
+
+    for paper in list_papers:
+        if not paper["DOI"] is None:
+            return_list.append(paper)
+
+    return return_list
+
 # define ieee request for api
 def compose_ieee_request(q_str):
     return IEEE_SITE + '?querytext=' + q_str + '&' + IEEE_HEADERS
@@ -26,4 +35,5 @@ def make_ieee_request(q_str):
 
     transfomed_ieee_response = list(transfomed_ieee_response.values())
 
-    return transfomed_ieee_response
+
+    return remove_nodoi(transfomed_ieee_response)
