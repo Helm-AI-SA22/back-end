@@ -4,6 +4,7 @@ from flask_restful import Resource, Api
 from utils.scopus_api import make_scopus_request
 from utils.ieee_api import make_ieee_request
 from utils.AI_request import make_post_request_to_AI
+from flask_cors import CORS
 
 
 def process_ai_result(ai_result, list_papers):
@@ -144,6 +145,8 @@ class FrontEndRequest(Resource):
 
 if __name__ == "__main__":
     app = Flask(__name__)
+    cors = CORS(app, resources={r"/*": {"origins": "*"}})
+
     api = Api(app)
 
     # routes
