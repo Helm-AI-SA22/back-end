@@ -10,5 +10,5 @@ IEEE_HEADERS = 'apikey=' + IEEE_API_KEY
 AI_URL_DEPLOY = "helmai"
 AI_PORT_DEPLOY = 5000
 
-AI_URL = "http://localhost"
-AI_PORT = 5001
+AI_URL = "http://helmai"
+AI_PORT = 5000

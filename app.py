@@ -1,6 +1,6 @@
 import json
 from flask import Flask, request, jsonify
-from flask_restful import Resource, Api
+from flask_restx import Api, Resource, reqparse
 from utils.scopus_api import make_scopus_request
 from utils.ieee_api import make_ieee_request
 from utils.AI_request import make_post_request_to_AI
@@ -79,19 +79,6 @@ def aggregator(ieee_results, scopus_results):
     return transformed_results
 
 
-class MockAI(Resource):
-
-    def get(self):
-        return {'prova AI': 'prova get'}
-        
-
-    def post(self):
-        req_json = request.get_json()
-        print('Json arrived to AI:', req_json)
-        return_json = {'prova AI': 'riuscita'}
-        return jsonify(return_json)
-
-
 def execute_aggregation_topic_modeling(query_string, topic_modeling):
     ieee_results = make_ieee_request(query_string)
 
@@ -99,8 +86,17 @@ def execute_aggregation_topic_modeling(query_string, topic_modeling):
 
     aggregated_results = aggregator(ieee_results, scopus_results)
 
+    # take simple subset, to be fast
+    aggregated_results = aggregated_results[:2]
+
+    print(len(aggregated_results))
+
     with open("aggregation_features.json") as f:
         aggregation_features = json.load(f)
+
+    # apply filtering
+
+    # apply ranking, parallelizable wrt call AI module
 
     # call AI module
     data_to_ai = format_data_ai(aggregated_results, [aggregation_features["aggregated_key"], aggregation_features["aggregated_abstract"]])
@@ -137,16 +133,6 @@ class Aggregator(Resource):
         return execute_aggregation_topic_modeling(query_string, topic_modeling)
 
 
-class Home(Resource):
-
-    def get(self):
-        
-        return "HOME in GET"
-
-    def post(self):
-
-        return "HOME in POST"
-
 class FrontEndRequest(Resource):
 
     def get(self):
@@ -167,6 +153,7 @@ class FrontEndRequest(Resource):
         json_file.close()
         return data
 
+
 if __name__ == "__main__":
     app = Flask(__name__)
     cors = CORS(app, resources={r"/*": {"origins": "*"}})
@@ -174,8 +161,6 @@ if __name__ == "__main__":
     api = Api(app)
 
     # routes
-    api.add_resource(Home, "/")
-    api.add_resource(MockAI, "/mock_ai")
     api.add_resource(Aggregator, "/aggregator")
     api.add_resource(FrontEndRequest, "/front_end_request")
     
