@@ -1,7 +1,7 @@
 {
     "scopus": ["author", "dc:title", "prism:coverDate", "citedby-count", "prism:doi", "link", "dc:description"],
     "ieee": ["Authors", "Document Title", "Publication Year", "Article Citation Count", "DOI", "PDF Link", "Abstract"],
-    "aggregated": ["autors", "title", "publication-year", "citation-count", "id", "pdf-link", "abstract"],
+    "aggregated": ["autors", "title", "publicationYear", "citationCount", "id", "pdfLink", "abstract"],
     "aggregated_key":  "id",
     "aggregated_abstract":  "abstract"
 }
