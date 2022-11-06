@@ -1,0 +1,725 @@
+{
+    "search-results": {
+        "opensearch:totalResults": "2624604",
+        "opensearch:startIndex": "5",
+        "opensearch:itemsPerPage": "5",
+        "opensearch:Query": {
+            "@role": "request",
+            "@searchTerms": "heart",
+            "@startPage": "5"
+        },
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "http://api.elsevier.com:80/content/search/scopus?start=5&count=5&query=heart&view=COMPLETE&ver=new",
+                "@type": "application/json"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "first",
+                "@href": "http://api.elsevier.com:80/content/search/scopus?start=0&count=5&query=heart&view=COMPLETE&ver=new",
+                "@type": "application/json"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "prev",
+                "@href": "http://api.elsevier.com:80/content/search/scopus?start=0&count=5&query=heart&view=COMPLETE&ver=new",
+                "@type": "application/json"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "next",
+                "@href": "http://api.elsevier.com:80/content/search/scopus?start=10&count=5&query=heart&view=COMPLETE&ver=new",
+                "@type": "application/json"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "last",
+                "@href": "http://api.elsevier.com:80/content/search/scopus?start=4995&count=5&query=heart&view=COMPLETE&ver=new",
+                "@type": "application/json"
+            }
+        ],
+        "entry": [
+            {
+                "@_fa": "true",
+                "link": [
+                    {
+                        "@_fa": "true",
+                        "@ref": "self",
+                        "@href": "http://api.elsevier.com/content/abstract/scopus_id/84884919538"
+                    },
+                    {
+                        "@_fa": "true",
+                        "@ref": "scopus",
+                        "@href": "http://www.scopus.com/inward/record.url?partnerID=HzOxMe3b&scp=84884919538"
+                    },
+                    {
+                        "@_fa": "true",
+                        "@ref": "scopus-citedby",
+                        "@href": "http://www.scopus.com/inward/citedby.url?partnerID=HzOxMe3b&scp=84884919538"
+                    },
+                    {
+                        "@_fa": "true",
+                        "@ref": "full-text",
+                        "@href": "http://api.elsevier.com/content/article/eid/1-s2.0-S0740002013001652"
+                    }
+                ],
+                "prism:url": "http://api.elsevier.com/content/abstract/scopus_id/84884919538",
+                "dc:identifier": "SCOPUS_ID:84884919538",
+                "dc:title": "Brain is the predilection site of Toxoplasma gondii in experimentally inoculated pigs as revealed by magnetic capture and real-time PCR",
+                "dc:creator": "Jur�nkov�, J.",
+                "prism:publicationName": "Food Microbiology",
+                "prism:issn": "07400020",
+                "prism:eIssn": "10959998",
+                "prism:volume": "38",
+                "prism:pageRange": "167-170",
+                "prism:coverDate": "2014-04-01",
+                "prism:coverDisplayDate": "April 2014",
+                "prism:doi": "10.1016/j.fm.2013.08.011",
+                "dc:description": "Pigs represent an important source of food in many countries, and undercooked pork containing tissue cysts is one of the most common sources of Toxoplasma gondii infection for humans. A magnetic capture method for the isolation of T.gondii DNA and quantitative real-time PCR targeting the 529bp TOXO repeat element were used to estimate the parasite burden in different tissues of pigs experimentally infected with T.gondii oocysts, and to determine the predilection sites of T.gondii in this host species. The highest concentration of T.gondii DNA was found in brain tissues, equivalent to [median] 553.7 (range 3857.7-121.9) parasites per gram, followed by lungs, heart and dorsal muscles with median values corresponding to 0.3 (range 61.3-0.02); 2.6 (range 7.34-0.37) and 0.6 (range 2.81-0.31) parasites per gram of tissue, respectively. Skeletal muscles from fore and hindlimb, liver and kidney presented very low infection burdens equivalent to [median] =0.2 parasites per gram of tissues, and no parasite DNA could be detected in the spleen. This study contributes to understanding the value of different pig tissues as a source of T.gondii infection for humans and shows that the brain, while not being of major importance as human food source, may represent a first-line selection tissue when performing non-serological surveys (e.g. bioassays, histopathological, immunohistochemical or molecular studies) to detect T.gondii infections in pigs. � 2013 Elsevier Ltd.",
+                "citedby-count": "0",
+                "affiliation": [
+                    {
+                        "@_fa": "true",
+                        "affiliation-url": "http://api.elsevier.com/content/affiliation/affiliation_id/60020771",
+                        "afid": "60020771",
+                        "affilname": "University of Veterinary and Pharmaceutical Sciences Brno",
+                        "affiliation-city": "Brno",
+                        "affiliation-country": "Czech Republic",
+                        "name-variant": [
+                            {
+                                "@_fa": "true",
+                                "$": "University of Veterinary and Pharmaceutical Sciences"
+                            },
+                            {
+                                "@_fa": "true",
+                                "$": "University of Veterinary and Pharmaceutical Sciences Brno"
+                            }
+                        ]
+                    },
+                    {
+                        "@_fa": "true",
+                        "affiliation-url": "http://api.elsevier.com/content/affiliation/affiliation_id/60012614",
+                        "afid": "60012614",
+                        "affilname": "Universit�t Z�rich",
+                        "affiliation-city": "Zurich",
+                        "affiliation-country": "Switzerland",
+                        "name-variant": [
+                            {
+                                "@_fa": "true",
+                                "$": "University of Zurich"
+                            },
+                            {
+                                "@_fa": "true",
+                                "$": "University of Z�rich"
+                            },
+                            {
+                                "@_fa": "true",
+                                "$": "Universit�t Z�rich"
+                            }
+                        ]
+                    }
+                ],
+                "prism:aggregationType": "Journal",
+                "subtype": "ar",
+                "subtypeDescription": "Article",
+                "author": [
+                    {
+                        "@_fa": "true",
+                        "author-url": "http://api.elsevier.com/content/author/author_id/55934048000",
+                        "authid": "55934048000",
+                        "authname": "Jur�nkov�, J.",
+                        "surname": "Jur�nkov�",
+                        "initials": "J.",
+                        "afid": [
+                            {
+                                "@_fa": "true",
+                                "$": "60020771"
+                            }
+                        ]
+                    },
+                    {
+                        "@_fa": "true",
+                        "author-url": "http://api.elsevier.com/content/author/author_id/6602634089",
+                        "authid": "6602634089",
+                        "authname": "Basso, W.",
+                        "given-name": "Walter",
+                        "surname": "Basso",
+                        "initials": "W.",
+                        "afid": [
+                            {
+                                "@_fa": "true",
+                                "$": "60012614"
+                            }
+                        ]
+                    },
+                    {
+                        "@_fa": "true",
+                        "author-url": "http://api.elsevier.com/content/author/author_id/23980872700",
+                        "authid": "23980872700",
+                        "authname": "Neumayerov�, H.",
+                        "given-name": "Helena",
+                        "surname": "Neumayerov�",
+                        "initials": "H.",
+                        "afid": [
+                            {
+                                "@_fa": "true",
+                                "$": "60020771"
+                            }
+                        ]
+                    },
+                    {
+                        "@_fa": "true",
+                        "author-url": "http://api.elsevier.com/content/author/author_id/55336480400",
+                        "authid": "55336480400",
+                        "authname": "Bal�, V.",
+                        "given-name": "Vojtech",
+                        "surname": "Bal�",
+                        "initials": "V.",
+                        "afid": [
+                            {
+                                "@_fa": "true",
+                                "$": "60020771"
+                            }
+                        ]
+                    },
+                    {
+                        "@_fa": "true",
+                        "author-url": "http://api.elsevier.com/content/author/author_id/6507548847",
+                        "authid": "6507548847",
+                        "authname": "J�nov�, E.",
+                        "given-name": "Eva",
+                        "surname": "J�nov�",
+                        "initials": "E.",
+                        "afid": [
+                            {
+                                "@_fa": "true",
+                                "$": "60020771"
+                            }
+                        ]
+                    },
+                    {
+                        "@_fa": "true",
+                        "author-url": "http://api.elsevier.com/content/author/author_id/8299106600",
+                        "authid": "8299106600",
+                        "authname": "Sidler, X.",
+                        "given-name": "Xaver",
+                        "surname": "Sidler",
+                        "initials": "X.",
+                        "afid": [
+                            {
+                                "@_fa": "true",
+                                "$": "60012614"
+                            }
+                        ]
+                    },
+                    {
+                        "@_fa": "true",
+                        "author-url": "http://api.elsevier.com/content/author/author_id/7006822338",
+                        "authid": "7006822338",
+                        "authname": "Deplazes, P.",
+                        "given-name": "Peter",
+                        "surname": "Deplazes",
+                        "initials": "P.",
+                        "afid": [
+                            {
+                                "@_fa": "true",
+                                "$": "60012614"
+                            }
+                        ]
+                    },
+                    {
+                        "@_fa": "true",
+                        "author-url": "http://api.elsevier.com/content/author/author_id/7005935041",
+                        "authid": "7005935041",
+                        "authname": "Koudela, B.",
+                        "given-name": "Bretislav",
+                        "surname": "Koudela",
+                        "initials": "B.",
+                        "afid": [
+                            {
+                                "@_fa": "true",
+                                "$": "60020771"
+                            }
+                        ]
+                    }
+                ],
+                "authkeywords": "Magnetic capture | Pigs | Real-time PCR | Toxoplasma gondii"
+            },
+            {
+                "@_fa": "true",
+                "link": [
+                    {
+                        "@_fa": "true",
+                        "@ref": "self",
+                        "@href": "http://api.elsevier.com/content/abstract/scopus_id/84888056396"
+                    },
+                    {
+                        "@_fa": "true",
+                        "@ref": "scopus",
+                        "@href": "http://www.scopus.com/inward/record.url?partnerID=HzOxMe3b&scp=84888056396"
+                    },
+                    {
+                        "@_fa": "true",
+                        "@ref": "scopus-citedby",
+                        "@href": "http://www.scopus.com/inward/citedby.url?partnerID=HzOxMe3b&scp=84888056396"
+                    },
+                    {
+                        "@_fa": "true",
+                        "@ref": "full-text",
+                        "@href": "http://api.elsevier.com/content/article/eid/1-s2.0-S0955067413001610"
+                    }
+                ],
+                "prism:url": "http://api.elsevier.com/content/abstract/scopus_id/84888056396",
+                "dc:identifier": "SCOPUS_ID:84888056396",
+                "dc:title": "Recent developments in biased agonism",
+                "dc:creator": "Wisler, J.W.",
+                "prism:publicationName": "Current Opinion in Cell Biology",
+                "prism:issn": "09550674",
+                "prism:eIssn": "18790410",
+                "prism:volume": "27",
+                "prism:issueIdentifier": "1",
+                "prism:pageRange": "18-24",
+                "prism:coverDate": "2014-04-01",
+                "prism:coverDisplayDate": "April 2014",
+                "prism:doi": "10.1016/j.ceb.2013.10.008",
+                "dc:description": "The classic paradigm of G protein-coupled receptor (GPCR) activation was based on the understanding that agonist binding to a receptor induces or stabilizes a conformational change to an 'active' conformation. In the past decade, however, it has been appreciated that ligands can induce distinct 'active' receptor conformations with unique downstream functional signaling profiles. Building on the initial recognition of the existence of such 'biased ligands', recent years have witnessed significant developments in several areas of GPCR biology. These include increased understanding of structural and biophysical mechanisms underlying biased agonism, improvements in characterization and quantification of ligand efficacy, as well as clinical development of these novel ligands. Here we review recent major developments in these areas over the past several years. � 2013 .",
+                "citedby-count": "0",
+                "affiliation": [
+                    {
+                        "@_fa": "true",
+                        "affiliation-url": "http://api.elsevier.com/content/affiliation/affiliation_id/60005200",
+                        "afid": "60005200",
+                        "affilname": "Duke University School of Medicine",
+                        "affiliation-city": "Durham",
+                        "affiliation-country": "United States",
+                        "name-variant": [
+                            {
+                                "@_fa": "true",
+                                "$": "Duke University Medical Center"
+                            },
+                            {
+                                "@_fa": "true",
+                                "$": "Duke Univ. Med. Cent."
+                            }
+                        ]
+                    }
+                ],
+                "prism:aggregationType": "Journal",
+                "subtype": "re",
+                "subtypeDescription": "Review",
+                "author": [
+                    {
+                        "@_fa": "true",
+                        "author-url": "http://api.elsevier.com/content/author/author_id/13606062200",
+                        "authid": "13606062200",
+                        "authname": "Wisler, J.W.",
+                        "given-name": "James W.",
+                        "surname": "Wisler",
+                        "initials": "J.W.",
+                        "afid": [
+                            {
+                                "@_fa": "true",
+                                "$": "60005200"
+                            }
+                        ]
+                    },
+                    {
+                        "@_fa": "true",
+                        "author-url": "http://api.elsevier.com/content/author/author_id/12775435300",
+                        "authid": "12775435300",
+                        "authname": "Xiao, K.",
+                        "given-name": "Kunhong",
+                        "surname": "Xiao",
+                        "initials": "K.",
+                        "afid": [
+                            {
+                                "@_fa": "true",
+                                "$": "60005200"
+                            }
+                        ]
+                    },
+                    {
+                        "@_fa": "true",
+                        "author-url": "http://api.elsevier.com/content/author/author_id/55934616100",
+                        "authid": "55934616100",
+                        "authname": "Thomsen, A.R.B.",
+                        "given-name": "Alex R B",
+                        "surname": "Thomsen",
+                        "initials": "A.R.B.",
+                        "afid": [
+                            {
+                                "@_fa": "true",
+                                "$": "60005200"
+                            }
+                        ]
+                    },
+                    {
+                        "@_fa": "true",
+                        "author-url": "http://api.elsevier.com/content/author/author_id/35391040400",
+                        "authid": "35391040400",
+                        "authname": "Lefkowitz, R.J.",
+                        "given-name": "Robert J.",
+                        "surname": "Lefkowitz",
+                        "initials": "R.J.",
+                        "afid": [
+                            {
+                                "@_fa": "true",
+                                "$": "60005200"
+                            },
+                            {
+                                "@_fa": "true",
+                                "$": "60005200"
+                            },
+                            {
+                                "@_fa": "true",
+                                "$": "60005200"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "link": [
+                    {
+                        "@_fa": "true",
+                        "@ref": "self",
+                        "@href": "http://api.elsevier.com/content/abstract/scopus_id/84884272794"
+                    },
+                    {
+                        "@_fa": "true",
+                        "@ref": "scopus",
+                        "@href": "http://www.scopus.com/inward/record.url?partnerID=HzOxMe3b&scp=84884272794"
+                    },
+                    {
+                        "@_fa": "true",
+                        "@ref": "scopus-citedby",
+                        "@href": "http://www.scopus.com/inward/citedby.url?partnerID=HzOxMe3b&scp=84884272794"
+                    }
+                ],
+                "prism:url": "http://api.elsevier.com/content/abstract/scopus_id/84884272794",
+                "dc:identifier": "SCOPUS_ID:84884272794",
+                "dc:title": "Symptoms as Solutions: Hypnosis and Biofeedback for Autonomic Regulation in Autism Spectrum Disorders",
+                "dc:creator": "Sugarman, L.I.",
+                "prism:publicationName": "American Journal of Clinical Hypnosis",
+                "prism:issn": "00029157",
+                "prism:eIssn": "21600562",
+                "prism:volume": "56",
+                "prism:issueIdentifier": "2",
+                "prism:pageRange": "152-173",
+                "prism:coverDate": "2014-04-01",
+                "prism:coverDisplayDate": "April 2014",
+                "prism:doi": "10.1080/00029157.2013.768197",
+                "dc:description": "The Autonomic Dysregulation Theory of autism posits that a phylogenetically early autonomic defect leads to overarousal and impairments in language and social engagement. Cognitive rigidity and repetitive behaviors manifest as mitigating efforts. Focusing on the implications of this premise may provide more productive therapeutic approaches than existing methods. It suggests that self-regulation therapy using hypnosis and biofeedback should be highly effective, especially for young people. Hypnotic strategies can utilize restrictive repetitive behaviors in trance as resources for comfort and control. Biofeedback training can be tailored to focus on autonomic regulation. The authors develop this theory and describe methods of integrating hypnosis and biofeedback that have been therapeutic for people with autism. Directions for future research to validate this approach are discussed. � 2013 Copyright American Society of Clinical Hypnosis.",
+                "citedby-count": "0",
+                "affiliation": [
+                    {
+                        "@_fa": "true",
+                        "affiliation-url": "http://api.elsevier.com/content/affiliation/affiliation_id/60001777",
+                        "afid": "60001777",
+                        "affilname": "Rochester Institute of Technology",
+                        "affiliation-city": "Rochester",
+                        "affiliation-country": "United States",
+                        "name-variant": [
+                            {
+                                "@_fa": "true",
+                                "$": "Rochester Institute of Technology"
+                            },
+                            {
+                                "@_fa": "true",
+                                "$": "Rochester Inst of Technology"
+                            }
+                        ]
+                    }
+                ],
+                "prism:aggregationType": "Journal",
+                "subtype": "ar",
+                "subtypeDescription": "Article",
+                "author": [
+                    {
+                        "@_fa": "true",
+                        "author-url": "http://api.elsevier.com/content/author/author_id/55856895200",
+                        "authid": "55856895200",
+                        "authname": "Sugarman, L.I.",
+                        "given-name": "Laurence I.",
+                        "surname": "Sugarman",
+                        "initials": "L.I.",
+                        "afid": [
+                            {
+                                "@_fa": "true",
+                                "$": "60001777"
+                            }
+                        ]
+                    },
+                    {
+                        "@_fa": "true",
+                        "author-url": "http://api.elsevier.com/content/author/author_id/55857192800",
+                        "authid": "55857192800",
+                        "authname": "Garrison, B.L.",
+                        "given-name": "Brian L.",
+                        "surname": "Garrison",
+                        "initials": "B.L.",
+                        "afid": [
+                            {
+                                "@_fa": "true",
+                                "$": "60001777"
+                            }
+                        ]
+                    },
+                    {
+                        "@_fa": "true",
+                        "author-url": "http://api.elsevier.com/content/author/author_id/55857853000",
+                        "authid": "55857853000",
+                        "authname": "Williford, K.L.",
+                        "given-name": "Kelsey L.",
+                        "surname": "Williford",
+                        "initials": "K.L.",
+                        "afid": [
+                            {
+                                "@_fa": "true",
+                                "$": "60001777"
+                            }
+                        ]
+                    }
+                ],
+                "authkeywords": "autism | autism spectrum disorder | autonomic regulation | biofeedback | hypnosis | repetitive behaviors"
+            },
+            {
+                "@_fa": "true",
+                "link": [
+                    {
+                        "@_fa": "true",
+                        "@ref": "self",
+                        "@href": "http://api.elsevier.com/content/abstract/scopus_id/84884527646"
+                    },
+                    {
+                        "@_fa": "true",
+                        "@ref": "scopus",
+                        "@href": "http://www.scopus.com/inward/record.url?partnerID=HzOxMe3b&scp=84884527646"
+                    },
+                    {
+                        "@_fa": "true",
+                        "@ref": "scopus-citedby",
+                        "@href": "http://www.scopus.com/inward/citedby.url?partnerID=HzOxMe3b&scp=84884527646"
+                    },
+                    {
+                        "@_fa": "true",
+                        "@ref": "full-text",
+                        "@href": "http://api.elsevier.com/content/article/eid/1-s2.0-S0261517713001556"
+                    }
+                ],
+                "prism:url": "http://api.elsevier.com/content/abstract/scopus_id/84884527646",
+                "dc:identifier": "SCOPUS_ID:84884527646",
+                "dc:title": "Investigating the effects of job demands and job resources on cabin crew safety behaviors",
+                "dc:creator": "Chen, C.-F.",
+                "prism:publicationName": "Tourism Management",
+                "prism:issn": "02615177",
+                "prism:volume": "41",
+                "prism:pageRange": "45-52",
+                "prism:coverDate": "2014-04-01",
+                "prism:coverDisplayDate": "April 2014",
+                "prism:doi": "10.1016/j.tourman.2013.08.009",
+                "dc:description": "Cabin crews are crucial to the cabin safety performance of airlines, and may enhance air travel safety and alleviate passenger concerns. Within the limited literature devoted to cabin crew related research, this study aims to examine the causal relationships among \"job demands\", \"job resources\" and cabin crew safety behaviors. Data from a survey of 339 flight attendants working for Taiwanese international airlines were analyzed using structural equation modeling. A variety of fit indices confirmed the overall model fit, and all the paths in the model were statistically significant. Framed in the context of the job demands-resources model, the results reveal negative causality between \"job demands\" and \"cabin crew safety behaviors\", whereas \"job resources\" are positively related to \"upward safety communication\", \"in-role\" and \"extra-role\" safety behaviors. The implications of the results for practitioners and future research are discussed. � 2013 Elsevier Ltd.",
+                "citedby-count": "0",
+                "affiliation": [
+                    {
+                        "@_fa": "true",
+                        "affiliation-url": "http://api.elsevier.com/content/affiliation/affiliation_id/60014982",
+                        "afid": "60014982",
+                        "affilname": "National Cheng Kung University",
+                        "affiliation-city": "Tainan",
+                        "affiliation-country": "Taiwan",
+                        "name-variant": [
+                            {
+                                "@_fa": "true",
+                                "$": "National Cheng Kung University"
+                            },
+                            {
+                                "@_fa": "true",
+                                "$": "Natl Cheng Kung Univ"
+                            },
+                            {
+                                "@_fa": "true",
+                                "$": "National Cheng-Kung University"
+                            }
+                        ]
+                    },
+                    {
+                        "@_fa": "true",
+                        "affiliation-url": "http://api.elsevier.com/content/affiliation/affiliation_id/60018181",
+                        "afid": "60018181",
+                        "affilname": "Aletheia University",
+                        "affiliation-city": "Tamsui",
+                        "affiliation-country": "Taiwan",
+                        "name-variant": [
+                            {
+                                "@_fa": "true",
+                                "$": "Aletheia University"
+                            }
+                        ]
+                    }
+                ],
+                "prism:aggregationType": "Journal",
+                "subtype": "ar",
+                "subtypeDescription": "Article",
+                "author": [
+                    {
+                        "@_fa": "true",
+                        "author-url": "http://api.elsevier.com/content/author/author_id/14832325400",
+                        "authid": "14832325400",
+                        "authname": "Chen, C.-F.",
+                        "given-name": "Chingfu",
+                        "surname": "Chen",
+                        "initials": "C.",
+                        "afid": [
+                            {
+                                "@_fa": "true",
+                                "$": "60014982"
+                            }
+                        ]
+                    },
+                    {
+                        "@_fa": "true",
+                        "author-url": "http://api.elsevier.com/content/author/author_id/25226574600",
+                        "authid": "25226574600",
+                        "authname": "Chen, S.-C.",
+                        "given-name": "Shuchuan",
+                        "surname": "Chen",
+                        "initials": "S.",
+                        "afid": [
+                            {
+                                "@_fa": "true",
+                                "$": "60014982"
+                            },
+                            {
+                                "@_fa": "true",
+                                "$": "60018181"
+                            }
+                        ]
+                    }
+                ],
+                "authkeywords": "Cabin crew | Job demands | Job resources | Safety behavior | Upward safety communication"
+            },
+            {
+                "@_fa": "true",
+                "link": [
+                    {
+                        "@_fa": "true",
+                        "@ref": "self",
+                        "@href": "http://api.elsevier.com/content/abstract/scopus_id/84886423686"
+                    },
+                    {
+                        "@_fa": "true",
+                        "@ref": "scopus",
+                        "@href": "http://www.scopus.com/inward/record.url?partnerID=HzOxMe3b&scp=84886423686"
+                    },
+                    {
+                        "@_fa": "true",
+                        "@ref": "scopus-citedby",
+                        "@href": "http://www.scopus.com/inward/citedby.url?partnerID=HzOxMe3b&scp=84886423686"
+                    }
+                ],
+                "prism:url": "http://api.elsevier.com/content/abstract/scopus_id/84886423686",
+                "dc:identifier": "SCOPUS_ID:84886423686",
+                "dc:title": "Antidiarrheal activities of isovanillin, iso-acetovanillon and Pycnocycla spinosa Decne ex.Boiss extract in mice",
+                "dc:creator": "Sadraei, H.",
+                "prism:publicationName": "Research in Pharmaceutical Sciences",
+                "prism:issn": "17355362",
+                "prism:eIssn": "17359414",
+                "prism:volume": "9",
+                "prism:issueIdentifier": "2",
+                "prism:pageRange": "83-89",
+                "prism:coverDate": "2014-04-01",
+                "prism:coverDisplayDate": "April 2014",
+                "dc:description": "Isovanillin and iso-acetovanillon are two phenolic components isolated from a number of plants including Pycnocycla spinosa. P. spinosa extract has antispasmodic and antidiarrheal activities. However, no comparative study has been done on antidiarrheal action of isovanillin and iso-acetovanillon, so far. The aim of this study was to investigate antidiarrheal action of isovanillin and iso-acetovanillon and their effects on small intestinal transit, for comparison with propantheline. Male mice (25-30 g), fasted over night with free access to water, were treated with test compounds or control (p.o.). Thirty min later castor oil (0.5 ml) was given orally to the animals. In another groups of animals MgSO4 (0.5 ml of 10% solution) was given first and half an hour later the test drugs were administered. Onset and number of wet defecations were recorded for each animal over 3.5 h after treatment with diarrhoea inducing agents. In another groups, intestinal transit of charcoal meal was determined following administration of the compounds. Isovanillin (2 mg/kg & 5 mg/kg), iso-acetovanillon (2 mg/kg & 5 mg/kg) and P. spinosa extract (5 mg/kg) delayed onset of diarrhoea and significantly reduced wet defecation induced by castor oil and MgSO4. They all had antidiarrheal effect similar to propantheline (5 mg/kg). Isovanillin, iso-acetovanillon and P. spinosa extract compared to control groups, significantly reduced small intestinal transit of charcoal meal. This study shows that antidiarrheal effect of P. spinosa extract is at least partially due to presence of two active compounds isovanillin and isoacetovanillon.",
+                "citedby-count": "0",
+                "affiliation": [
+                    {
+                        "@_fa": "true",
+                        "affiliation-url": "http://api.elsevier.com/content/affiliation/affiliation_id/60020609",
+                        "afid": "60020609",
+                        "affilname": "Isfahan University of Medical Sciences",
+                        "affiliation-city": "Isfahan",
+                        "affiliation-country": "Iran",
+                        "name-variant": [
+                            {
+                                "@_fa": "true",
+                                "$": "Isfahan University of Medical Sciences"
+                            },
+                            {
+                                "@_fa": "true",
+                                "$": "Isfahan Univ. of Medical Sciences"
+                            }
+                        ]
+                    }
+                ],
+                "prism:aggregationType": "Journal",
+                "subtype": "ar",
+                "subtypeDescription": "Article",
+                "author": [
+                    {
+                        "@_fa": "true",
+                        "author-url": "http://api.elsevier.com/content/author/author_id/6602807070",
+                        "authid": "6602807070",
+                        "authname": "Sadraei, H.",
+                        "given-name": "Hassan",
+                        "surname": "Sadraei",
+                        "initials": "H.",
+                        "afid": [
+                            {
+                                "@_fa": "true",
+                                "$": "60020609"
+                            }
+                        ]
+                    },
+                    {
+                        "@_fa": "true",
+                        "author-url": "http://api.elsevier.com/content/author/author_id/36117642300",
+                        "authid": "36117642300",
+                        "authname": "Ghanadian, M.",
+                        "given-name": "Mustafa Mustafa",
+                        "surname": "Ghanadian",
+                        "initials": "M.M.",
+                        "afid": [
+                            {
+                                "@_fa": "true",
+                                "$": "60020609"
+                            }
+                        ]
+                    },
+                    {
+                        "@_fa": "true",
+                        "author-url": "http://api.elsevier.com/content/author/author_id/6602771409",
+                        "authid": "6602771409",
+                        "authname": "Asghari, G.",
+                        "given-name": "Gholamreza Reza",
+                        "surname": "Asghari",
+                        "initials": "G.R."
+                    },
+                    {
+                        "@_fa": "true",
+                        "author-url": "http://api.elsevier.com/content/author/author_id/55901131400",
+                        "authid": "55901131400",
+                        "authname": "Azali, N.",
+                        "given-name": "N.",
+                        "surname": "Azali",
+                        "initials": "N.",
+                        "afid": [
+                            {
+                                "@_fa": "true",
+                                "$": "60020609"
+                            },
+                            {
+                                "@_fa": "true",
+                                "$": "60020609"
+                            }
+                        ]
+                    }
+                ],
+                "authkeywords": "Iso-acetovanillon | Isovanillin | Propantheline, ileum transit, pycnocycla spinosa extract, diarrhoea"
+            }
+        ]
+    }
+}

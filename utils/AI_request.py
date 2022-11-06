@@ -4,8 +4,7 @@ import json
 
 
 def make_post_request_to_AI(list_papers, type):
-    print(AI_URL + ':' + str(AI_PORT) + f"/{type}")
-    AI_response = requests.post(AI_URL + ':' + str(AI_PORT) + f"/{type}", json = list_papers)
+    AI_response = requests.post(AI_URL + ':' + str(AI_PORT) + f"/{type}", json = {"documents" : list_papers})
 
     return AI_response.json()
 

@@ -72,7 +72,7 @@ def make_scopus_request(q_str):
 
     """
 
-    with open("scopus_try.json") as f:
+    with open("mocks/scopus_try.json") as f:
         result = json.load(f)
 
     result = result["search-results"]["entry"]

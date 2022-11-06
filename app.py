@@ -9,7 +9,7 @@ from flask_cors import CORS
 
 def add_topic_paper(topics, papers, doi):
     for paper in papers:
-        if paper["doi"] == str(doi):
+        if paper["id"] == str(doi):
             paper["topics"] = topics
 
     return papers
@@ -27,17 +27,18 @@ def process_ai_result(ai_result, list_papers):
     return ai_result
 
 
-def format_data_ai(list_papers, return_keys):
+def format_data_ai(list_papers, key_doi, key_abstract):
     return_list = list()
     
     for paper in list_papers:
+        if not paper[key_abstract] is None:
 
-        formatted_paper = dict()
+            formatted_paper = dict()
 
-        for k in return_keys:
-            formatted_paper[k] = paper[k]
+            formatted_paper[key_doi] = paper[key_doi]
+            formatted_paper[key_abstract] = paper[key_abstract]
 
-        return_list.append(formatted_paper)
+            return_list.append(formatted_paper)
     
     return return_list
 
@@ -52,6 +53,7 @@ def remove_duplicated(results, key):
             memo.add(res[key])
 
     return transformed_results
+
 
 def mapping_feature_names(results, start_features, end_features):
 
@@ -87,9 +89,7 @@ def execute_aggregation_topic_modeling(query_string, topic_modeling):
     aggregated_results = aggregator(ieee_results, scopus_results)
 
     # take simple subset, to be fast
-    aggregated_results = aggregated_results[:2]
-
-    print(len(aggregated_results))
+    aggregated_results = aggregated_results[:200]
 
     with open("aggregation_features.json") as f:
         aggregation_features = json.load(f)
@@ -99,7 +99,7 @@ def execute_aggregation_topic_modeling(query_string, topic_modeling):
     # apply ranking, parallelizable wrt call AI module
 
     # call AI module
-    data_to_ai = format_data_ai(aggregated_results, [aggregation_features["aggregated_key"], aggregation_features["aggregated_abstract"]])
+    data_to_ai = format_data_ai(aggregated_results, aggregation_features["aggregated_key"], aggregation_features["aggregated_abstract"])
 
     ai_result = make_post_request_to_AI(data_to_ai, topic_modeling)
 
@@ -133,25 +133,39 @@ class Aggregator(Resource):
         return execute_aggregation_topic_modeling(query_string, topic_modeling)
 
 
+def mock_retrieving(topic_modeling):
+    if topic_modeling == "slow":
+
+        with open('mocks/slow_be_fe.json', "r") as json_file:
+            data = json.load(json_file)
+
+    elif topic_modeling == "fast":
+
+        with open('mocks/fast_be_fe.json', "r") as json_file:
+            data = json.load(json_file)
+
+    else:
+        raise Exception("type key not valid (slow | fast)")
+
+            
+    return data
+
+
 class FrontEndRequest(Resource):
 
     def get(self):
-        
-        with open('mocks/BE_respto_FE.json', "r") as json_file:
-            data = json.load(json_file)
-        
-        json_file.close()
 
-        return data
+        topic_modeling = request.args.get("type")
 
+        return mock_retrieving(topic_modeling)
 
     def post(self):
 
-        with open('mocks/BE_respto_FE.json', "r") as json_file:
-            data = json.load(json_file)
-        
-        json_file.close()
-        return data
+        data = request.get_json()
+
+        topic_modeling = data["type"]
+
+        return mock_retrieving(topic_modeling)
 
 
 if __name__ == "__main__":
@@ -162,7 +176,7 @@ if __name__ == "__main__":
 
     # routes
     api.add_resource(Aggregator, "/aggregator")
-    api.add_resource(FrontEndRequest, "/front_end_request")
+    api.add_resource(FrontEndRequest, "/mock")
     
     # set host to gateway to handle route
     app.run(host = "0.0.0.0")

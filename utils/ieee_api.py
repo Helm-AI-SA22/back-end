@@ -22,7 +22,7 @@ def make_ieee_request(q_str):
     # ieee_request = compose_ieee_request(q_str)
     # ieee_response = requests.get(ieee_request).json()
 
-    with open("ieee.json") as f:
+    with open("mocks/ieee.json") as f:
         ieee_response = json.load(f)
 
     # transform ieee response in a list of papers, with relative infoes
