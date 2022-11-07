@@ -3,15 +3,42 @@ import requests
 import json
 from collections import defaultdict
 
+def remove_uncompleted_papers(list_papers):
 
-def remove_nodoi(list_papers):
+    with open("aggregation_features.json", "r") as f:
+        aggregated_features = json.load(f)
+
+    features = aggregated_features["ieee"]
+
     return_list = list()
 
     for paper in list_papers:
-        if not paper["DOI"] is None:
-            return_list.append(paper)
+        accepted_paper = True
+
+        for feature in features:
+            if not feature in paper.keys():
+                accepted_paper = False
+                break
+            else: 
+                if paper[feature] is None:
+                    accepted_paper = False
+                    break
+
+        if accepted_paper:
+            return_list.append(paper)        
 
     return return_list
+
+
+def clear_author(author_paper):
+    res_authors = list()
+
+    for aut in author_paper["authors"]:
+        if "full_name" in aut.keys():
+            res_authors.append(aut["full_name"])
+
+    return ";".join(res_authors)
+
 
 # define ieee request for api
 def compose_ieee_request(q_str):
@@ -19,7 +46,7 @@ def compose_ieee_request(q_str):
 
 # execute request
 def make_ieee_request(keywords):
-    
+    """
     key = []
     for keyword in keywords:
         key.append(QUOTES_IEEE + keyword.replace(' ', SPACE_IEEE) + QUOTES_IEEE)
@@ -30,18 +57,13 @@ def make_ieee_request(keywords):
     ieee_response = requests.get(ieee_request).json()
 
     """
+
     with open("mocks/ieee.json") as f:
         ieee_response = json.load(f)
-    """
 
-    # transform ieee response in a list of papers, with relative infos
+    list_papers = ieee_response["articles"]
 
-    transfomed_ieee_response = defaultdict(dict)
+    for paper in list_papers:
+        paper["authors"] = clear_author(paper["authors"])
 
-    for feature_key, feature_values_dict in ieee_response.items():
-        for key, value in feature_values_dict.items():
-            transfomed_ieee_response[key][feature_key] = value
-    
-    transfomed_ieee_response = list(transfomed_ieee_response.values())
-
-    return remove_nodoi(transfomed_ieee_response)
+    return remove_uncompleted_papers(list_papers)
