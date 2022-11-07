@@ -85,12 +85,18 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
     
     ieee_results = make_ieee_request(keywords)
 
+    print("[LOG]: ieeee done")
+
     scopus_results = make_scopus_request(keywords)
+
+    print("[LOG]: scopus done")
 
     aggregated_results = aggregator(ieee_results, scopus_results)
 
+    print("[LOG]: aggregation done")
+
     # take simple subset, to be fast
-    aggregated_results = aggregated_results[:200]
+    # aggregated_results = aggregated_results[:200]
 
     with open("aggregation_features.json") as f:
         aggregation_features = json.load(f)
@@ -102,9 +108,15 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
     # call AI module
     data_to_ai = format_data_ai(aggregated_results, aggregation_features["aggregated_key"], aggregation_features["aggregated_abstract"])
 
+    print("[LOG]: formatted to ai done")
+
     ai_result = make_post_request_to_AI(data_to_ai, topic_modeling)
 
+    print("[LOG]: ai done")
+
     processed_result = process_ai_result(ai_result, aggregated_results)
+
+    print("[LOG]: processed ai result done")
 
     return jsonify(processed_result)
 
@@ -117,10 +129,8 @@ class Aggregator(Resource):
         keywords = request.args.get("keywords").split(";")
 
         topic_modeling = request.args.get("type")
-
-        query_string = " AND ".join(keywords)
         
-        return execute_aggregation_topic_modeling(query_string, topic_modeling)
+        return execute_aggregation_topic_modeling(keywords, topic_modeling)
 
     def post(self):
 

@@ -40,13 +40,19 @@ def clear_author(author_paper):
     return ";".join(res_authors)
 
 
+def clear_features(list_papers):
+    for paper in list_papers:
+        paper["authors"] = clear_author(paper["authors"])
+
+    return list_papers
+
+
 # define ieee request for api
 def compose_ieee_request(q_str):
     return IEEE_SITE + '?querytext=' + q_str + '&' + IEEE_HEADERS
 
 # execute request
 def make_ieee_request(keywords):
-    """
     key = []
     for keyword in keywords:
         key.append(QUOTES_IEEE + keyword.replace(' ', SPACE_IEEE) + QUOTES_IEEE)
@@ -56,14 +62,8 @@ def make_ieee_request(keywords):
     ieee_request = compose_ieee_request(query_string)
     ieee_response = requests.get(ieee_request).json()
 
-    """
+    results = ieee_response["articles"]
 
-    with open("mocks/ieee.json") as f:
-        ieee_response = json.load(f)
+    results = clear_features(results)
 
-    list_papers = ieee_response["articles"]
-
-    for paper in list_papers:
-        paper["authors"] = clear_author(paper["authors"])
-
-    return remove_uncompleted_papers(list_papers)
+    return remove_uncompleted_papers(results)

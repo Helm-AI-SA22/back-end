@@ -72,6 +72,9 @@ def make_scopus_request(keywords):
 
             scopus_response = scopus_response["search-results"]
 
+            if not "entry" in scopus_response.keys():
+                break
+
             scopus_entries = scopus_response["entry"]
 
             if "error" in scopus_entries[0].keys():
@@ -81,17 +84,8 @@ def make_scopus_request(keywords):
 
         except Exception as e:
             raise e
-
-    return remove_uncompleted_papers(result)
-
-    """
-    with open("mocks/scopus_try.json") as f:
-        result = json.load(f)
-
-    result = result["search-results"]["entry"]
     
     # clear features to make them consistent with other sources
     result = clear_features(result)
 
-    return remove_nodoi(result)
-    """
+    return remove_uncompleted_papers(result)
