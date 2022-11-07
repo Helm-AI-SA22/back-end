@@ -82,6 +82,7 @@ def aggregator(ieee_results, scopus_results):
 
 
 def execute_aggregation_topic_modeling(query_string, topic_modeling):
+    
     ieee_results = make_ieee_request(query_string)
 
     scopus_results = make_scopus_request(query_string)
@@ -110,6 +111,7 @@ def execute_aggregation_topic_modeling(query_string, topic_modeling):
 
 class Aggregator(Resource):
 
+    #TODO rimuovere get?
     def get(self):
 
         keywords = request.args.get("keywords").split(";")
@@ -123,13 +125,18 @@ class Aggregator(Resource):
     def post(self):
 
         data = request.get_json()
-
         keywords = data["keywords"]
-
         topic_modeling = data["type"]
 
-        query_string = " AND ".join(keywords)
+        starting_string = "KEY%28"
+        ending_string = "%29"
+
+        query_string = starting_string
         
+        query_string += "+AND+".join(keywords)
+
+        query_string += ending_string
+
         return execute_aggregation_topic_modeling(query_string, topic_modeling)
 
 
