@@ -38,18 +38,20 @@ def compose_scopus_request(q_str, start=0):
     return SCOPUS_SITE + '?query=' + q_str + '&' + SCOPUS_HEADERS + f"&start={start}"
 
 
-def make_scopus_request(q_str):
+def make_scopus_request(keywords):
     
     result = list()
 
-    while len(result) < 20:
+    query_string = STARTING_STRING_SCOPUS
+    query_string += "+AND+".join(keywords)
+    query_string += ENDING_STRING_SCOPUS
+
+    while len(result) < SCOPUS_MAX_COUNT:
         try:
 
-            scopus_request = compose_scopus_request(q_str, len(result))
+            scopus_request = compose_scopus_request(query_string, len(result))
 
             scopus_response = requests.get(scopus_request).json()
-
-            print(scopus_response)
 
             scopus_response = scopus_response["search-results"]
 

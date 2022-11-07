@@ -81,11 +81,11 @@ def aggregator(ieee_results, scopus_results):
     return transformed_results
 
 
-def execute_aggregation_topic_modeling(query_string, topic_modeling):
+def execute_aggregation_topic_modeling(keywords, topic_modeling):
     
-    ieee_results = make_ieee_request(query_string)
+    ieee_results = make_ieee_request(keywords)
 
-    scopus_results = make_scopus_request(query_string)
+    scopus_results = make_scopus_request(keywords)
 
     aggregated_results = aggregator(ieee_results, scopus_results)
 
@@ -128,16 +128,7 @@ class Aggregator(Resource):
         keywords = data["keywords"]
         topic_modeling = data["type"]
 
-        starting_string = "KEY%28"
-        ending_string = "%29"
-
-        query_string = starting_string
-        
-        query_string += "+AND+".join(keywords)
-
-        query_string += ending_string
-
-        return execute_aggregation_topic_modeling(query_string, topic_modeling)
+        return execute_aggregation_topic_modeling(keywords, topic_modeling)
 
 
 def mock_retrieving(topic_modeling):
