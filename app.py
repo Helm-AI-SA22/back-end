@@ -3,8 +3,43 @@ from flask import Flask, request, jsonify
 from flask_restx import Api, Resource, reqparse
 from utils.scopus_api import make_scopus_request
 from utils.ieee_api import make_ieee_request
+from utils.utils import debug_log
 from utils.AI_request import make_post_request_to_AI
 from flask_cors import CORS
+from flask_log_request_id import RequestID
+
+import sys
+from logging.config import dictConfig
+import logging
+
+dictConfig({
+    'version': 1,
+    'formatters': {'default': {
+        'format': '[%(asctime)s] %(levelname)s in %(module)s: %(message)s',
+    }},
+    'handlers': {'wsgi': {
+        'class': 'logging.StreamHandler',
+        'stream': 'ext://sys.stdout',
+        'formatter': 'default',
+    }},
+# TODO: understand how doesn't works
+#    'filters': {
+#        'myfilter': {
+#            '()': RequestIDLogFilter,
+#        }
+#    },
+    'root': {
+        'level': 'NOTSET',
+        'handlers': ['wsgi']
+    }
+})
+
+
+app = Flask(__name__)
+RequestID(app)
+cors = CORS(app, resources={r"/*": {"origins": "*"}})
+
+api = Api(app)
 
 
 def add_topic_paper(topics, papers, doi):
@@ -85,15 +120,15 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
     
     ieee_results = make_ieee_request(keywords)
 
-    print("[LOG]: ieeee done")
+    debug_log("ieee done")
 
     scopus_results = make_scopus_request(keywords)
 
-    print("[LOG]: scopus done")
+    debug_log("scopus done")
 
     aggregated_results = aggregator(ieee_results, scopus_results)
 
-    print("[LOG]: aggregation done")
+    debug_log("aggregation done")
 
     # take simple subset, to be fast
     # aggregated_results = aggregated_results[:200]
@@ -108,15 +143,15 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
     # call AI module
     data_to_ai = format_data_ai(aggregated_results, aggregation_features["aggregated_key"], aggregation_features["aggregated_abstract"])
 
-    print("[LOG]: formatted to ai done")
+    debug_log("formatted to ai done")
 
     ai_result = make_post_request_to_AI(data_to_ai, topic_modeling)
 
-    print("[LOG]: ai done")
+    debug_log("ai done")
 
     processed_result = process_ai_result(ai_result, aggregated_results)
 
-    print("[LOG]: processed ai result done")
+    debug_log("processed ai results done")
 
     return jsonify(processed_result)
 
@@ -147,10 +182,14 @@ def mock_retrieving(topic_modeling):
         with open('mocks/slow_be_fe.json', "r") as json_file:
             data = json.load(json_file)
 
+        debug_log("retrieved slow mock data")
+
     elif topic_modeling == "fast":
 
         with open('mocks/fast_be_fe.json', "r") as json_file:
             data = json.load(json_file)
+
+        debug_log("retrieved fast mock data")
 
     else:
         raise Exception("type key not valid (slow | fast)")
@@ -165,6 +204,8 @@ class FrontEndRequest(Resource):
 
         topic_modeling = request.args.get("type")
 
+        debug_log(f"starting get mock request type : {topic_modeling}")
+
         return mock_retrieving(topic_modeling)
 
     def post(self):
@@ -173,18 +214,15 @@ class FrontEndRequest(Resource):
 
         topic_modeling = data["type"]
 
+        debug_log(f"starting post mock request type : {topic_modeling}")
+
         return mock_retrieving(topic_modeling)
 
 
 if __name__ == "__main__":
-    app = Flask(__name__)
-    cors = CORS(app, resources={r"/*": {"origins": "*"}})
-
-    api = Api(app)
-
     # routes
     api.add_resource(Aggregator, "/aggregator")
     api.add_resource(FrontEndRequest, "/mock")
-    
+
     # set host to gateway to handle route
     app.run(host = "0.0.0.0")
