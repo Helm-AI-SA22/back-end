@@ -40,9 +40,15 @@ def clear_author(author_paper):
     return ";".join(res_authors)
 
 
+def clear_access_type(access_type):
+    print(access_type)
+    return 1 if access_type in ["OPEN_ACCESS", "EPHEMERA"] else 0
+
+
 def clear_features(list_papers):
     for paper in list_papers:
         paper["authors"] = clear_author(paper["authors"])
+        paper["access_type"] = clear_access_type(paper["access_type"])
 
     return list_papers
 
