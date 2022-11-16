@@ -70,6 +70,9 @@ def make_scopus_request(keywords):
 
             scopus_response = requests.get(scopus_request).json()
 
+            if "search-results" not in scopus_response:
+                break
+            
             scopus_response = scopus_response["search-results"]
 
             if not "entry" in scopus_response.keys():
