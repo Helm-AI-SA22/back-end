@@ -86,7 +86,7 @@ def make_scopus_request(keywords):
             result += scopus_entries
 
         except Exception as e:
-            raise e
+            break
     
     # clear features to make them consistent with other sources
     result = clear_features(result)
