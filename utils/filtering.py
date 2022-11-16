@@ -61,15 +61,12 @@ filtering_functions = {
     "topic": topic_filtering,
     "date": date_filtering,
     "author": author_filtering,
-    "citation_count": citation_filtering,
+    "citationCount": citation_filtering,
     "availability": availability_filtering
 }
 
 
-def filtering(data_json):
-    # convert data_json to dictionary
-    data_dict = json.loads(data_json)
-
+def filtering(data_dict):
     criteria = data_dict["criteria"]
 
     # convert data_dict[ "documents" ] to dataframe
@@ -88,4 +85,4 @@ def filtering(data_json):
     data_dict.pop("criteria")
     data_dict["documents"] = documents
     
-    return json.dumps(data_dict)
+    return data_dict

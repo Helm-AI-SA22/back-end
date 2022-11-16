@@ -5,6 +5,7 @@ from utils.scopus_api import make_scopus_request
 from utils.ieee_api import make_ieee_request
 from utils.utils import debug_log
 from utils.AI_request import make_post_request_to_AI
+from utils.filtering import filtering
 from flask_cors import CORS
 from flask_log_request_id import RequestID
 
@@ -218,11 +219,18 @@ class FrontEndRequest(Resource):
 
         return mock_retrieving(topic_modeling)
 
+class FilteringRequest(Resource):
+
+    def post(self):
+
+        return filtering(request.get_json())
+
 
 if __name__ == "__main__":
     # routes
     api.add_resource(Aggregator, "/aggregator")
     api.add_resource(FrontEndRequest, "/mock")
+    api.add_resource(FilteringRequest, "/filtering")
 
     # set host to gateway to handle route
     app.run(host = "0.0.0.0")
