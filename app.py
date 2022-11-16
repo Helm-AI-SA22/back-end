@@ -52,12 +52,22 @@ def add_topic_paper(topics, papers, doi):
     return papers
 
 
+def prune_topics(topics, threshold=0.1):
+    cleaned_topics = list()
+
+    for topic in topics:
+        if topic["affinity"] >= threshold:
+            cleaned_topics.append(topic)
+
+    return cleaned_topics
+
+
 def process_ai_result(ai_result, list_papers):
     documents_result_ai = ai_result.pop("documents")
 
     for doc in documents_result_ai:
         doi = doc["id"]
-        list_papers = add_topic_paper(doc["topics"], list_papers, doi)
+        list_papers = add_topic_paper(prune_topics(doc["topics"]), list_papers, doi)
 
     ai_result["documents"] = list_papers
 
@@ -123,9 +133,12 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
     
     ieee_results = make_ieee_request(keywords)
 
+
     debug_log("ieee done")
 
-    scopus_results = [] # make_scopus_request(keywords)
+    scopus_results = make_scopus_request(keywords)
+
+    print(scopus_results[0])
 
     debug_log("scopus done")
 
