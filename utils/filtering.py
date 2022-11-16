@@ -1,4 +1,3 @@
-import json
 import pandas as pd
 
 MIN = 'min'
