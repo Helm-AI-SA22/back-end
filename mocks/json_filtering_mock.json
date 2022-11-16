@@ -1,4 +1,12 @@
-{    
+{
+    "criteria": {
+        "topic": [0,1],
+        "availability": 0,
+        "citationCount": {"min": 2, "max": 100},
+        "date": {"min": 2018, "max": 2022},
+        "author": ["a"]
+    },
+    
     "documents": [
         {
             "abstract": "Nowadays, it is a challenging task of recognizing the emotions, gender, and age of a person at the same time. Researchers are working hard to develop techniques and code to extract features from faces. Different types of architecture are already exploited using deep learning to get better outcomes. The main goal of this research is to identify the emotions, gender, and age of children, men, women, and common gender of different ages together which gives better results than the current systems. In this research, we proposed a methodology using SURF and BRISK and Modified Convolutional Neural Network (M-CNN) model to extract features where classification is followed by a Multi-support Vector Machine (M-SVM). In our prediction part, we use the head detection technique instead of face detection to get a better outcome. We created a features dataset that will match the features of the test image and will detect the head from the test image. We created three datasets named Face Emotion Recognition (FER-2022) dataset, Gender Recognition (GR-2022) dataset and Age Recognition (AR-2022) dataset respectively which applied to evaluate the perfection of the proposed system. Where the accuracy of classification of emotion, gender and age are 95.45% 99.25% and 95.69% respectively.",
