@@ -3,3 +3,5 @@ flask-restx
 flask-cors
 requests
 Flask-Log-Request-ID
+pandas
+xmltodict

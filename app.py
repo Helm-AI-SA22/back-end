@@ -3,6 +3,7 @@ from flask import Flask, request, jsonify
 from flask_restx import Api, Resource, reqparse
 from utils.scopus_api import make_scopus_request
 from utils.ieee_api import make_ieee_request
+from utils.arxiv_api import make_arxiv_request
 from utils.utils import debug_log
 from utils.AI_request import make_post_request_to_AI
 from flask_cors import CORS
@@ -100,15 +101,16 @@ def mapping_feature_names(results, start_features, end_features):
     return transformed_results
 
 
-def aggregator(ieee_results, scopus_results):
+def aggregator(ieee_results, scopus_results, arxiv_results):
 
     with open("aggregation_features.json") as f:
         aggregation_features = json.load(f)
 
     ieee_transformed_results = mapping_feature_names(ieee_results, aggregation_features["ieee"], aggregation_features["aggregated"])
     scopus_transformed_results = mapping_feature_names(scopus_results, aggregation_features["scopus"], aggregation_features["aggregated"])
+    arxiv_transformed_results = mapping_feature_names(arxiv_results, aggregation_features["arxiv"], aggregation_features["aggregated"])
 
-    results = ieee_transformed_results + scopus_transformed_results
+    results = ieee_transformed_results + scopus_transformed_results + arxiv_transformed_results
 
     # remove duplicate
     transformed_results = remove_duplicated(results, aggregation_features["aggregated_key"])
@@ -122,11 +124,15 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
 
     debug_log("ieee done")
 
-    scopus_results = make_scopus_request(keywords)
+    scopus_results = [] # make_scopus_request(keywords)
 
     debug_log("scopus done")
 
-    aggregated_results = aggregator(ieee_results, scopus_results)
+    arxiv_results = make_arxiv_request(keywords)
+
+    debug_log("arxiv done")
+
+    aggregated_results = aggregator(ieee_results, scopus_results, arxiv_results)
 
     debug_log("aggregation done")
 

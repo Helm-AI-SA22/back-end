@@ -41,7 +41,6 @@ def clear_author(author_paper):
 
 
 def clear_access_type(access_type):
-    print(access_type)
     return 1 if access_type in ["OPEN_ACCESS", "EPHEMERA"] else 0
 
 
