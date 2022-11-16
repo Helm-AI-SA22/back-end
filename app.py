@@ -176,7 +176,31 @@ class Aggregator(Resource):
 
         return execute_aggregation_topic_modeling(keywords, topic_modeling)
 
+class RankRequest(Resource):
 
+    def get(self):
+
+        sort_key = request.args["sort_key"]
+
+        debug_log(f"starting mock sorting request type : {sort_key}")
+
+        with open('mocks/fast_be_fe.json', "r") as json_file:
+            data = json.load(json_file)
+
+        documents_list = data["documents"]
+        return {"documents": rank(documents_list, sort_key)}
+
+    def post(self):
+
+        data = request.get_json()
+
+        sort_key = data["sort_key"]
+
+        debug_log(f"starting mock sorting request type : {sort_key}")
+
+        documents_list = data["documents"]
+        return {"documents": rank(documents_list, sort_key)}
+    
 def mock_retrieving(topic_modeling):
     if topic_modeling == "slow":
 
@@ -203,50 +227,21 @@ class FrontEndRequest(Resource):
 
     def get(self):
 
-        if "type" in request.args:
+        topic_modeling = request.args.get("type")
 
-            topic_modeling = request.args.get("type")
+        debug_log(f"starting get mock request type : {topic_modeling}")
 
-            debug_log(f"starting get mock request type : {topic_modeling}")
-
-            return mock_retrieving(topic_modeling)
-
-        elif "sort_key" in request.args:
-
-            sort_key = request.args["sort_key"]
-
-            debug_log(f"starting mock sorting request type : {sort_key}")
-
-            with open('mocks/fast_be_fe.json', "r") as json_file:
-                data = json.load(json_file)
-
-            documents_list = data["documents"]
-            return {"documents": rank(documents_list, sort_key)}
-        else:
-            return {}
+        return mock_retrieving(topic_modeling)
 
     def post(self):
-
+    
         data = request.get_json()
 
-        if "type" in data:
-            topic_modeling = data["type"]
+        topic_modeling = data["type"]
 
-            debug_log(f"starting post mock request type : {topic_modeling}")
+        debug_log(f"starting post mock request type : {topic_modeling}")
 
-            return mock_retrieving(topic_modeling)
-
-        elif "sort_key" in data:
-
-            sort_key = data["sort_key"]
-
-            debug_log(f"starting mock sorting request type : {sort_key}")
-
-            documents_list = data["documents"]
-            return {"documents": rank(documents_list, sort_key)}
-
-        else:
-            return {}
+        return mock_retrieving(topic_modeling)
 
 
 if __name__ == "__main__":
