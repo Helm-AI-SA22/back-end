@@ -118,15 +118,18 @@ def make_arxiv_request(keywords):
 
     query_text = query_text[:-5]
 
-    request_text = compose_arxiv_request(query_text)
+    try:
+        request_text = compose_arxiv_request(query_text)
 
-    response = requests.get(request_text)
+        response = requests.get(request_text)
     
-    data_dict = xmltodict.parse(response.text)
+        data_dict = xmltodict.parse(response.text)
     
-    # json_data = json.dumps(data_dict)
+        # json_data = json.dumps(data_dict)
 
-    results = data_dict["feed"]["entry"]
+        results = data_dict["feed"]["entry"]
+    except:
+        return []
 
     results = clear_features(results)
 
