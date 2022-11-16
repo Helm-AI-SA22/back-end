@@ -196,7 +196,7 @@ class RankRequest(Resource):
 
         sort_key = data["sort_key"]
 
-        debug_log(f"starting mock sorting request type : {sort_key}")
+        debug_log(f"starting sorting request type : {sort_key}")
 
         documents_list = data["documents"]
         return {"documents": rank(documents_list, sort_key)}
