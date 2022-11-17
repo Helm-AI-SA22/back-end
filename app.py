@@ -7,6 +7,7 @@ from utils.arxiv_api import make_arxiv_request
 from utils.utils import debug_log
 from utils.AI_request import make_post_request_to_AI
 from utils.filtering import filtering
+from utils.ranking import rank
 from flask_cors import CORS
 from flask_log_request_id import RequestID
 
@@ -195,7 +196,31 @@ class Aggregator(Resource):
 
         return execute_aggregation_topic_modeling(keywords, topic_modeling)
 
+class RankRequest(Resource):
 
+    def get(self):
+
+        sort_key = request.args["sort_key"]
+
+        debug_log(f"starting mock sorting request type : {sort_key}")
+
+        with open('mocks/fast_be_fe.json', "r") as json_file:
+            data = json.load(json_file)
+
+        documents_list = data["documents"]
+        return {"documents": rank(documents_list, sort_key)}
+
+    def post(self):
+
+        data = request.get_json()
+
+        sort_key = data["sort_key"]
+
+        debug_log(f"starting sorting request type : {sort_key}")
+
+        documents_list = data["documents"]
+        return {"documents": rank(documents_list, sort_key)}
+    
 def mock_retrieving(topic_modeling):
     if topic_modeling == "slow":
 
@@ -229,7 +254,7 @@ class FrontEndRequest(Resource):
         return mock_retrieving(topic_modeling)
 
     def post(self):
-
+    
         data = request.get_json()
 
         topic_modeling = data["type"]

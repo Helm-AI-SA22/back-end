@@ -16,5 +16,5 @@ def error_log(message):
     logging.error(f'{current_request_id()} - {message}')
 
 
-def error_log(message):
+def warning_log(message):
     logging.warning(f'{current_request_id()} - {message}')
