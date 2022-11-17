@@ -63,27 +63,27 @@ def make_scopus_request(keywords):
     query_string += "+AND+".join(keywords)
     query_string += ENDING_STRING_SCOPUS
 
-    while len(result) < SCOPUS_MAX_COUNT:
-        try:
+    try:
+        while len(result) < SCOPUS_MAX_COUNT:
 
-            scopus_request = compose_scopus_request(query_string, len(result))
+                scopus_request = compose_scopus_request(query_string, len(result))
 
-            scopus_response = requests.get(scopus_request).json()
+                scopus_response = requests.get(scopus_request).json()
 
-            scopus_response = scopus_response["search-results"]
+                scopus_response = scopus_response["search-results"]
 
-            if not "entry" in scopus_response.keys():
-                break
+                if not "entry" in scopus_response.keys():
+                    break
 
-            scopus_entries = scopus_response["entry"]
+                scopus_entries = scopus_response["entry"]
 
-            if "error" in scopus_entries[0].keys():
-                break
-            
-            result += scopus_entries
+                if "error" in scopus_entries[0].keys():
+                    break
+                
+                result += scopus_entries
 
-        except Exception as e:
-            raise e
+    except Exception as e:
+        return []
     
     # clear features to make them consistent with other sources
     result = clear_features(result)
