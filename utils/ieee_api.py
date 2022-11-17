@@ -64,10 +64,13 @@ def make_ieee_request(keywords):
     keys_conj = SPACE_IEEE + "AND" + SPACE_IEEE
     query_string = keys_conj.join(key)
     
-    ieee_request = compose_ieee_request(query_string)
-    ieee_response = requests.get(ieee_request).json()
+    try:
+        ieee_request = compose_ieee_request(query_string)
+        ieee_response = requests.get(ieee_request).json()
 
-    results = ieee_response["articles"]
+        results = ieee_response["articles"]
+    except:
+        return []
 
     results = clear_features(results)
 
