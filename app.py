@@ -18,7 +18,7 @@ import logging
 dictConfig({
     'version': 1,
     'formatters': {'default': {
-        'format': '[%(asctime)s] %(levelname)s in %(module)s: %(message)s',
+        'format': '[%(asctime)s] %(levelname)s : %(message)s',
     }},
     'handlers': {'wsgi': {
         'class': 'logging.StreamHandler',
@@ -138,8 +138,6 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
     debug_log("ieee done")
 
     scopus_results = make_scopus_request(keywords)
-
-    print(scopus_results[0])
 
     debug_log("scopus done")
 
@@ -275,6 +273,7 @@ if __name__ == "__main__":
     api.add_resource(Aggregator, "/aggregator")
     api.add_resource(FrontEndRequest, "/mock")
     api.add_resource(FilteringRequest, "/filtering")
+    api.add_resource(RankRequest, "/ranking")
 
     # set host to gateway to handle route
     app.run(host = "0.0.0.0")
