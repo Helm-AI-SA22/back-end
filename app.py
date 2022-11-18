@@ -103,6 +103,11 @@ def remove_duplicated(results, key):
         if not res[key] in memo:
             transformed_results.append(res)
             memo.add(res[key])
+        else:
+            for doc in transformed_results:
+                if doc["id"] == res[key]:
+                    doc["source"] += res["source"]
+
 
     return transformed_results
 
@@ -113,7 +118,9 @@ def mapping_feature_names(results, start_features, end_features):
 
     for res in results:
         transformed_results.append({end_features[i]: res[k] for i, k in enumerate(start_features)})
-    
+    for doc in transformed_results:
+        doc["source"] = [source]
+
     return transformed_results
 
 
@@ -122,9 +129,9 @@ def aggregator(ieee_results, scopus_results, arxiv_results):
     with open("aggregation_features.json") as f:
         aggregation_features = json.load(f)
 
-    ieee_transformed_results = mapping_feature_names(ieee_results, aggregation_features["ieee"], aggregation_features["aggregated"])
-    scopus_transformed_results = mapping_feature_names(scopus_results, aggregation_features["scopus"], aggregation_features["aggregated"])
-    arxiv_transformed_results = mapping_feature_names(arxiv_results, aggregation_features["arxiv"], aggregation_features["aggregated"])
+    ieee_transformed_results = mapping_feature_names(ieee_results, aggregation_features["ieee"], aggregation_features["aggregated"], "ieee")
+    scopus_transformed_results = mapping_feature_names(scopus_results, aggregation_features["scopus"], aggregation_features["aggregated"], "scopus")
+    arxiv_transformed_results = mapping_feature_names(arxiv_results, aggregation_features["arxiv"], aggregation_features["aggregated"], "arxiv")
 
     results = ieee_transformed_results + scopus_transformed_results + arxiv_transformed_results
 
