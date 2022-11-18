@@ -47,7 +47,7 @@ def clear_link(link_paper):
 def clear_features(list_papers):
     for paper in list_papers:
         paper["author"] = clear_author(paper["author"])
-        paper["link"] = clear_author(paper["link"])
+        paper["link"] = clear_link(paper["link"])
 
     return list_papers
 
