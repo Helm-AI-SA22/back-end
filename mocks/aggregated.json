@@ -1,0 +1,133 @@
+[
+    {
+        "authors": "Shoji Kido;Yasusi Hirano;Noriaki Hashimoto",
+        "title": "Detection and classification of lung abnormalities by use of convolutional neural network (CNN) and regions with CNN features (R-CNN)",
+        "publicationDate": "7-9 Jan. 2018",
+        "citationCount": 48,
+        "id": "10.1109/IWAIT.2018.8369798",
+        "pdfLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8369798",
+        "abstract": "Image-based computer-aided diagnosis (CADx) algorithm by use of convolutional neural network (CNN) does not necessarily require an image-feature extractor. Therefore, image-based CADx is powerful compared with feature-based CADx that requires the image-feature extractor for differential diagnosis of lung abnormalities such as lung nodules and diffuse lung diseases. We have also developed an image-based computer-aided detection (CADe) algorithm by use of regions with CNN features (R-CNN) for detection of lung abnormalities. We evaluated the performance of image-based CADx by use of CNN and that of image-based CADe by use of R-CNN for various kinds of lung abnormalities such as lung nodules and diffuse lung diseases.",
+        "openaccess": 0,
+        "source": [
+            "ieee",
+            "scopus"
+        ]
+    },
+    {
+        "authors": "Mi-Young Lee;Joo-Hyun Lee;Jin-Kyu Kim;Byung-Jo Kim;Ju-Yeob Kim",
+        "title": "The Sparsity and Activation Analysis of Compressed CNN Networks in a HW CNN Accelerator Model",
+        "publicationDate": "6-9 Oct. 2019",
+        "citationCount": 5,
+        "id": "10.1109/ISOCC47750.2019.9027643",
+        "pdfLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9027643",
+        "abstract": "In this paper, we present the result of sparsity increase by CNN compression on 6 representative CNN networks including a famous localization CNN network VGG16-SSD-300. We will also show activation analysis result by applying the compressed CNN networks to a CNN HW accelerator model. Finally, this paper will be ended up with processing time estimation result of the CNN HW accelerator model which reflects the reduced transmission time of sparse weights.",
+        "openaccess": 0,
+        "source": [
+            "ieee"
+        ]
+    },
+    {
+        "authors": "Chris Hinton;Dan Shockley;Michael Koetter",
+        "title": "Contrasting Software Systems Integration Strategies for Large Scale Media Architectures",
+        "publicationDate": "25-27 Oct. 2011",
+        "citationCount": 0,
+        "id": "10.5594/M001086",
+        "pdfLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7269303",
+        "abstract": "The prevailing method for media systems integration is trending towards orchestration of a number of loosely coupled services via process automation frameworks. And who can blame anyone for wanting to avoid point to point integrations that are difficult to re-purpose, costly to maintain & lacking flexibility as business needs change? Yet, as the key ingredients for these loosely coupled \u201corchestration\u201d frameworks have evolved, so have the web-driven frameworks to support lightweight \u201cchoreographed\u201d interactions between networked service endpoints. \u2014 This paper compares and contrasts these strategies. We explore techniques for bridging heterogeneous integration techniques, ultimately arguing that a hybrid model provides the optimal mix of flexibility, performance, reliability, rapid integration & maintainability.",
+        "openaccess": 0,
+        "source": [
+            "ieee"
+        ]
+    },
+    {
+        "authors": "Hussin Ketout;Jason Gu;Gabrielle Horne",
+        "title": "MVN_CNN and UBN_CNN for endocardial edge detection",
+        "publicationDate": "26-28 July 2011",
+        "citationCount": 2,
+        "id": "10.1109/ICNC.2011.6022163",
+        "pdfLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6022163",
+        "abstract": "In this paper, Universal Binary Neurons Cellular Neural Networks (UBN_CNN) endocardial edge detection is proposed. The echocardiographic image is preprocessed to enhance the contrast and smoothness by utilizing Multi Valued Neural Cellular Neural Networks (MVN_CNN) non linear filter. UBN_CNN is applied to the smoothed image to extract the heart boundaries. A non threshold Boolean function with nine variables is utilized to detect the edges corresponding to the upward and downward brightness overleaps. Some experimental results are given for different echocardiographic images. The combination of MVN_CNN and UBN_CNN approach showed better results for extracting the LV endocardial boundaries.",
+        "openaccess": 0,
+        "source": [
+            "ieee"
+        ]
+    },
+    {
+        "authors": "Dimitrios Kollias;Stefanos Zafeiriou",
+        "title": "Exploiting Multi-CNN Features in CNN-RNN Based Dimensional Emotion Recognition on the OMG in-the-Wild Dataset",
+        "publicationDate": "1 July-Sept. 2021",
+        "citationCount": 14,
+        "id": "10.1109/TAFFC.2020.3014171",
+        "pdfLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9158345",
+        "abstract": "This article presents a novel CNN-RNN based approach, which exploits multiple CNN features for dimensional emotion recognition in-the-wild, utilizing the One-Minute Gradual-Emotion (OMG-Emotion) dataset. Our approach includes first pre-training with the relevant and large in size, Aff-Wild and Aff-Wild2 emotion databases. Low-, mid- and high-level features are extracted from the trained CNN component and are exploited by RNN subnets in a multi-task framework. Their outputs constitute an intermediate level prediction; final estimates are obtained as the mean or median values of these predictions. Fusion of the networks is also examined for boosting the obtained performance, at Decision-, or at Model-level; in the latter case a RNN was used for the fusion. Our approach, although using only the visual modality, outperformed state-of-the-art methods that utilized audio and visual modalities. Some of our developments have been submitted to the OMG-Emotion Challenge, ranking second among the technologies which used only visual information for valence estimation; ranking third overall. Through extensive experimentation, we further show that arousal estimation is greatly improved when low-level features are combined with high-level ones.",
+        "openaccess": 0,
+        "source": [
+            "ieee"
+        ]
+    },
+    {
+        "authors": "Sidratul Montaha;Sami Azam;A. K. M. Rakibul Haque Rafid;Md. Zahid Hasan;Asif Karim;Ashraful Islam",
+        "title": "TimeDistributed-CNN-LSTM: A Hybrid Approach Combining CNN and LSTM to Classify Brain Tumor on 3D MRI Scans Performing Ablation Study",
+        "publicationDate": "2022",
+        "citationCount": 0,
+        "id": "10.1109/ACCESS.2022.3179577",
+        "pdfLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9786658",
+        "abstract": "Identification of brain tumors at an early stage is crucial in cancer diagnosis, as a timely diagnosis can increase the chances of survival. Considering the challenges of tumor biopsies, three dimensional (3D) Magnetic Resonance Imaging (MRI) are extensively used in analyzing brain tumors using deep learning. In this study, three BraTS datasets are employed to classify brain tumor into two classes where each of the datasets contains four 3D MRI sequences for a single patient. This research is composed of two approaches. In the first part, we propose a hybrid model named TimeDistributed-CNN-LSTM (TD- CNN-LSTM) combining 3D Convolutional Neural Network (CNN) and Long Short Term Memory (LSTM) where each layer is wrapped with a TimeDistributed function. The objective is to consider all the four MRI sequences of each patient as a single input data because every sequence contains necessary information of tumor. Therefore, the model is developed with optimal configuration performing ablation study for layer architecture and hyper-parameters. In the second part, a 3D CNN model is trained respectively with each of the MRI sequences to compare the performance. Moreover, the datasets are preprocessed to ensure highest performance. Results demonstrate that the TD-CNN-LSTM network outperforms 3D CNN achieving the highest test accuracy of 98.90%. Later, to evaluate the performance consistency, the TD-CNN-LSTM model is evaluated with K-fold cross validation. The approach of putting together all the MRI sequences at a time with good generalization capability can be used in future medical research which can aid radiologists in tumor diagnostics effectively.",
+        "openaccess": 0,
+        "source": [
+            "ieee"
+        ]
+    },
+    {
+        "authors": "Guansheng Shu;Weiqing Liu;Xiaojie Zheng;Jing Li",
+        "title": "IF-CNN: Image-Aware Inference Framework for CNN With the Collaboration of Mobile Devices and Cloud",
+        "publicationDate": "2018",
+        "citationCount": 10,
+        "id": "10.1109/ACCESS.2018.2880196",
+        "pdfLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8529186",
+        "abstract": "Improving the performance of CNN-based mobile applications by offloading its computation from mobile devices to the cloud has attracted the attention of the community. Generally, there are three stages in the workflow, including local inference on the mobile device, data transmission of the intermediate result, and remote inference in the cloud. However, the time cost of local inference and data transmission are still the bottleneck in reaching the desirable inference performance. In this paper, we propose an image-aware inference framework called IF-CNN to enable fast inference based on computation offloading. In the framework, we first build a model pool consisting of CNN models with different complexities. The most efficient one from such candidate models is selected to process the corresponding image. During the selection process, we have designed an effective model to predict the confidence based on multi-task learning. After model selection, half-floating optimization and feature compression are applied to accelerate the process of distributed inference between mobile devices and cloud. Experimental results show that IF-CNN is credible to identify the most effective model for different images and the total inference performance could be significantly improved. Meanwhile, IF-CNN is complementary to other inference acceleration methods of CNN models.",
+        "openaccess": 1,
+        "source": [
+            "ieee"
+        ]
+    },
+    {
+        "authors": "Othmane Daanouni;Bouchaib Cherradi;Amal Tmiri",
+        "title": "NSL-MHA-CNN: A Novel CNN Architecture for Robust Diabetic Retinopathy Prediction Against Adversarial Attacks",
+        "publicationDate": "2022",
+        "citationCount": 0,
+        "id": "10.1109/ACCESS.2022.3210179",
+        "pdfLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9903611",
+        "abstract": "Convolution Neural Network (CNN) models have gained ground in research activities particularly in medical images used for Diabetes Retinopathy (DR) detection. X-ray, MRI, and CT scans have all been used to validate CNN models, with classification accuracy generally reaching that of trained doctors. It is mandatory to evaluate the strength of CNN models used in medical tasks against adversarial attacks especially in healthcare, that is to say, the security of such models is becoming extremely relevant to the diagnosis as this latter will guide high-stakes decision-making. However, little study has been conducted to better comprehend this issue. This paper focuses on MobileNet CNN architecture in order to investigate its vulnerability against fast gradient sign methods (FGSM) adversarial attacks. For this end, a Neural Structure Learning (NSL) and a Multi-Head Attention (MHA) have been used to effectively reduce the vulnerability against attack by end-to-end CNN training with adversarial neighbors that produce adversarial perturbations on optical coherence tomography (OCT) images. With suggested model NSL-MHA-CNN, there has been an ability to maintain model performance on adversarial attack without increasing cost of training. Through theoretical assistance and empirical validation, it was possible to examine the stability of MobileNet architecture and demonstrate its susceptibility, particularly to adversarial attack. The experiments in this paper show that indiscernible degrees of perturbation  $\\varepsilon < 0.01$  were sufficient to cause a task failure resulting to misclassification in majority of the time. Moreover, empirical simulation shows that the proposed approach advanced in this paper can be an effective method to defense against adversarial attack at level of CNN model testing.",
+        "openaccess": 0,
+        "source": [
+            "ieee"
+        ]
+    },
+    {
+        "authors": "Hideaki Yanagisawa;Takuro Yamashita;Hiroshi Watanabe",
+        "title": "A study on object detection method from manga images using CNN",
+        "publicationDate": "7-9 Jan. 2018",
+        "citationCount": 29,
+        "id": "10.1109/IWAIT.2018.8369633",
+        "pdfLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8369633",
+        "abstract": "Japanese comics (manga) are popular content worldwide. In order to acquire metadata from manga images, techniques automatic recognition of manga content have been studied. Recently, Convolutional Neural Network (CNN) has been applied to object detection in manga images. R-CNN and Fast R-CNN generate region proposals by Selective Search. Faster R-CNN generates them using CNN layers called Region Proposal Network (RPN). Single Shot MultiBox Detector (SSD), the latest detection method, performs object classification and box adjustment for small regions in an image. These methods are effective to natural images. However, it is unclear whether such methods work properly to manga images or not, since those image features are different from natural images. In this paper, we examine the effectiveness of manga object detection by comparing Fast R-CNN, Faster R-CNN, and SSD. Here, manga objects are panel layout, speech balloon, character face, and text. Experimental results show that Fast R-CNN is effective for panel layout and speech balloon, whereas Faster R-CNN is effective for character face and text.",
+        "openaccess": 0,
+        "source": [
+            "ieee"
+        ]
+    },
+    {
+        "authors": "Liqiong Lu;Yaohua Yi;Faliang Huang;Kaili Wang;Qi Wang",
+        "title": "Integrating Local CNN and Global CNN for Script Identification in Natural Scene Images",
+        "publicationDate": "2019",
+        "citationCount": 28,
+        "id": "10.1109/ACCESS.2019.2911964",
+        "pdfLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8693781",
+        "abstract": "Script identification in natural scene images is a key pre-step for text recognition and is also an indispensable condition for automatic text understanding systems that are designed for multi-language environments. In this paper, we present a novel framework integrating Local CNN and Global CNN both of which are based on ResNet-20 for script identification. We first obtain a lot of patches and segmented images based on the aspect ratios of the images. Subsequently, these patches and segmented images are used as inputs to Local CNN and Global CNN for training, respectively. Finally, to get the final results, the Adaboost algorithm is used to combine the results of Local CNN and Global CNN for decision-level fusion. Benefiting from such a strategy, Local CNN fully exploits the local features of the image, effectively revealing subtle differences among the scripts that are difficult to distinguish such as English, Greek, and Russian. Moreover, Global CNN mines the global features of the image to improve the accuracy of script identification. The experimental results demonstrate that our approach has a good performance on four public datasets.",
+        "openaccess": 1,
+        "source": [
+            "ieee"
+        ]
+    }
+]

@@ -1,0 +1,1500 @@
+[
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85132041565",
+        "dc:identifier": "SCOPUS_ID:85132041565",
+        "eid": "2-s2.0-85132041565",
+        "dc:title": "CNN-Based Broad Learning for Cross-Domain Emotion Classification",
+        "dc:creator": "Zeng R.",
+        "prism:publicationName": "Tsinghua Science and Technology",
+        "prism:issn": "10070214",
+        "prism:eIssn": "18787606",
+        "prism:volume": "28",
+        "prism:issueIdentifier": "2",
+        "prism:pageRange": "360-369",
+        "prism:coverDate": "2023-04-01",
+        "prism:coverDisplayDate": "1 April 2023",
+        "prism:doi": "10.1109/IWAIT.2018.8369798",
+        "dc:description": "Cross-domain emotion classification aims to leverage useful information in a source domain to help predict emotion polarity in a target domain in a unsupervised or semi-supervised manner. Due to the domain discrepancy, an emotion classifier trained on source domain may not work well on target domain. Many researchers have focused on traditional cross-domain sentiment classification, which is coarse-grained emotion classification. However, the problem of emotion classification for cross-domain is rarely involved. In this paper, we propose a method, called convolutional neural network (CNN) based broad learning, for cross-domain emotion classification by combining the strength of CNN and broad learning. We first utilized CNN to extract domain-invariant and domain-specific features simultaneously, so as to train two more efficient classifiers by employing broad learning. Then, to take advantage of these two classifiers, we designed a co-training model to boost together for them. Finally, we conducted comparative experiments on four datasets for verifying the effectiveness of our proposed method. The experimental results show that the proposed method can improve the performance of emotion classification more effectively than those baseline methods.",
+        "citedby-count": "1",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60073739",
+                "afid": "60073739",
+                "affilname": "Zhanjiang Normal College",
+                "affiliation-city": "Zhanjiang",
+                "affiliation-country": "China"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60018486",
+                "afid": "60018486",
+                "affilname": "Institute of Automation Chinese Academy of Sciences",
+                "affiliation-city": "Beijing",
+                "affiliation-country": "China"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60011235",
+                "afid": "60011235",
+                "affilname": "Guangdong University of Foreign Studies",
+                "affiliation-city": "Guangzhou",
+                "affiliation-country": "China"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60010432",
+                "afid": "60010432",
+                "affilname": "Soochow University",
+                "affiliation-city": "Suzhou",
+                "affiliation-country": "China"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60005816",
+                "afid": "60005816",
+                "affilname": "South China Normal University",
+                "affiliation-city": "Guangzhou",
+                "affiliation-country": "China"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "7",
+            "$": "7"
+        },
+        "author": "Zeng R.;Liu H.;Peng S.;Cao L.;Yang A.;Zong C.;Zhou G.",
+        "authkeywords": "broad learning | classifier | CNN | co-training | cross-domain emotion classification",
+        "source-id": "25522",
+        "fund-no": "undefined",
+        "openaccess": "1",
+        "openaccessFlag": true,
+        "freetoread": {
+            "value": [
+                {
+                    "$": "all"
+                },
+                {
+                    "$": "publisherfree2read"
+                }
+            ]
+        },
+        "freetoreadLabel": {
+            "value": [
+                {
+                    "$": "All Open Access"
+                },
+                {
+                    "$": "Bronze"
+                }
+            ]
+        }
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85140931028",
+        "dc:identifier": "SCOPUS_ID:85140931028",
+        "eid": "2-s2.0-85140931028",
+        "dc:title": "Image super-resolution: A comprehensive review, recent trends, challenges and applications",
+        "dc:creator": "Lepcha D.C.",
+        "prism:publicationName": "Information Fusion",
+        "prism:issn": "15662535",
+        "prism:volume": "91",
+        "prism:pageRange": "230-260",
+        "prism:coverDate": "2023-03-01",
+        "prism:coverDisplayDate": "March 2023",
+        "prism:doi": "10.1016/j.inffus.2022.10.007",
+        "pii": "S1566253522001762",
+        "dc:description": "Super resolution (SR) is an eminent system in the field of computer vison and image processing to improve the visual perception of the poor-quality images. The key objective of image super resolution is to address the limitations of imaging systems mainly due to hardware problems and requirements for clinical processing of medical imaging using post-processing operations. Numerous super resolution strategies have been put-forward in the computer vision community to improve and achieve high-resolution images over the years. In the past few years, there has been a significant advancement in image super-resolution algorithms. This paper aims to provide the detailed survey on recent advancements in image super-resolution in terms of traditional, deep learning and the latest transformer-based algorithms. The in-depth taxonomy of broadly classified super-resolution techniques within these categories has been broadly discussed. An extensive survey has been carried out on deep learning techniques in terms of parameters, architecture, network complexity, depth, learning rate, framework, optimization, and loss function. Furthermore, we also address some of the significant parameters such as problem definition, evaluation metrics, publicly benchmarks datasets, loss functions and applications. In addition, we have performed an experimental analysis and comparison of various benchmark algorithms on publicly available datasets both qualitively and quantitively. Lastly, we conclude our survey by emphasizing some of the prospective future directions and open issues that the community need to address in the future.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60159938",
+                "afid": "60159938",
+                "affilname": "Ronin Institute",
+                "affiliation-city": "Montclair",
+                "affiliation-country": "United States"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60114077",
+                "afid": "60114077",
+                "affilname": "GLA University, Mathura",
+                "affiliation-city": "Mathura",
+                "affiliation-country": "India"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60111704",
+                "afid": "60111704",
+                "affilname": "Chandigarh University",
+                "affiliation-city": "Mohali",
+                "affiliation-country": "India"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "sh",
+        "subtypeDescription": "Short Survey",
+        "author-count": {
+            "@limit": "100",
+            "@total": "4",
+            "$": "4"
+        },
+        "author": "Lepcha D.C.;Goyal B.;Dogra A.;Goyal V.",
+        "authkeywords": "Convolutional neural network (CNN) | Deep learning | Generative adversarial network (GAN) | High resolution (HR) | Image quality assessment (IQA) | Learning strategies | Low resolution (LR) | Super- resolution (SR) | Survey",
+        "source-id": "26099",
+        "fund-no": "undefined",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85140439045",
+        "dc:identifier": "SCOPUS_ID:85140439045",
+        "eid": "2-s2.0-85140439045",
+        "dc:title": "LSTM-CNN model of drowsiness detection from multiple consciousness states acquired by EEG",
+        "dc:creator": "Lee C.",
+        "prism:publicationName": "Expert Systems with Applications",
+        "prism:issn": "09574174",
+        "prism:volume": "213",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-03-01",
+        "prism:coverDisplayDate": "1 March 2023",
+        "prism:doi": "10.1016/j.eswa.2022.119032",
+        "pii": "S0957417422020504",
+        "dc:description": "This study aimed to design a deep neural network for electroencephalography (EEG)-based drowsiness detection in multiple consciousness states, i.e., \u201cawake,\u201d \u201csleep,\u201d and \u201cdrowsiness.\u201d Few studies have seriously considered the optimal input vector size or labeling method in classifying multiple consciousness states, which may affect classification performance. To determine the optimal input vector length, i.e., window length, three neural network models (long short-term memory [LSTM], convolutional neural network [CNN], and combined LSTM and CNN) and four feature-based models were tested with six different levels of window length. The EEG dataset was acquired from 19 participants with randomly assigned auditory stimuli and button responses. The EEG data were labeled into three classes (awake, sleep, and drowsiness) based on the defined button response pattern corresponding to the stimuli. The results demonstrated that when the input vector size exceeded 8 sec, the performance of the neural network models dropped rapidly; however, when the window size was less than 8 sec, the performance change according to the window size was small. In contrast, the performance of feature-based models increased continuously as the window size increased. The LSTM model yielded the best accuracy (86%) for a 1 sec window length, and the LSTM-CNN model yielded the best kappa index (0.77) for a 4 sec window length. In addition, the proposed model was applied to the binary classification of normal consciousness (awake) and low consciousness (drowsiness and sleep) states to determine whether this model works appropriately in actual applications such as drowsiness detection in a driving environment. For binary classification, the LSTM-CNN model resulted in 0.95 F1 scores in 4000-ms. When a short input data (500 msec) is used, the LSTM-CNN model resulted in an average accuracy of 85.6% and a kappa index of 0.77 for the three-class classification problem and 0.94 F1 scores for the binary classification problem. In conclusion, we demonstrated that the proposed model could effectively detect drowsiness. Furthermore, a significant correlation was found between reaction time and drowsiness. However, using the reaction time as an index for labeling drowsiness was challenging because of the high false-negative ratio.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60092864",
+                "afid": "60092864",
+                "affilname": "Daegu Gyeongbuk Institute of Science and Technology",
+                "affiliation-city": "Daegu",
+                "affiliation-country": "South Korea"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "2",
+            "$": "2"
+        },
+        "author": "Lee C.;An J.",
+        "authkeywords": "CNN (convolutional neural network) | Drowsiness detection | EEG (electroencephalogram) | Input vector length optimization | LSTM (long-short term memory) | Multiclass classification",
+        "article-number": "119032",
+        "source-id": "24201",
+        "fund-acr": "MSIP",
+        "fund-no": "21-IT-03",
+        "fund-sponsor": "Ministry of Science, ICT and Future Planning",
+        "openaccess": "1",
+        "openaccessFlag": true,
+        "freetoread": {
+            "value": [
+                {
+                    "$": "all"
+                },
+                {
+                    "$": "publisherhybridgold"
+                }
+            ]
+        },
+        "freetoreadLabel": {
+            "value": [
+                {
+                    "$": "All Open Access"
+                },
+                {
+                    "$": "Hybrid Gold"
+                }
+            ]
+        }
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85140304587",
+        "dc:identifier": "SCOPUS_ID:85140304587",
+        "eid": "2-s2.0-85140304587",
+        "dc:title": "Learning to automatically spectate games for Esports using object detection mechanism",
+        "dc:creator": "Joo H.T.",
+        "prism:publicationName": "Expert Systems with Applications",
+        "prism:issn": "09574174",
+        "prism:volume": "213",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-03-01",
+        "prism:coverDisplayDate": "1 March 2023",
+        "prism:doi": "10.1016/j.eswa.2022.118979",
+        "pii": "S0957417422019972",
+        "dc:description": "Human game observers, who control in-game cameras and provide viewers with an engaging experience, are a vital part of electronic sports (Esports) which has emerged as a rapidly growing industry in recent years. However, such a professional human observer poses several problems. For example, they are prone to missing events occurring concurrently across the map. Further, human game observers are difficult to afford when only a small number of spectators are spectating the game. Consequently, various methods to create automatic observers have been explored, and these methods are based on defining in-game events and focus on defined events. However, these event-based methods necessitate detailed predefined events, demanding high domain knowledge when developing. Additionally, these methods cannot show scenes that contain undefined events. In this paper, we propose a method to overcome these problems by utilizing multiple human observational data and an object detection method, Mask R-CNN, in a real-time strategy game (e.g., StarCraft). By learning from human observational data, our method can observe scenes that are not defined as events in advance. The proposed model utilizes an object detection mechanism to find the area where the human spectator is interested. We consider the pattern of the two-dimensional spatial area that the spectator is looking at as the object to find, rather than treating a single unit or building as an object which is conventionally done in object detection. Consequently, we show that our automatic observer outperforms both current rule-based methods and human observers. The game observation video that compares our method and the rule-based method is available at https://www.youtube.com/watch?v=61JIfSrLHVk.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60068688",
+                "afid": "60068688",
+                "affilname": "Gwangju Institute of Science and Technology",
+                "affiliation-city": "Gwangju",
+                "affiliation-country": "South Korea"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "4",
+            "$": "4"
+        },
+        "author": "Joo H.T.;Lee S.H.;Bae C.m.;Kim K.J.",
+        "authkeywords": "Automatic observer | Esports | Mask R-CNN | Spectators | StarCraft",
+        "article-number": "118979",
+        "source-id": "24201",
+        "fund-acr": "GIST",
+        "fund-no": "2021R1A4A1030075",
+        "fund-sponsor": "Gwangju Institute of Science and Technology",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85140138195",
+        "dc:identifier": "SCOPUS_ID:85140138195",
+        "eid": "2-s2.0-85140138195",
+        "dc:title": "A hybrid approach for Bangla sign language recognition using deep transfer learning model with random forest classifier",
+        "dc:creator": "Das S.",
+        "prism:publicationName": "Expert Systems with Applications",
+        "prism:issn": "09574174",
+        "prism:volume": "213",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-03-01",
+        "prism:coverDisplayDate": "1 March 2023",
+        "prism:doi": "10.1016/j.eswa.2022.118914",
+        "pii": "S0957417422019327",
+        "dc:description": "Sign language is the comprehensive medium of mass communication for hearing and speaking impaired individuals. As they cannot speak or hear, they are not able to use sound or vocal signals as an information medium for their communication. Rather, they are bound to exchange visual signals to express their feeling in their day-to-day life. For this, they use various body language mainly hand gestures as sign language. Sign language fundamentals can be largely divided into two parts namely digits (numerals) and characters (alphabetical). In this paper, we proposed a hybrid model consisting of a deep transfer learning-based convolutional neural network with a random forest classifier for the automatic recognition of Bangla Sign Language (numerals and alphabets). The overall performance of the presented system is verified on \u2018Ishara-Bochon\u2019 and \u2018Ishara-Lipi\u2019 datasets. \u2018Ishara-Bochon\u2019 and \u2018Ishara-Lipi\u2019 are datasets of isolated numerals and alphabets respectively which are the first complete multipurpose open-access dataset for Bangla Sign Language (BSL). Besides, we also proposed a background elimination algorithm that removes unnecessary features from the sign images. Along with the proposed background elimination technique, the system is able to achieve accuracy, precision, recall, f1-score values of 91.67%, 93.64%, 91.67%, 91.47% for character recognition and 97.33%, 97.89%, 97.33%, 97.37% for digit recognition respectively. The detailed experimental analysis assures the feasibility and effectiveness of the proposed system for BSL recognition.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60029738",
+                "afid": "60029738",
+                "affilname": "Queen's University Belfast",
+                "affiliation-city": "Belfast",
+                "affiliation-country": "United Kingdom"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60025301",
+                "afid": "60025301",
+                "affilname": "Khulna University of Engineering and Technology",
+                "affiliation-city": "Khulna",
+                "affiliation-country": "Bangladesh"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60020730",
+                "afid": "60020730",
+                "affilname": "Ulster University",
+                "affiliation-city": "Coleraine",
+                "affiliation-country": "United Kingdom"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "5",
+            "$": "5"
+        },
+        "author": "Das S.;Imtiaz M.S.;Neom N.H.;Siddique N.;Wang H.",
+        "authkeywords": "Bangla sign language | Character recognition | Convolutional neural network (CNN) | Deep learning | Digit recognition | Transfer learning",
+        "article-number": "118914",
+        "source-id": "24201",
+        "fund-no": "undefined",
+        "openaccess": "1",
+        "openaccessFlag": true,
+        "freetoread": {
+            "value": [
+                {
+                    "$": "all"
+                },
+                {
+                    "$": "publisherhybridgold"
+                },
+                {
+                    "$": "repository"
+                },
+                {
+                    "$": "repositoryvor"
+                }
+            ]
+        },
+        "freetoreadLabel": {
+            "value": [
+                {
+                    "$": "All Open Access"
+                },
+                {
+                    "$": "Hybrid Gold"
+                },
+                {
+                    "$": "Green"
+                }
+            ]
+        }
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85140068343",
+        "dc:identifier": "SCOPUS_ID:85140068343",
+        "eid": "2-s2.0-85140068343",
+        "dc:title": "A two-stage estimation method based on Conceptors-aided unsupervised clustering and convolutional neural network classification for the estimation of the degradation level of industrial equipment",
+        "dc:creator": "Xu M.",
+        "prism:publicationName": "Expert Systems with Applications",
+        "prism:issn": "09574174",
+        "prism:volume": "213",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-03-01",
+        "prism:coverDisplayDate": "1 March 2023",
+        "prism:doi": "10.1016/j.eswa.2022.118962",
+        "pii": "S0957417422019807",
+        "dc:description": "In practical applications, degradation level estimation is often facing the challenge of dealing with unlabeled time series characterized by long-term temporal dependencies, which are typically not properly represented using sliding time windows. Inspired by the idea of representing temporal patterns by a mechanism of neurodynamical pattern learning, called Conceptors, a two-stage method for the estimation of the equipment degradation level is developed. In the first stage, clusters of Conceptors representing similar patterns of degradation within complete run-to-failure trajectories are identified; in the second stage, the obtained clusters are used to supervise the training of a convolutional neural network classifier of the equipment degradation level. The proposed method is applied to a synthetic case study and to two literature case studies regarding bearings degradation level estimation. The obtained results show that the proposed method provides more accurate estimation of the equipment degradation level than other state-of-the-art methods.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60073518",
+                "afid": "60073518",
+                "affilname": "Dongguan University of Technology",
+                "affiliation-city": "Dongguan",
+                "affiliation-country": "China"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60030506",
+                "afid": "60030506",
+                "affilname": "Mines ParisTech",
+                "affiliation-city": "Paris",
+                "affiliation-country": "France"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60023256",
+                "afid": "60023256",
+                "affilname": "Politecnico di Milano",
+                "affiliation-city": "Milan",
+                "affiliation-country": "Italy"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/114605995",
+                "afid": "114605995",
+                "affilname": "Aramis Srl",
+                "affiliation-city": "Milan",
+                "affiliation-country": "Italy"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "4",
+            "$": "4"
+        },
+        "author": "Xu M.;Baraldi P.;Yang Z.;Zio E.",
+        "authkeywords": "Bearings | Conceptors | Convolutional Neural Network (CNN) | Degradation level estimation | Reservoir computing | Time series clustering",
+        "article-number": "118962",
+        "source-id": "24201",
+        "fund-acr": "CSC",
+        "fund-no": "201606420061",
+        "fund-sponsor": "China Scholarship Council",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85138809751",
+        "dc:identifier": "SCOPUS_ID:85138809751",
+        "eid": "2-s2.0-85138809751",
+        "dc:title": "Fast and accurate pose estimation of additive manufactured objects from few X-ray projections",
+        "dc:creator": "Presenti A.",
+        "prism:publicationName": "Expert Systems with Applications",
+        "prism:issn": "09574174",
+        "prism:volume": "213",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-03-01",
+        "prism:coverDisplayDate": "1 March 2023",
+        "prism:doi": "10.1016/j.eswa.2022.118866",
+        "pii": "S095741742201884X",
+        "dc:description": "X-ray Computed Tomography (CT) is a commonly used imaging technique for non-destructive inspection of manufactured objects. However, a full CT scan requires a long acquisition time, making this method unsuitable for inline applications. In contrast to X-ray CT, inspection can be performed directly in the projection space, using simulated X-ray projections of a reference model of the manufactured object. However, to effectively compare simulated and measured projections, an accurate 3D pose estimation of the object and consequent alignment between the measured object and the reference model are crucial. In this paper, we present a fast method to estimate the 3D pose of a measured object based on convolutional neural networks (CNNs). Through experiments on synthetic and measured data, we demonstrate that our method allows estimating the 3D pose of the object with sub-pixel accuracy. Even if very few projections are available, our approach is comparable to CT-based methods for registration, and outperforms state-of-the-art deep learning methods for radiograph-based pose estimation.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60012937",
+                "afid": "60012937",
+                "affilname": "Universiteit Antwerpen",
+                "affiliation-city": "Antwerpen",
+                "affiliation-country": "Belgium"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/126388843",
+                "afid": "126388843",
+                "affilname": "Universidade Federal do Agreste de Pernambuco",
+                "affiliation-city": "Garanhuns",
+                "affiliation-country": "Brazil"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "5",
+            "$": "5"
+        },
+        "author": "Presenti A.;Liang Z.;Pereira L.F.A.;Sijbers J.;De Beenhouwer J.",
+        "authkeywords": "CNN | Inspection | Pose estimation | Radiography | X-ray CT",
+        "article-number": "118866",
+        "source-id": "24201",
+        "fund-acr": "EC",
+        "fund-no": "S003421N",
+        "fund-sponsor": "Interreg",
+        "openaccess": "1",
+        "openaccessFlag": true,
+        "freetoread": {
+            "value": [
+                {
+                    "$": "all"
+                },
+                {
+                    "$": "publisherhybridgold"
+                }
+            ]
+        },
+        "freetoreadLabel": {
+            "value": [
+                {
+                    "$": "All Open Access"
+                },
+                {
+                    "$": "Hybrid Gold"
+                }
+            ]
+        }
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85140491065",
+        "dc:identifier": "SCOPUS_ID:85140491065",
+        "eid": "2-s2.0-85140491065",
+        "dc:title": "Breast cancer detection model using fuzzy entropy segmentation and ensemble classification",
+        "dc:creator": "Vidivelli S.",
+        "prism:publicationName": "Biomedical Signal Processing and Control",
+        "prism:issn": "17468094",
+        "prism:eIssn": "17468108",
+        "prism:volume": "80",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-02-01",
+        "prism:coverDisplayDate": "February 2023",
+        "prism:doi": "10.1016/j.bspc.2022.104236",
+        "pii": "S1746809422006905",
+        "dc:description": "According to studies, breast cancer is the deadliest disease and the main cause of the elevated mortality rates among women. The main method for detecting breast cancer is mammography. Even today, using a mammography image to make earlier detection of breast cancer remains a complex undertaking. In this work, the proposed system includes the following processes: \u201c(i) pre-processing (ii) segmentation (iii) feature extraction (iv) optimal feature selection and (v) classification\u201d. Initially, RGB-Grey scale conversion is done during pre-processing, and segmentation is carried out using the proposed fuzzy entropy segmentation model. Then the features including \u201cfractal features like lacunarity, fractal dimension and texture features such as Grey Level Co-occurrence Matrix (GLCM) and Proposed Local Binary Patterns (LBP)\u201d are determined. Then, in the prediction phase, an optimized ensemble classifier is introduced. The proposed ensemble classifier is constructed by amalgamating the \u201cRandom Forest (RF), Support Vector Machine (SVM) Neural Network (NN) and Optimized CNN\u201d respectively. The extracted features are subjected to SVM, NN and RF, simultaneously. Here, optimized CNN determines the final results. In particular, Self Improved Cat Swarm Optimization (SI-CSO) is used to fine-tune CNN's weights. Finally, many metrics demonstrate the proposed model's efficiency.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60005147",
+                "afid": "60005147",
+                "affilname": "SASTRA Deemed University",
+                "affiliation-city": "Thanjavur",
+                "affiliation-country": "India"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/127329169",
+                "afid": "127329169",
+                "affilname": "University College of Engineering (BIT Campus)",
+                "affiliation-city": "Tiruchirappalli",
+                "affiliation-country": "India"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "2",
+            "$": "2"
+        },
+        "author": "Vidivelli S.;Sathiya Devi S.",
+        "authkeywords": "Breast cancer | Fuzzy Entropy | Optimized CNN | Proposed LBP | SI-CSO Optimization",
+        "article-number": "104236",
+        "source-id": "4700152237",
+        "fund-no": "undefined",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85140139580",
+        "dc:identifier": "SCOPUS_ID:85140139580",
+        "eid": "2-s2.0-85140139580",
+        "dc:title": "Auto-MyIn: Automatic diagnosis of myocardial infarction via multiple GLCMs, CNNs, and SVMs",
+        "dc:creator": "Attallah O.",
+        "prism:publicationName": "Biomedical Signal Processing and Control",
+        "prism:issn": "17468094",
+        "prism:eIssn": "17468108",
+        "prism:volume": "80",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-02-01",
+        "prism:coverDisplayDate": "February 2023",
+        "prism:doi": "10.1016/j.bspc.2022.104273",
+        "pii": "S1746809422007273",
+        "dc:description": "This paper proposes an automated diagnostic tool namely, Auto-MyIn, for diagnosing myocardial infarction (MI) using multiple convolutional neural networks (CNN). Rather than utilizing the spatial information of the original delayed-enhancement magnetic resonance (DE-MRI) images, Auto-MyIn uses the textural information obtained by applying grey level co-occurrence matrix (GLCM) of four different grey levels to train the three CNNs (ResNet-18, DarkNet-19, and SqueezeNet). First, the images generated from each GLCM grey level are used to train each CNN individually. Next, for each GLCM grey level, the textural-based deep features extracted from the three CNNs are concatenated and used to train several support vector machine (SVM) classifiers. Finally, Auto-MyIn fuses textural-based deep features of the four GLCM grey levels using principal component analysis (PCA). The results of Auto-MyIn indicated that fusing the textural-based deep features of each level of GLCM is better than the end-to-end deep learning classification of the three CNNs trained with each grey level of GLCM images. Furthermore, it showed that fusing textural-based deep features of the four grey levels of the GLCM using PCA has further improvement on diagnostic accuracy. Moreover, the results prove that using textural information is superior to using spatial information of the original DE-MRI images. In addition, the results of Auto-MyIn when compared with other related studies demonstrated its competitive ability. Moreover, the performance of Auto-MyIn shows an accuracy of 0.984, a sensitivity of 0.992, specificity of 0.968, and precision of 0.967, which indicate that it is a reliable tool, therefore it could be employed to help in the clinical decision making and facilitate the diagnostic process of MI thus avoiding the limitations of manual diagnosis.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60007253",
+                "afid": "60007253",
+                "affilname": "Arab Academy for Science, Technology and Maritime Transport",
+                "affiliation-city": "Alexandria",
+                "affiliation-country": "Egypt"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "2",
+            "$": "2"
+        },
+        "author": "Attallah O.;Ragab D.A.",
+        "authkeywords": "Artificial Intelligence (AI) | Cardiovascular (CV) Diseases | Convolutional Neural Network (CNN) | Deep Learning | Grey level Co-occurrence Matrix (GLCM) | Myocardial Infarction (MI) Diagnosis | Support Vector Machine (SVM)",
+        "article-number": "104273",
+        "source-id": "4700152237",
+        "fund-no": "undefined",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85140065545",
+        "dc:identifier": "SCOPUS_ID:85140065545",
+        "eid": "2-s2.0-85140065545",
+        "dc:title": "CoSleepNet: Automated sleep staging using a hybrid CNN-LSTM network on imbalanced EEG-EOG datasets",
+        "dc:creator": "Efe E.",
+        "prism:publicationName": "Biomedical Signal Processing and Control",
+        "prism:issn": "17468094",
+        "prism:eIssn": "17468108",
+        "prism:volume": "80",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-02-01",
+        "prism:coverDisplayDate": "February 2023",
+        "prism:doi": "10.1016/j.bspc.2022.104299",
+        "pii": "S1746809422007534",
+        "dc:description": "Sleep relaxes and rests the body by slowing down the metabolism, making us physically stronger and fitter when we wake up. However, in a sleep disorder that may occur in humans, this process is reversed and various disorders occur in the body. Therefore, determining sleep stages is vital for diagnosing and treating such sleep disorders. However, manual scoring of sleep stages is tedious, time-consuming and requires considerable expertise. It also suffers from inter-observer variability. Deep learning techniques can automate this process, overcome these problems and produce more consistent results. This study proposes a new hybrid neural network architecture using focal loss and discrete cosine transform methods to solve the training data imbalance problem. The model was trained on four different databases using k-fold validation strategies (subject-wise), and the highest score was 87.11% accuracy, 81.81% Kappa score, and 79.83% MF1 when using two channels (EEG-EOG). The results of our approach are promising when compared to existing methods.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60193845",
+                "afid": "60193845",
+                "affilname": "Konya Technical University",
+                "affiliation-city": "Konya",
+                "affiliation-country": "Turkey"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60102465",
+                "afid": "60102465",
+                "affilname": "Hitit University",
+                "affiliation-city": "Corum",
+                "affiliation-country": "Turkey"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "2",
+            "$": "2"
+        },
+        "author": "Efe E.;Ozsen S.",
+        "authkeywords": "Automatic sleep staging | CNN | Discrete cosine transform | Focal loss | LSTM",
+        "article-number": "104299",
+        "source-id": "4700152237",
+        "fund-no": "undefined",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85140039524",
+        "dc:identifier": "SCOPUS_ID:85140039524",
+        "eid": "2-s2.0-85140039524",
+        "dc:title": "Local Pattern Transformation-Based convolutional neural network for sleep stage scoring",
+        "dc:creator": "Zan H.",
+        "prism:publicationName": "Biomedical Signal Processing and Control",
+        "prism:issn": "17468094",
+        "prism:eIssn": "17468108",
+        "prism:volume": "80",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-02-01",
+        "prism:coverDisplayDate": "February 2023",
+        "prism:doi": "10.1016/j.bspc.2022.104275",
+        "pii": "S1746809422007297",
+        "dc:description": "Sleep stage scoring is essential for the diagnosis and treatment of sleep disorders. However, manual sleep scoring is a tedious, time-consuming, and subjective task. Therefore, this paper proposes a novel framework based on local pattern transformation (LPT) methods and convolutional neural networks for automatic sleep stage scoring. Unlike in previous works in other fields, these methods were not employed for manual feature extraction, which requires expert knowledge and the pipeline behind it might bias results. The transformed signals were directly fed into a CNN model (called EpochNet) that can accept multiple successive epochs. The model learns features from multiple input epochs and considers inter-epoch context during classification. To evaluate and validate the effectiveness of the proposed approach, we conducted several experiments on the Sleep-EDF dataset. Four LPT methods, including One-dimensional Local Binary Pattern (1D-LBP), Local Neighbor Descriptive Pattern (LNDP), Local Gradient Pattern (LGP), and Local Neighbor Gradient Pattern (LNGP), and different polysomnography (PSG) signals were analyzed as sequence length (number of input epochs) increased from one to five. 1D-LBP and LNDP achieved similar performances, outperforming other LPT methods that are less sensitive to local variations. The best performance was achieved when an input sequence containing five epochs of PSG signals transformed by 1D-LBP was employed. The best accuracy, F1 score, and Kohen's kappa coefficient were 0.848, 0.782, and 0.790, respectively. The results showed that our approach can achieve comparable performance to other state-of-the-art methods while occupying fewer computing resources because of the compact size of EpochNet.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60104501",
+                "afid": "60104501",
+                "affilname": "Mardin Artuklu \u00dcniversitesi",
+                "affiliation-city": "Mardin",
+                "affiliation-country": "Turkey"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60016299",
+                "afid": "60016299",
+                "affilname": "Dicle \u00dcniversitesi",
+                "affiliation-city": "Diyarbakir",
+                "affiliation-country": "Turkey"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "2",
+            "$": "2"
+        },
+        "author": "Zan H.;Yildiz A.",
+        "authkeywords": "1D-LBP | CNN | Convolutional neural network | LGP | LNDP | LNGP | Local Gradient Pattern | Local Neighbor Descriptive Pattern | Local Neighbor Gradient Pattern | Local pattern Transformation | LPT | One-dimensional Local Binary Pattern | Sleep stage scoring",
+        "article-number": "104275",
+        "source-id": "4700152237",
+        "fund-no": "undefined",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85139876362",
+        "dc:identifier": "SCOPUS_ID:85139876362",
+        "eid": "2-s2.0-85139876362",
+        "dc:title": "Estimation of spinach (Spinacia oleracea) seed yield with 2D UAV data and deep learning",
+        "dc:creator": "Ariza-Sent\u00eds M.",
+        "prism:publicationName": "Smart Agricultural Technology",
+        "prism:eIssn": "27723755",
+        "prism:volume": "3",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-02-01",
+        "prism:coverDisplayDate": "February 2023",
+        "prism:doi": "10.1016/j.atech.2022.100129",
+        "pii": "S2772375522000946",
+        "dc:description": "Precision agriculture has drawn much attention in the last few years because of the benefits it has on reducing farming costs while maximizing the harvest obtained. Yield prediction is of importance for farmers to fertilize accordingly to reach the potential yield. However, this task is still relying on manual work, which is expensive and time-consuming. Instance segmentation has been implemented in the last years for fruit detection and yield estimation, obtaining state-of-the-art metrics, and reducing the labor required. This research presents a novel approach for spinach seed yield estimation for seed production purposes, that consists of correlating the number of plants and two phenotyping variables (plant area and canopy cover percentage) with the number of harvested seeds and the thousand seed weight. Mask R-CNN is applied to count the number of detections of spinach plants and obtain the object mask from which the plant area is derived. The results show that there is a high linear correlation between a multivariate linear mixed model of the three variables and the number of seeds, with an R2adj of 0.80. Furthermore, 77.42% of the variation in the weight of thousand seeds can be explained by the number of plants. For future studies, the algorithm should be trained with more spinach images from different locations and under varying weather conditions to allow it to generalize for the crop worldwide. It can be concluded, until further research, that Mask R-CNN can be applied for spinach counting and the computation of its individual plant area, with promising results.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60004156",
+                "afid": "60004156",
+                "affilname": "Wageningen University &amp; Research",
+                "affiliation-city": "Wageningen",
+                "affiliation-country": "Netherlands"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "5",
+            "$": "5"
+        },
+        "author": "Ariza-Sent\u00eds M.;Valente J.;Kooistra L.;Kramer H.;M\u00fccher S.",
+        "authkeywords": "Deep learning | Mask R-CNN | Precision agriculture | Seed yield estimation",
+        "article-number": "100129",
+        "source-id": "21101111783",
+        "fund-no": "undefined",
+        "openaccess": "1",
+        "openaccessFlag": true,
+        "freetoread": {
+            "value": [
+                {
+                    "$": "all"
+                },
+                {
+                    "$": "publisherfullgold"
+                }
+            ]
+        },
+        "freetoreadLabel": {
+            "value": [
+                {
+                    "$": "All Open Access"
+                },
+                {
+                    "$": "Gold"
+                }
+            ]
+        }
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85139368308",
+        "dc:identifier": "SCOPUS_ID:85139368308",
+        "eid": "2-s2.0-85139368308",
+        "dc:title": "Multi-stage image denoising with the wavelet transform",
+        "dc:creator": "Tian C.",
+        "prism:publicationName": "Pattern Recognition",
+        "prism:issn": "00313203",
+        "prism:volume": "134",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-02-01",
+        "prism:coverDisplayDate": "February 2023",
+        "prism:doi": "10.1016/j.patcog.2022.109050",
+        "pii": "S0031320322005301",
+        "dc:description": "Deep convolutional neural networks (CNNs) are used for image denoising via automatically mining accurate structure information. However, most of existing CNNs depend on enlarging depth of designed networks to obtain better denoising performance, which may cause training difficulty. In this paper, we propose a multi-stage image denoising CNN with the wavelet transform (MWDCNN) via three stages, i.e., a dynamic convolutional block (DCB), two cascaded wavelet transform and enhancement blocks (WEBs) and a residual block (RB). DCB uses a dynamic convolution to dynamically adjust parameters of several convolutions for making a tradeoff between denoising performance and computational costs. WEB uses a combination of signal processing technique (i.e., wavelet transformation) and discriminative learning to suppress noise for recovering more detailed information in image denoising. To further remove redundant features, RB is used to refine obtained features for improving denoising effects and reconstruct clean images via improved residual dense architectures. Experimental results show that the proposed MWDCNN outperforms some popular denoising methods in terms of quantitative and qualitative analysis. Codes are available at https://github.com/hellloxiaotian/MWDCNN.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60271961",
+                "afid": "60271961",
+                "affilname": "Peng Cheng Laboratory",
+                "affiliation-city": "Shenzhen",
+                "affiliation-country": "China"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60108865",
+                "afid": "60108865",
+                "affilname": "The Chinese University of Hong Kong, Shenzhen",
+                "affiliation-city": "Shenzhen",
+                "affiliation-country": "China"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60022317",
+                "afid": "60022317",
+                "affilname": "University of Macau",
+                "affiliation-city": "Taipa",
+                "affiliation-country": "Macao"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60019616",
+                "afid": "60019616",
+                "affilname": "Harbin Institute of Technology",
+                "affiliation-city": "Harbin",
+                "affiliation-country": "China"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60003977",
+                "afid": "60003977",
+                "affilname": "Northwestern Polytechnical University",
+                "affiliation-city": "Xi'an",
+                "affiliation-country": "China"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/125744895",
+                "afid": "125744895",
+                "affilname": "Shenzhen Institute of Artificial Intelligence and Robotics for Society",
+                "affiliation-city": "Shenzhen",
+                "affiliation-country": "China"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "6",
+            "$": "6"
+        },
+        "author": "Tian C.;Zheng M.;Zuo W.;Zhang B.;Zhang Y.;Zhang D.",
+        "authkeywords": "CNN | Dynamic convolution | Image denoising | Signal processing | Wavelet transform",
+        "article-number": "109050",
+        "source-id": "24823",
+        "fund-acr": "NSFC",
+        "fund-no": "JSSCBC20220942",
+        "fund-sponsor": "National Natural Science Foundation of China",
+        "openaccess": "0",
+        "openaccessFlag": false,
+        "freetoread": {
+            "value": [
+                {
+                    "$": "all"
+                },
+                {
+                    "$": "repository"
+                },
+                {
+                    "$": "repositoryam"
+                }
+            ]
+        },
+        "freetoreadLabel": {
+            "value": [
+                {
+                    "$": "All Open Access"
+                },
+                {
+                    "$": "Green"
+                }
+            ]
+        }
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85139240296",
+        "dc:identifier": "SCOPUS_ID:85139240296",
+        "eid": "2-s2.0-85139240296",
+        "dc:title": "Nonstationary training image partition algorithm based on deep features",
+        "dc:creator": "Su L.",
+        "prism:publicationName": "Interpretation",
+        "prism:issn": "23248858",
+        "prism:eIssn": "23248866",
+        "prism:volume": "11",
+        "prism:issueIdentifier": "1",
+        "prism:pageRange": "SA93-SA104",
+        "prism:coverDate": "2023-02-01",
+        "prism:coverDisplayDate": "1 February 2023",
+        "prism:doi": "10.1190/INT-2022-0023.1",
+        "dc:description": "Training image (TI) is a key input of multipoint geostatistical modeling. For modeling sedimentary facies under nonstationary conditions, it is common to first generate nonstationary TIs, then use a partitioned simulation approach, and finally merge the realizations of each subregion. We develop a new method for partitioning nonstationary TIs based on features extracted using a deep network model. The basic idea of the method is to crop a TI with a sliding window to obtain the subblocks of the TI and use the pretrained convolutional neural network model as a fixed feature extractor for the subblocks. We use K-means to cluster the extracted deep features and t-distributed stochastic neighbor embedding to visualize the clustering effect and assign the classification information of all feature points to the subblocks of the TI as its subregion markers. Finally, we stitch the subblocks of the marked TIs by position to obtain the partitioning results of the nonstationary TIs. Experimental results indicate that the classification accuracy of the method reaches 90.53%, and the partition effect is relatively good. Research indicates that the method can reproduce well the spatial variation characteristics of nonstationary TIs and provide a new method for processing the multipoint geostatistical nonstationarity.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60019836",
+                "afid": "60019836",
+                "affilname": "Yangtze University",
+                "affiliation-city": "Jingzhou",
+                "affiliation-country": "China"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60001604",
+                "afid": "60001604",
+                "affilname": "Ministry of Education China",
+                "affiliation-city": "Beijing",
+                "affiliation-country": "China"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "4",
+            "$": "4"
+        },
+        "author": "Su L.;Yu S.;Li S.;Wang X.",
+        "authkeywords": "CNN | deep features | K -means | multipoint geostatistics | nonstationary",
+        "source-id": "21100874164",
+        "fund-acr": "NSFC",
+        "fund-no": "2021DQ02-0106",
+        "fund-sponsor": "National Natural Science Foundation of China",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85138450117",
+        "dc:identifier": "SCOPUS_ID:85138450117",
+        "eid": "2-s2.0-85138450117",
+        "dc:title": "Integration of deep adaptation transfer learning and online sequential extreme learning machine for cross-person and cross-position activity recognition",
+        "dc:creator": "Xu Q.",
+        "prism:publicationName": "Expert Systems with Applications",
+        "prism:issn": "09574174",
+        "prism:volume": "212",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-02-01",
+        "prism:coverDisplayDate": "February 2023",
+        "prism:doi": "10.1016/j.eswa.2022.118807",
+        "pii": "S0957417422018255",
+        "dc:description": "Deep learning (DL) has been evolving to a prevalent method in human activity recognition (HAR). However, the performance of wearable sensor based HAR models decline significantly when training data come from different persons or sensor positions, and a time-consuming data annotation is indispensible to cater for the big-data driven DL models. In this paper we proposed a fast and robust hybrid model to handle the transfer issues of wearable sensor based HAR between different persons (cross-person) and different positions (cross-position) with just a few annotated data in target domain. The model consists of three parts: (1) A convolutional neural network (CNN) with global average pooling layer to facilitate the extraction of advanced common features in source domain and target domain; (2) A domain adaptive neural network with a gradient reversal layer (DANN) and deep domain confusion network with an adaptive layer (DDC) to reduce domain shift caused by the change of persons and sensor positions; (3) An adaptive classifier based on online sequential extreme learning machine (OS-ELM) to achieve fast and accurate classification with a few annotated data in target domain. Experimental results on four public datasets verified the superiority of the proposed hybrid model over standard CNN and deep transfer learning models in adapting the classifier to new sensor locations and subjects quickly, where the HAR accuracy can be improved by at least 12% for cross-person transfer and 20% for cross-position transfer, respectively.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60022422",
+                "afid": "60022422",
+                "affilname": "Ocean University of China",
+                "affiliation-city": "Qingdao",
+                "affiliation-country": "China"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60018465",
+                "afid": "60018465",
+                "affilname": "Yanshan University",
+                "affiliation-city": "Qinhuangdao",
+                "affiliation-country": "China"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "5",
+            "$": "5"
+        },
+        "author": "Xu Q.;Wei X.;Bai R.;Li S.;Meng Z.",
+        "authkeywords": "Convolution neural network (CNN) | Cross-position | Deep adaptation transfer learning | Human activity recognition (HAR) | Online sequential extreme learning machine (OS-ELM)",
+        "article-number": "118807",
+        "source-id": "24201",
+        "fund-acr": "NSFC",
+        "fund-no": "226Z5001G",
+        "fund-sponsor": "National Natural Science Foundation of China",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85138449988",
+        "dc:identifier": "SCOPUS_ID:85138449988",
+        "eid": "2-s2.0-85138449988",
+        "dc:title": "Gravelly soil uniformity identification based on the optimized Mask R-CNN model",
+        "dc:creator": "Qu X.",
+        "prism:publicationName": "Expert Systems with Applications",
+        "prism:issn": "09574174",
+        "prism:volume": "212",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-02-01",
+        "prism:coverDisplayDate": "February 2023",
+        "prism:doi": "10.1016/j.eswa.2022.118837",
+        "pii": "S0957417422018553",
+        "dc:description": "The uniformity of gravelly soil has an important influence on compaction quality. The most important task to judge the uniformity of gravelly soil is to segment the gravels from the image. However, gravels are widely and densely distributed, and their particle size varies greatly, increasing segmentation difficulty. Among existing studies, research on rapid and quantitative judgment methods of gravelly soil uniformity remains scarce. To address the abovementioned issue, a gravelly soil uniformity identification based on the optimized Mask R-CNN model is proposed. The original Mask R-CNN only produces one combined mask of multiple overlapping gravels, which hinders postprocessing and uniformity calculation. To address this problem, separate masks for each gravel are generated for better parameter calculation. Then, according to the characteristics of the pixel image of a single mask, the calculation of static moment is deduced and simplified. Finally, the single mask dataset of the optimized Mask R-CNN and static distance theory are used to establish a quantitative evaluation index of gravelly soil uniformity, in which the uniformity coefficient (UC) and area ratio coefficient (ARC) are adopted. In addition, the convergence curves and the Average Precision (AP) of the ResNet101 and the ResNet50 backbones are compared, and the result proves the superiority of ResNet101 in gravel segmentation. Furthermore, three data enhancement methods (namely, rotation, mirroring, and brightness transformation) are adopted to improve the AP performance and result in a 2.32% increase. The application in a real large-scale hydropower project shows that the AP can reach 88.96%, and each calculation and analysis can be controlled within one minute, which shows the effectiveness, convenience and efficiency of the method.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/112689952",
+                "afid": "112689952",
+                "affilname": "State Key Laboratory of Hydraulic Engineering Simulation and Safety",
+                "affiliation-city": "Tianjin",
+                "affiliation-country": "China"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "6",
+            "$": "6"
+        },
+        "author": "Qu X.;Wang J.;Wang X.;Hu Y.;Zeng T.;Tan T.",
+        "authkeywords": "Construction site | Gravelly soil | Mask R-CNN | Single mask | Uniformity",
+        "article-number": "118837",
+        "source-id": "24201",
+        "fund-acr": "NSFC",
+        "fund-no": "52009089",
+        "fund-sponsor": "National Natural Science Foundation of China",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85138408789",
+        "dc:identifier": "SCOPUS_ID:85138408789",
+        "eid": "2-s2.0-85138408789",
+        "dc:title": "Image inpainting based on deep learning: A review",
+        "dc:creator": "Zhang X.",
+        "prism:publicationName": "Information Fusion",
+        "prism:issn": "15662535",
+        "prism:volume": "90",
+        "prism:pageRange": "74-94",
+        "prism:coverDate": "2023-02-01",
+        "prism:coverDisplayDate": "February 2023",
+        "prism:doi": "10.1016/j.inffus.2022.08.033",
+        "pii": "S1566253522001324",
+        "dc:description": "Image inpainting is an important research direction in the study of computer vision, and is widely used in image editing and photo inpainting etc. Traditional image inpainting algorithms are often difficult to deal with large-scale image deletion, since these algorithms are prone to inconsistent image semantics. With the rapid development of deep learning (DL) in recent years, the advantages of DL in image processing have become increasingly prominent, it can solve the problems existing in traditional image inpainting algorithms to a certain extent. At present, image inpainting based on deep learning becomes a research hotspot in computer vision. In this article, we systematically summarize and analyze the literature on image inpainting based on deep learning. First, we review the specific research status of deep learning technology in the field of image inpainting in the past 15 years; then, We deeply study and analyze the existing image restoration methods based on different neural network structures and their information fusion methods. In addition, we also classify and summarize the different tasks of image inpainting according to the application scenarios of image inpainting. Finally, we point out some problems that urgently need to be solved for deep learning in the field of image inpainting, provide constructive suggestions and discuss the future development direction.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60010421",
+                "afid": "60010421",
+                "affilname": "Southwest Jiaotong University",
+                "affiliation-city": "Chengdu",
+                "affiliation-country": "China"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "sh",
+        "subtypeDescription": "Short Survey",
+        "author-count": {
+            "@limit": "100",
+            "@total": "5",
+            "$": "5"
+        },
+        "author": "Zhang X.;Zhai D.;Li T.;Zhou Y.;Lin Y.",
+        "authkeywords": "CNN | Deep learning | Fusion | GAN | Image inpainting",
+        "source-id": "26099",
+        "fund-acr": "NSFC",
+        "fund-no": "DRN2203",
+        "fund-sponsor": "National Natural Science Foundation of China",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85138076414",
+        "dc:identifier": "SCOPUS_ID:85138076414",
+        "eid": "2-s2.0-85138076414",
+        "dc:title": "A deep learning approach for automatic detection, segmentation and classification of breast lesions from thermal images",
+        "dc:creator": "Civilibal S.",
+        "prism:publicationName": "Expert Systems with Applications",
+        "prism:issn": "09574174",
+        "prism:volume": "212",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-02-01",
+        "prism:coverDisplayDate": "February 2023",
+        "prism:doi": "10.1016/j.eswa.2022.118774",
+        "pii": "S0957417422017924",
+        "dc:description": "Purpose: This study investigates implementation of deep learning (DL) approaches to breast tumor recognition based on thermal images. We propose to utilize Mask R-CNN technique on images by first assigning bounding boxes and then creating a border for each tumor volume to differentiate it from adjacent tissues and structures. In this manner, thermal images can be handled by a single DL model to successfully perform detection, classification, and segmentation of normal and abnormal breast tissues. Methods: This study employs Mask R-CNN technique along with transfer learning models to accurately delineate breast volumes from adjacent tissues and structures. It is a novel study that uses a single DL model to carry out three steps of breast tumor diagnosis, namely detection, segmentation and classification of normal and abnormal tissues based on thermal images. Results: Two network architectures (ResNet-50 and ResNet-101) were trained for 60 epochs and were then evaluated based on their classification and segmentation performances. The testing process resulted in higher classification success for ResNet-50 backbone pretrained on COCO images (%97.1 accuracy). Detection and segmentation performances of this model were also higher with mAP of 0.921 and overlap score of 0.868. Conclusions: Our results indicate that the classification and segmentation performances of Mask R-CNN method on ResNet-50 architecture are better than the data reported in the literature for thermal breast image studies. It should be emphasized that our approach employs a single DL model that successfully performs detection, classification, and segmentation procedures for diagnosing normal and abnormal breast tissues.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60010104",
+                "afid": "60010104",
+                "affilname": "Akdeniz \u00dcniversitesi",
+                "affiliation-city": "Antalya",
+                "affiliation-country": "Turkey"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "3",
+            "$": "3"
+        },
+        "author": "Civilibal S.;Cevik K.K.;Bozkurt A.",
+        "authkeywords": "Classification | Detection | Mask R-CNN | Segmentation | Thermal breast images | Transfer learning",
+        "article-number": "118774",
+        "source-id": "24201",
+        "fund-no": "undefined",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85138072509",
+        "dc:identifier": "SCOPUS_ID:85138072509",
+        "eid": "2-s2.0-85138072509",
+        "dc:title": "Multimodal spatiotemporal skeletal kinematic gait feature fusion for vision-based fall detection",
+        "dc:creator": "M A.",
+        "prism:publicationName": "Expert Systems with Applications",
+        "prism:issn": "09574174",
+        "prism:volume": "212",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-02-01",
+        "prism:coverDisplayDate": "February 2023",
+        "prism:doi": "10.1016/j.eswa.2022.118681",
+        "pii": "S095741742201716X",
+        "dc:description": "Fall happens when a person's movement coordination is disturbed, forcing them to rest on the ground unintentionally causing serious health risks. The objective of this work is to develop a Multimodal SpatioTemporal Skeletal Kinematic Gait Feature Fusion (MSTSK-GFF) classifier for detecting fall using video data. The walking pattern of an individual is referred to as gait. The event of fall recorded in video shows discrepancies and irregularities in gait patterns. Analysis of these patterns plays a vital role in the identification of fall risk. However, assessment of the gait patterns from video data remains challenging due to its spatial and temporal feature dependencies. The proposed MSTSK-GFF framework presents a multimodal feature fusion process that overcomes these challenges and generates two sets of spatiotemporal kinematic gait features using SpatioTemporal Graph Convolution Network (STGCN) and 1D-CNN network model. These two generated feature sets are combined using concatenative feature fusion process and classification model is constucted for detecting fall. For optimizing the network weights, a bio-inspired spotted hyena optimizer is applied during training process. Finally, performance of the classification model is evaluated and compared to detect fall in videos. The proposed work is experimented with the two vision-based fall datasets namely, UR Fall Detection (URFD) dataset and self-build dataset. The experimental outcome proves the effectiveness of MSTSK-GFF in terms of its classification accuracy of 96.53% and 95.80% with two datasets when compared with existing state-of-the-art techniques.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60021176",
+                "afid": "60021176",
+                "affilname": "Anna University",
+                "affiliation-city": "Chennai",
+                "affiliation-country": "India"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60005941",
+                "afid": "60005941",
+                "affilname": "Madras Institute of Technology",
+                "affiliation-city": "Chennai",
+                "affiliation-country": "India"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "3",
+            "$": "3"
+        },
+        "author": "M A.;Y N.J.;H K.N.",
+        "authkeywords": "Fall risk | Gait patterns | Multimodal feature fusion | Spatiotemporal features | Spotted hyena optimizer | STGCN and 1D-CNN",
+        "article-number": "118681",
+        "source-id": "24201",
+        "fund-no": "undefined",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85137049241",
+        "dc:identifier": "SCOPUS_ID:85137049241",
+        "eid": "2-s2.0-85137049241",
+        "dc:title": "Application of ensemble neural-network method to integrated sugar content prediction model for citrus fruit using Vis/NIR spectroscopy.",
+        "dc:creator": "Kim S.Y.",
+        "prism:publicationName": "Journal of Food Engineering",
+        "prism:issn": "02608774",
+        "prism:volume": "338",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-02-01",
+        "prism:coverDisplayDate": "February 2023",
+        "prism:doi": "10.1016/j.jfoodeng.2022.111254",
+        "pii": "S0260877422003089",
+        "dc:description": "As consumers\u2019 preference for sweetness in food products is increasing, most agricultural product processing complexes currently operate sugar-screening machines. However, every season, the entire prediction models have to be modified to fit the fruit species cultivated that season using a long-drawn process, because separate models are required for each species. Therefore, in this study, species-integrated prediction models were examined based on three citrus species. The species-specific and species-integrated prediction performance of classical partial least squares regression (PLSR)-based, neural-network-based, and ensemble-based models were evaluated. Four different types of ensemble models were proposed depending on the combination method of layers and classification features. The analytical results indicated that the Ensemble Type-4 model exhibited the best performance on both species-specific and species-integrated data, with average 9.9% and 22.1% reduction in RMSETest compared with that of conventional PLSR methods. Furthermore, based on the structural advantages of modularity in ensemble models, effective model maintenance is expected to be possible for future applications in the field.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60120232",
+                "afid": "60120232",
+                "affilname": "Research Institute of Agricultural and Life Science",
+                "affiliation-city": "Seoul",
+                "affiliation-country": "South Korea"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60013682",
+                "afid": "60013682",
+                "affilname": "Seoul National University",
+                "affiliation-city": "Seoul",
+                "affiliation-country": "South Korea"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "5",
+            "$": "5"
+        },
+        "author": "Kim S.Y.;Hong S.J.;Kim E.;Lee C.H.;Kim G.",
+        "authkeywords": "Artificial neural network (ANN) | Convolutional neural network (CNN) | Partial least square (PLS) | Soluble solid contents (SSC) | Stacking ensemble | Wavelength selection",
+        "article-number": "111254",
+        "source-id": "20586",
+        "fund-acr": "RDA",
+        "fund-no": "11801403",
+        "fund-sponsor": "Rural Development Administration",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85137024671",
+        "dc:identifier": "SCOPUS_ID:85137024671",
+        "eid": "2-s2.0-85137024671",
+        "dc:title": "Rapid identification of fish species by laser-induced breakdown spectroscopy and Raman spectroscopy coupled with machine learning methods",
+        "dc:creator": "Ren L.",
+        "prism:publicationName": "Food Chemistry",
+        "prism:issn": "03088146",
+        "prism:eIssn": "18737072",
+        "prism:volume": "400",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-01-30",
+        "prism:coverDisplayDate": "30 January 2023",
+        "prism:doi": "10.1016/j.foodchem.2022.134043",
+        "pii": "S0308814622020052",
+        "dc:description": "There has been an increasing demand for the rapid verification of fish authenticity and the detection of adulteration. In this work, we combined LIBS and Raman spectroscopy for the fish species identification for the first time. Two machine learning methods of SVM and CNN are used to establish the classification models based on the LIBS and Raman data obtained from 13 types of fish species. Data fusion strategies including low-level, mid-level and high-level fusions are used for the combination of LIBS and Raman data. It shows that all these data fusion strategies offer a significant improvement in fish classification compared with the individual LIBS or Raman data, and the CNN model works more powerfully than the SVM model. The low-level fusion CNN model provides a best classification accuracy of 98.2%, while the mid-level fusion involved with feature selection improves the computing efficiency and gains the interpretability of CNN.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60117367",
+                "afid": "60117367",
+                "affilname": "Qingdao Institute of Bioenergy and Bioprocess Technology",
+                "affiliation-city": "Qingdao",
+                "affiliation-country": "China"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60022422",
+                "afid": "60022422",
+                "affilname": "Ocean University of China",
+                "affiliation-city": "Qingdao",
+                "affiliation-country": "China"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60019499",
+                "afid": "60019499",
+                "affilname": "Chinese Academy of Sciences",
+                "affiliation-city": "Beijing",
+                "affiliation-country": "China"
+            }
+        ],
+        "pubmed-id": "36058043",
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "10",
+            "$": "10"
+        },
+        "author": "Ren L.;Tian Y.;Yang X.;Wang Q.;Wang L.;Geng X.;Wang K.;Du Z.;Li Y.;Lin H.",
+        "authkeywords": "convolutional neural network (CNN) | Data fusion | Fish species identification | laser-induced breakdown spectroscopy (LIBS) | Machine learning | Raman spectroscopy",
+        "article-number": "134043",
+        "source-id": "24039",
+        "fund-acr": "NKRDPC",
+        "fund-no": "2019YFD0901701",
+        "fund-sponsor": "National Key Research and Development Program of China",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85135910148",
+        "dc:identifier": "SCOPUS_ID:85135910148",
+        "eid": "2-s2.0-85135910148",
+        "dc:title": "A deep learning approach for electromechanical impedance based concrete structural damage quantification using two-dimensional convolutional neural network",
+        "dc:creator": "Ai D.",
+        "prism:publicationName": "Mechanical Systems and Signal Processing",
+        "prism:issn": "08883270",
+        "prism:eIssn": "10961216",
+        "prism:volume": "183",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-01-15",
+        "prism:coverDisplayDate": "15 January 2023",
+        "prism:doi": "10.1016/j.ymssp.2022.109634",
+        "pii": "S0888327022007221",
+        "dc:description": "Deep learning approach using convolutional neural networks (CNNs) has ushered in numerous breakthroughs in image-based recognition field, but the electromechanical impedance/admittance (EMI/EMA)-based structural damage identification by CNN remains being refined. This paper proposed a deep learning approach for the raw EMA-based rapid damage quantification on concrete structure utilizing two-dimensional (2D) CNNs. In the approach, the EMA signatures are first split into multiple sub-range responses, among which corresponding to the maximum indices namely root mean square deviations (RMSDs) are selected to construct the input of CNNs for training, and then damage severity degree could be rapidly predicted. The proposed approach is verified through crossover experiments of detecting multiple mass loss damages on a cubic concrete structure. Effect of input size on the performance of the approach is also evaluated by developing different CNN models. Experimental results confirm that the proposed approach is of high accuracy and efficiency even to tiny damages, thus paving a promising way to the real-life monitoring for concrete structures.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60025761",
+                "afid": "60025761",
+                "affilname": "Huazhong University of Science and Technology",
+                "affiliation-city": "Wuhan",
+                "affiliation-country": "China"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "2",
+            "$": "2"
+        },
+        "author": "Ai D.;Cheng J.",
+        "authkeywords": "Concrete structure | Damage quantification | Electromechanical admittance (EMA) | Root mean square deviation (RMSD) | Two-dimensional convolutional neural network (2D CNN)",
+        "article-number": "109634",
+        "source-id": "21080",
+        "fund-no": "undefined",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85135893208",
+        "dc:identifier": "SCOPUS_ID:85135893208",
+        "eid": "2-s2.0-85135893208",
+        "dc:title": "On the explainability of convolutional neural networks processing ultrasonic guided waves for damage diagnosis",
+        "dc:creator": "Lomazzi L.",
+        "prism:publicationName": "Mechanical Systems and Signal Processing",
+        "prism:issn": "08883270",
+        "prism:eIssn": "10961216",
+        "prism:volume": "183",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-01-15",
+        "prism:coverDisplayDate": "15 January 2023",
+        "prism:doi": "10.1016/j.ymssp.2022.109642",
+        "pii": "S0888327022007282",
+        "dc:description": "Among the maintenance policies adopted to guarantee the safety of structures throughout their service life, condition-based maintenance policies driven by structural health monitoring approaches have progressively gained importance over the last years. Within this field, among the several methods proposed in the literature to diagnose damage affecting thin-walled structures, satisfactory performances have been achieved by adopting tomographic algorithms to process ultrasonic guided waves, even though with some limitations. Recently, such limitations have been overcome by adopting machine learning-based algorithms, even though their implementation in real life applications is still limited because of the mistrust in neural networks determined by their black box-like nature. To date, however, several explainability algorithms have been proposed to interpret the behaviour of neural networks, in particular in the medical and in the military fields, where trust in the tools adopted must be guaranteed. Thus, exploiting the potentialities of explainability frameworks, in this work the layer-wise relevance propagation algorithm is employed to explain the predictions of convolutional neural networks for classification and for regression that characterise damage by processing ultrasonic guided waves excited and sensed by means of a 2-D network of piezoelectric devices. First, the explainability algorithm is applied to give a score to each sample of the acquired ultrasonic guided waves, then such scores are collected by means of a properly developed aggregation strategy to rank the most informative couples of piezoelectric devices. The capabilities of the explainable damage diagnosis framework are demonstrated by means of a numerical, yet realistic, case study involving a metal plate affected by crack-like damage. In particular, the focus is set on the explanation of the behaviour of the neural networks involved, with the aim of building trust in such algorithms and, possibly, revealing damage-related hidden features of ultrasonic guided waves.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60023256",
+                "afid": "60023256",
+                "affilname": "Politecnico di Milano",
+                "affiliation-city": "Milan",
+                "affiliation-country": "Italy"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "5",
+            "$": "5"
+        },
+        "author": "Lomazzi L.;Fabiano S.;Parziale M.;Giglio M.;Cadini F.",
+        "authkeywords": "CNN | Explainable AI | LRP | SHM | Ultrasonic guided wave",
+        "article-number": "109642",
+        "source-id": "21080",
+        "fund-no": "undefined",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85140913326",
+        "dc:identifier": "SCOPUS_ID:85140913326",
+        "eid": "2-s2.0-85140913326",
+        "dc:title": "A high-performance convolution block oriented accelerator for MBConv-Based CNNs",
+        "dc:creator": "Shang J.",
+        "prism:publicationName": "Integration",
+        "prism:issn": "01679260",
+        "prism:volume": "88",
+        "prism:pageRange": "298-312",
+        "prism:coverDate": "2023-01-01",
+        "prism:coverDisplayDate": "January 2023",
+        "prism:doi": "10.1016/j.vlsi.2022.10.012",
+        "pii": "S0167926022001432",
+        "dc:description": "Convolution Neural Network (CNN) models have shown their dominance in computer vision tasks. Recently, a special convolution block, named MBConv block or inverted residual block, is proposed to construct CNNs to meet the real-time requirements on resource-constrained edge-computing platforms. The MBConv block is first proposed by MobileNetV2 and has been widely used to construct lightweight CNNs. However, the MBConv block brings new challenges to the structure of the computing engine, the bandwidth requirement of off-chip memory and the demand for on-chip memory when designing hardware accelerators. In this paper, a convolution Block Oriented Accelerator (BOA) is proposed for the inference of CNNs constructed on MBConv blocks. In BOA, the MBConv-based CNNs are performed block by block using a Block-Based Engine which consists of dedicated computing units for each layer of the MBConv block. To reduce both the bandwidth requirement of off-chip memory and the demand for on-chip memory, a two-level data flow optimization and an amortized weight loading method are proposed. Furthermore, a hierarchical scheduling scheme is proposed to improve the performance and flexibility so that BOA can guarantee all units running in parallel and support various MBConv-based CNNs. Finally, we deploy BOA on Xilinx VC709. We evaluate the accelerator on ImageNet for image classification. The results show that BOA can perform various MBConv-based CNNs and achieve 1.28x - 7.75x speedup on inference latency.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60019616",
+                "afid": "60019616",
+                "affilname": "Harbin Institute of Technology",
+                "affiliation-city": "Harbin",
+                "affiliation-country": "China"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60005244",
+                "afid": "60005244",
+                "affilname": "Southeast University",
+                "affiliation-city": "Nanjing",
+                "affiliation-country": "China"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/114407634",
+                "afid": "114407634",
+                "affilname": "State Key Laboratory of Mathematical Engineering and Advanced Computing",
+                "affiliation-city": "Wuxi",
+                "affiliation-country": "China"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "5",
+            "$": "5"
+        },
+        "author": "Shang J.;Zhang K.;Zhang Z.;Li C.;Liu H.",
+        "authkeywords": "Block oriented accelerator | Convolution neural network (CNN) | Field-programmable gate array (FPGA) | MBConv",
+        "source-id": "17932",
+        "fund-no": "undefined",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": "",
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85140906098",
+        "dc:identifier": "SCOPUS_ID:85140906098",
+        "eid": "2-s2.0-85140906098",
+        "dc:title": "Recent trends in human activity recognition \u2013 A comparative study",
+        "dc:creator": "Singh R.",
+        "prism:publicationName": "Cognitive Systems Research",
+        "prism:eIssn": "13890417",
+        "prism:volume": "77",
+        "prism:pageRange": "30-44",
+        "prism:coverDate": "2023-01-01",
+        "prism:coverDisplayDate": "January 2023",
+        "prism:doi": "10.1016/j.cogsys.2022.10.003",
+        "pii": "S138904172200047X",
+        "dc:description": "Identification of human actions from video has gathered much attention in past few years. Most of the computer vision tasks such as Health Care Activity Detection, Suspicious Activity detection, Human Computer Interactions etc. are based on the principle of activity detection. Automatic labelling of activity from videos frames is known as activity detection. With the introduction of deep networks, the process of activity detection is clustered into two groups known as hand-crafted feature based approach and automatic feature extraction approach. This paper focuses on various approaches used in recent literature based on traditional and automatic approach. Moreover, hierarchy for different approaches under them such as space based, motion based, genetic based, fuzzy based, dictionary based are discussed. With introduction of Convolutional Neural Networks and Recurrent Neural Networks, automatic learning capability from input modality makes them first choice to be implemented for activity recognition. In this paper various approaches have been analyzed according to methodology, accuracy, classifier and datasets.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60032346",
+                "afid": "60032346",
+                "affilname": "Guru Ghasidas Vishwavidyalaya",
+                "affiliation-city": "Bilaspur",
+                "affiliation-country": "India"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60019106",
+                "afid": "60019106",
+                "affilname": "Indian Institute of Technology Banaras Hindu University",
+                "affiliation-city": "Varanasi",
+                "affiliation-country": "India"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60016760",
+                "afid": "60016760",
+                "affilname": "Punjab Technical University",
+                "affiliation-city": "Jalandhar",
+                "affiliation-country": "India"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "4",
+            "$": "4"
+        },
+        "author": "Singh R.;Kumar Singh Kushwaha A.;Chandni ;Srivastava R.",
+        "authkeywords": "CNN | Deep learning | Handcrafted features | HAR | LBP | MHI | RNN",
+        "source-id": "12886",
+        "fund-no": "undefined",
+        "openaccess": "0",
+        "openaccessFlag": false
+    }
+]

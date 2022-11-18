@@ -1,0 +1,1490 @@
+[
+    {
+        "doi": "10.1109/IWAIT.2018.8369798",
+        "title": "Detection and classification of lung abnormalities by use of convolutional neural network (CNN) and regions with CNN features (R-CNN)",
+        "publisher": "IEEE",
+        "isbn": "978-1-5386-2616-0",
+        "rank": 1,
+        "authors": "Shoji Kido;Yasusi Hirano;Noriaki Hashimoto",
+        "access_type": 0,
+        "content_type": "Conferences",
+        "abstract": "Image-based computer-aided diagnosis (CADx) algorithm by use of convolutional neural network (CNN) does not necessarily require an image-feature extractor. Therefore, image-based CADx is powerful compared with feature-based CADx that requires the image-feature extractor for differential diagnosis of lung abnormalities such as lung nodules and diffuse lung diseases. We have also developed an image-based computer-aided detection (CADe) algorithm by use of regions with CNN features (R-CNN) for detection of lung abnormalities. We evaluated the performance of image-based CADx by use of CNN and that of image-based CADe by use of R-CNN for various kinds of lung abnormalities such as lung nodules and diffuse lung diseases.",
+        "article_number": "8369798",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8369798",
+        "html_url": "https://ieeexplore.ieee.org/document/8369798/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/8369798/",
+        "publication_title": "2018 International Workshop on Advanced Image Technology (IWAIT)",
+        "conference_location": "Chiang Mai, Thailand",
+        "conference_dates": "7-9 Jan. 2018",
+        "publication_number": 8365178,
+        "is_number": 8369620,
+        "publication_year": 2018,
+        "publication_date": "7-9 Jan. 2018",
+        "start_page": "1",
+        "end_page": "4",
+        "citing_paper_count": 48,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Lung",
+                    "Feature extraction",
+                    "Cancer",
+                    "Training",
+                    "Convolutional neural networks",
+                    "Lesions"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "computer-aided diagnosis (CAD)",
+                    "deep learning",
+                    "convolutional neural network (CNN)",
+                    "regions with CNN features (R-CNN)"
+                ]
+            }
+        },
+        "isbn_formats": {
+            "isbns": [
+                {
+                    "format": "Print on Demand(PoD) ISBN",
+                    "value": "978-1-5386-2616-0",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "CD",
+                    "value": "978-1-5386-2614-6",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "Electronic ISBN",
+                    "value": "978-1-5386-2615-3",
+                    "isbnType": "New-2005"
+                }
+            ]
+        }
+    },
+    {
+        "doi": "10.1109/ISOCC47750.2019.9027643",
+        "title": "The Sparsity and Activation Analysis of Compressed CNN Networks in a HW CNN Accelerator Model",
+        "publisher": "IEEE",
+        "isbn": "978-1-7281-2479-7",
+        "issn": "2163-9612",
+        "rank": 2,
+        "authors": "Mi-Young Lee;Joo-Hyun Lee;Jin-Kyu Kim;Byung-Jo Kim;Ju-Yeob Kim",
+        "access_type": 0,
+        "content_type": "Conferences",
+        "abstract": "In this paper, we present the result of sparsity increase by CNN compression on 6 representative CNN networks including a famous localization CNN network VGG16-SSD-300. We will also show activation analysis result by applying the compressed CNN networks to a CNN HW accelerator model. Finally, this paper will be ended up with processing time estimation result of the CNN HW accelerator model which reflects the reduced transmission time of sparse weights.",
+        "article_number": "9027643",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9027643",
+        "html_url": "https://ieeexplore.ieee.org/document/9027643/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/9027643/",
+        "publication_title": "2019 International SoC Design Conference (ISOCC)",
+        "conference_location": "Jeju, Korea (South)",
+        "conference_dates": "6-9 Oct. 2019",
+        "publication_number": 9017212,
+        "is_number": 9027628,
+        "publication_year": 2019,
+        "publication_date": "6-9 Oct. 2019",
+        "start_page": "255",
+        "end_page": "256",
+        "citing_paper_count": 5,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Quantization (signal)",
+                    "Load modeling",
+                    "Neural networks",
+                    "Indexes",
+                    "Computational modeling",
+                    "Activation analysis",
+                    "Analytical models"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "CNN compression"
+                ]
+            }
+        },
+        "isbn_formats": {
+            "isbns": [
+                {
+                    "format": "Print on Demand(PoD) ISBN",
+                    "value": "978-1-7281-2479-7",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "Electronic ISBN",
+                    "value": "978-1-7281-2478-0",
+                    "isbnType": "New-2005"
+                }
+            ]
+        }
+    },
+    {
+        "doi": "10.5594/M001086",
+        "title": "Contrasting Software Systems Integration Strategies for Large Scale Media Architectures",
+        "publisher": "SMPTE",
+        "isbn": "978-1-61482-940-9",
+        "rank": 3,
+        "authors": "Chris Hinton;Dan Shockley;Michael Koetter",
+        "access_type": 0,
+        "content_type": "Conferences",
+        "abstract": "The prevailing method for media systems integration is trending towards orchestration of a number of loosely coupled services via process automation frameworks. And who can blame anyone for wanting to avoid point to point integrations that are difficult to re-purpose, costly to maintain & lacking flexibility as business needs change? Yet, as the key ingredients for these loosely coupled \u201corchestration\u201d frameworks have evolved, so have the web-driven frameworks to support lightweight \u201cchoreographed\u201d interactions between networked service endpoints. \u2014 This paper compares and contrasts these strategies. We explore techniques for bridging heterogeneous integration techniques, ultimately arguing that a hybrid model provides the optimal mix of flexibility, performance, reliability, rapid integration & maintainability.",
+        "article_number": "7269303",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7269303",
+        "html_url": "https://ieeexplore.ieee.org/document/7269303/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/7269303/",
+        "publication_title": "The 2011 Annual Technical Conference & Exhibition",
+        "conference_location": "Hollywood, CA, USA",
+        "conference_dates": "25-27 Oct. 2011",
+        "publication_number": 7269267,
+        "is_number": 7269268,
+        "publication_year": 2011,
+        "publication_date": "25-27 Oct. 2011",
+        "start_page": "1",
+        "end_page": "13",
+        "citing_paper_count": 0,
+        "citing_patent_count": 0,
+        "index_terms": {},
+        "isbn_formats": {
+            "isbns": [
+                {
+                    "format": "Print ISBN",
+                    "value": "978-1-61482-940-9",
+                    "isbnType": "New-2005"
+                }
+            ]
+        }
+    },
+    {
+        "doi": "10.1109/ICNC.2011.6022163",
+        "title": "MVN_CNN and UBN_CNN for endocardial edge detection",
+        "publisher": "IEEE",
+        "isbn": "978-1-4244-9952-6",
+        "issn": "2157-9555",
+        "partnum": "11EX5118",
+        "rank": 4,
+        "volume": "2",
+        "authors": "Hussin Ketout;Jason Gu;Gabrielle Horne",
+        "access_type": 0,
+        "content_type": "Conferences",
+        "abstract": "In this paper, Universal Binary Neurons Cellular Neural Networks (UBN_CNN) endocardial edge detection is proposed. The echocardiographic image is preprocessed to enhance the contrast and smoothness by utilizing Multi Valued Neural Cellular Neural Networks (MVN_CNN) non linear filter. UBN_CNN is applied to the smoothed image to extract the heart boundaries. A non threshold Boolean function with nine variables is utilized to detect the edges corresponding to the upward and downward brightness overleaps. Some experimental results are given for different echocardiographic images. The combination of MVN_CNN and UBN_CNN approach showed better results for extracting the LV endocardial boundaries.",
+        "article_number": "6022163",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6022163",
+        "html_url": "https://ieeexplore.ieee.org/document/6022163/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/6022163/",
+        "publication_title": "2011 Seventh International Conference on Natural Computation",
+        "conference_location": "Shanghai, China",
+        "conference_dates": "26-28 July 2011",
+        "publication_number": 6012803,
+        "is_number": 6022138,
+        "publication_year": 2011,
+        "publication_date": "26-28 July 2011",
+        "start_page": "781",
+        "end_page": "785",
+        "citing_paper_count": 2,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Image edge detection",
+                    "Neurons",
+                    "Nonlinear filters",
+                    "Cellular neural networks",
+                    "Equations",
+                    "Heart"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "Endocardial",
+                    "Echocardiography",
+                    "artifacts",
+                    "CNN",
+                    "MVN_CNN",
+                    "UBN_CNN",
+                    "edge detection"
+                ]
+            }
+        },
+        "isbn_formats": {
+            "isbns": [
+                {
+                    "format": "CD",
+                    "value": "978-1-4244-9952-6",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "Print ISBN",
+                    "value": "978-1-4244-9950-2",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "Electronic ISBN",
+                    "value": "978-1-4244-9953-3",
+                    "isbnType": "New-2005"
+                }
+            ]
+        }
+    },
+    {
+        "doi": "10.1109/TAFFC.2020.3014171",
+        "title": "Exploiting Multi-CNN Features in CNN-RNN Based Dimensional Emotion Recognition on the OMG in-the-Wild Dataset",
+        "publisher": "IEEE",
+        "issue": "3",
+        "issn": "2371-9850",
+        "rank": 5,
+        "volume": "12",
+        "authors": "Dimitrios Kollias;Stefanos Zafeiriou",
+        "access_type": 0,
+        "content_type": "Journals",
+        "abstract": "This article presents a novel CNN-RNN based approach, which exploits multiple CNN features for dimensional emotion recognition in-the-wild, utilizing the One-Minute Gradual-Emotion (OMG-Emotion) dataset. Our approach includes first pre-training with the relevant and large in size, Aff-Wild and Aff-Wild2 emotion databases. Low-, mid- and high-level features are extracted from the trained CNN component and are exploited by RNN subnets in a multi-task framework. Their outputs constitute an intermediate level prediction; final estimates are obtained as the mean or median values of these predictions. Fusion of the networks is also examined for boosting the obtained performance, at Decision-, or at Model-level; in the latter case a RNN was used for the fusion. Our approach, although using only the visual modality, outperformed state-of-the-art methods that utilized audio and visual modalities. Some of our developments have been submitted to the OMG-Emotion Challenge, ranking second among the technologies which used only visual information for valence estimation; ranking third overall. Through extensive experimentation, we further show that arousal estimation is greatly improved when low-level features are combined with high-level ones.",
+        "article_number": "9158345",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9158345",
+        "html_url": "https://ieeexplore.ieee.org/document/9158345/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/9158345/",
+        "publication_title": "IEEE Transactions on Affective Computing",
+        "publication_number": 5165369,
+        "is_number": 9527348,
+        "publication_year": 2021,
+        "publication_date": "1 July-Sept. 2021",
+        "start_page": "595",
+        "end_page": "606",
+        "citing_paper_count": 14,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Feature extraction",
+                    "Estimation",
+                    "Databases",
+                    "Computer architecture",
+                    "Visualization",
+                    "Machine learning",
+                    "Emotion recognition"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "Deep convolutional and recurrent neural architectures",
+                    "CNN plus Multi RNN",
+                    "low-, mid-, high-level features",
+                    "multi-CNN feature extraction and aggregation",
+                    "multi-task learning",
+                    "facial image analysis",
+                    "valence",
+                    "arousal",
+                    "emotion recognition in-the-wild",
+                    "AffWildNet",
+                    "AffWild and AffWild2 emotion databases",
+                    "OMG-Emotion database and challenge"
+                ]
+            }
+        }
+    },
+    {
+        "doi": "10.1109/ACCESS.2022.3179577",
+        "title": "TimeDistributed-CNN-LSTM: A Hybrid Approach Combining CNN and LSTM to Classify Brain Tumor on 3D MRI Scans Performing Ablation Study",
+        "publisher": "IEEE",
+        "issn": "2169-3536",
+        "rank": 6,
+        "volume": "10",
+        "authors": "Sidratul Montaha;Sami Azam;A. K. M. Rakibul Haque Rafid;Md. Zahid Hasan;Asif Karim;Ashraful Islam",
+        "access_type": 0,
+        "content_type": "Journals",
+        "abstract": "Identification of brain tumors at an early stage is crucial in cancer diagnosis, as a timely diagnosis can increase the chances of survival. Considering the challenges of tumor biopsies, three dimensional (3D) Magnetic Resonance Imaging (MRI) are extensively used in analyzing brain tumors using deep learning. In this study, three BraTS datasets are employed to classify brain tumor into two classes where each of the datasets contains four 3D MRI sequences for a single patient. This research is composed of two approaches. In the first part, we propose a hybrid model named TimeDistributed-CNN-LSTM (TD- CNN-LSTM) combining 3D Convolutional Neural Network (CNN) and Long Short Term Memory (LSTM) where each layer is wrapped with a TimeDistributed function. The objective is to consider all the four MRI sequences of each patient as a single input data because every sequence contains necessary information of tumor. Therefore, the model is developed with optimal configuration performing ablation study for layer architecture and hyper-parameters. In the second part, a 3D CNN model is trained respectively with each of the MRI sequences to compare the performance. Moreover, the datasets are preprocessed to ensure highest performance. Results demonstrate that the TD-CNN-LSTM network outperforms 3D CNN achieving the highest test accuracy of 98.90%. Later, to evaluate the performance consistency, the TD-CNN-LSTM model is evaluated with K-fold cross validation. The approach of putting together all the MRI sequences at a time with good generalization capability can be used in future medical research which can aid radiologists in tumor diagnostics effectively.",
+        "article_number": "9786658",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9786658",
+        "html_url": "https://ieeexplore.ieee.org/document/9786658/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/9786658/",
+        "publication_title": "IEEE Access",
+        "publication_number": 6287639,
+        "is_number": 9668973,
+        "publication_year": 2022,
+        "publication_date": "2022",
+        "start_page": "60039",
+        "end_page": "60059",
+        "citing_paper_count": 0,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Magnetic resonance imaging",
+                    "Tumors",
+                    "Three-dimensional displays",
+                    "Solid modeling",
+                    "Brain modeling",
+                    "Cancer",
+                    "Imaging"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "Deep learning",
+                    "brain tumor classification",
+                    "3D MRI",
+                    "hybrid CNN LSTM",
+                    "3D CNN",
+                    "ablation study"
+                ]
+            }
+        }
+    },
+    {
+        "doi": "10.1109/ACCESS.2018.2880196",
+        "title": "IF-CNN: Image-Aware Inference Framework for CNN With the Collaboration of Mobile Devices and Cloud",
+        "publisher": "IEEE",
+        "issn": "2169-3536",
+        "rank": 7,
+        "volume": "6",
+        "authors": "Guansheng Shu;Weiqing Liu;Xiaojie Zheng;Jing Li",
+        "access_type": 1,
+        "content_type": "Journals",
+        "abstract": "Improving the performance of CNN-based mobile applications by offloading its computation from mobile devices to the cloud has attracted the attention of the community. Generally, there are three stages in the workflow, including local inference on the mobile device, data transmission of the intermediate result, and remote inference in the cloud. However, the time cost of local inference and data transmission are still the bottleneck in reaching the desirable inference performance. In this paper, we propose an image-aware inference framework called IF-CNN to enable fast inference based on computation offloading. In the framework, we first build a model pool consisting of CNN models with different complexities. The most efficient one from such candidate models is selected to process the corresponding image. During the selection process, we have designed an effective model to predict the confidence based on multi-task learning. After model selection, half-floating optimization and feature compression are applied to accelerate the process of distributed inference between mobile devices and cloud. Experimental results show that IF-CNN is credible to identify the most effective model for different images and the total inference performance could be significantly improved. Meanwhile, IF-CNN is complementary to other inference acceleration methods of CNN models.",
+        "article_number": "8529186",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8529186",
+        "html_url": "https://ieeexplore.ieee.org/document/8529186/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/8529186/",
+        "publication_title": "IEEE Access",
+        "publication_number": 6287639,
+        "is_number": 8274985,
+        "publication_year": 2018,
+        "publication_date": "2018",
+        "start_page": "68621",
+        "end_page": "68633",
+        "citing_paper_count": 10,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Computational modeling",
+                    "Mobile handsets",
+                    "Acceleration",
+                    "Image coding",
+                    "Cloud computing",
+                    "Performance evaluation",
+                    "Mobile applications"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "CNN-based mobile applications",
+                    "IF-CNN",
+                    "model selection",
+                    "half-floating optimization",
+                    "feature compression"
+                ]
+            }
+        }
+    },
+    {
+        "doi": "10.1109/ACCESS.2022.3210179",
+        "title": "NSL-MHA-CNN: A Novel CNN Architecture for Robust Diabetic Retinopathy Prediction Against Adversarial Attacks",
+        "publisher": "IEEE",
+        "issn": "2169-3536",
+        "rank": 8,
+        "volume": "10",
+        "authors": "Othmane Daanouni;Bouchaib Cherradi;Amal Tmiri",
+        "access_type": 0,
+        "content_type": "Journals",
+        "abstract": "Convolution Neural Network (CNN) models have gained ground in research activities particularly in medical images used for Diabetes Retinopathy (DR) detection. X-ray, MRI, and CT scans have all been used to validate CNN models, with classification accuracy generally reaching that of trained doctors. It is mandatory to evaluate the strength of CNN models used in medical tasks against adversarial attacks especially in healthcare, that is to say, the security of such models is becoming extremely relevant to the diagnosis as this latter will guide high-stakes decision-making. However, little study has been conducted to better comprehend this issue. This paper focuses on MobileNet CNN architecture in order to investigate its vulnerability against fast gradient sign methods (FGSM) adversarial attacks. For this end, a Neural Structure Learning (NSL) and a Multi-Head Attention (MHA) have been used to effectively reduce the vulnerability against attack by end-to-end CNN training with adversarial neighbors that produce adversarial perturbations on optical coherence tomography (OCT) images. With suggested model NSL-MHA-CNN, there has been an ability to maintain model performance on adversarial attack without increasing cost of training. Through theoretical assistance and empirical validation, it was possible to examine the stability of MobileNet architecture and demonstrate its susceptibility, particularly to adversarial attack. The experiments in this paper show that indiscernible degrees of perturbation  $\\varepsilon < 0.01$  were sufficient to cause a task failure resulting to misclassification in majority of the time. Moreover, empirical simulation shows that the proposed approach advanced in this paper can be an effective method to defense against adversarial attack at level of CNN model testing.",
+        "article_number": "9903611",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9903611",
+        "html_url": "https://ieeexplore.ieee.org/document/9903611/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/9903611/",
+        "publication_title": "IEEE Access",
+        "publication_number": 6287639,
+        "is_number": 9668973,
+        "publication_year": 2022,
+        "publication_date": "2022",
+        "start_page": "103987",
+        "end_page": "103999",
+        "citing_paper_count": 0,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Convolutional neural networks",
+                    "Perturbation methods",
+                    "Biomedical imaging",
+                    "Solid modeling",
+                    "Neural networks",
+                    "Malware",
+                    "Retinopathy"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "Fast gradient sign method",
+                    "malicious attack",
+                    "MobileNet",
+                    "multi-head attention",
+                    "neural structure learning",
+                    "vulnerability in CNN"
+                ]
+            }
+        }
+    },
+    {
+        "doi": "10.1109/IWAIT.2018.8369633",
+        "title": "A study on object detection method from manga images using CNN",
+        "publisher": "IEEE",
+        "isbn": "978-1-5386-2616-0",
+        "rank": 9,
+        "authors": "Hideaki Yanagisawa;Takuro Yamashita;Hiroshi Watanabe",
+        "access_type": 0,
+        "content_type": "Conferences",
+        "abstract": "Japanese comics (manga) are popular content worldwide. In order to acquire metadata from manga images, techniques automatic recognition of manga content have been studied. Recently, Convolutional Neural Network (CNN) has been applied to object detection in manga images. R-CNN and Fast R-CNN generate region proposals by Selective Search. Faster R-CNN generates them using CNN layers called Region Proposal Network (RPN). Single Shot MultiBox Detector (SSD), the latest detection method, performs object classification and box adjustment for small regions in an image. These methods are effective to natural images. However, it is unclear whether such methods work properly to manga images or not, since those image features are different from natural images. In this paper, we examine the effectiveness of manga object detection by comparing Fast R-CNN, Faster R-CNN, and SSD. Here, manga objects are panel layout, speech balloon, character face, and text. Experimental results show that Fast R-CNN is effective for panel layout and speech balloon, whereas Faster R-CNN is effective for character face and text.",
+        "article_number": "8369633",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8369633",
+        "html_url": "https://ieeexplore.ieee.org/document/8369633/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/8369633/",
+        "publication_title": "2018 International Workshop on Advanced Image Technology (IWAIT)",
+        "conference_location": "Chiang Mai, Thailand",
+        "conference_dates": "7-9 Jan. 2018",
+        "publication_number": 8365178,
+        "is_number": 8369620,
+        "publication_year": 2018,
+        "publication_date": "7-9 Jan. 2018",
+        "start_page": "1",
+        "end_page": "4",
+        "citing_paper_count": 29,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Object detection",
+                    "Proposals",
+                    "Face",
+                    "Detectors",
+                    "Training",
+                    "Feature extraction",
+                    "Layout"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "Object Detection",
+                    "Manga",
+                    "CNN",
+                    "Fast R-CNN",
+                    "Faster R-CNN",
+                    "SSD"
+                ]
+            }
+        },
+        "isbn_formats": {
+            "isbns": [
+                {
+                    "format": "Print on Demand(PoD) ISBN",
+                    "value": "978-1-5386-2616-0",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "CD",
+                    "value": "978-1-5386-2614-6",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "Electronic ISBN",
+                    "value": "978-1-5386-2615-3",
+                    "isbnType": "New-2005"
+                }
+            ]
+        }
+    },
+    {
+        "doi": "10.1109/ACCESS.2019.2911964",
+        "title": "Integrating Local CNN and Global CNN for Script Identification in Natural Scene Images",
+        "publisher": "IEEE",
+        "issn": "2169-3536",
+        "rank": 10,
+        "volume": "7",
+        "authors": "Liqiong Lu;Yaohua Yi;Faliang Huang;Kaili Wang;Qi Wang",
+        "access_type": 1,
+        "content_type": "Journals",
+        "abstract": "Script identification in natural scene images is a key pre-step for text recognition and is also an indispensable condition for automatic text understanding systems that are designed for multi-language environments. In this paper, we present a novel framework integrating Local CNN and Global CNN both of which are based on ResNet-20 for script identification. We first obtain a lot of patches and segmented images based on the aspect ratios of the images. Subsequently, these patches and segmented images are used as inputs to Local CNN and Global CNN for training, respectively. Finally, to get the final results, the Adaboost algorithm is used to combine the results of Local CNN and Global CNN for decision-level fusion. Benefiting from such a strategy, Local CNN fully exploits the local features of the image, effectively revealing subtle differences among the scripts that are difficult to distinguish such as English, Greek, and Russian. Moreover, Global CNN mines the global features of the image to improve the accuracy of script identification. The experimental results demonstrate that our approach has a good performance on four public datasets.",
+        "article_number": "8693781",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8693781",
+        "html_url": "https://ieeexplore.ieee.org/document/8693781/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/8693781/",
+        "publication_title": "IEEE Access",
+        "publication_number": 6287639,
+        "is_number": 8600701,
+        "publication_year": 2019,
+        "publication_date": "2019",
+        "start_page": "52669",
+        "end_page": "52679",
+        "citing_paper_count": 28,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Image segmentation",
+                    "Feature extraction",
+                    "Training",
+                    "Testing",
+                    "Object recognition",
+                    "Text analysis",
+                    "Neural networks"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "Script identification",
+                    "Local CNN",
+                    "Global CNN",
+                    "ResNet-20",
+                    "decision-level fusion"
+                ]
+            }
+        }
+    },
+    {
+        "doi": "10.1109/ICCCIS51004.2021.9397079",
+        "title": "Performance Analysis and Comparison of Faster R-CNN, Mask R-CNN and ResNet50 for the Detection and Counting of Vehicles",
+        "publisher": "IEEE",
+        "isbn": "978-1-7281-8530-9",
+        "rank": 11,
+        "authors": "Hassam Tahir;Muhammad Shahbaz Khan;Muhammad Owais Tariq",
+        "access_type": 0,
+        "content_type": "Conferences",
+        "abstract": "Traffic congestion is one of the major issues of urban cities. The conventional techniques used usually to control traffic via different types of sensors are less precise and expensive. Intelligent solutions using deep learning algorithms provide promising results in terms of better performance, prompt decision making and cost effectiveness. This article aims at providing an easy, more accurate and less expensive solution for the traffic control issues specifically at the traffic signals. Three deep neural network (DNN) frameworks i.e. Faster R-CNN, Mask R-CNN and ResNet-50 have been implemented and compared for vehicle detection, classification and counting. A dataset of 3200 images of different vehicles is used for the training of the models. The training is carried out on NVIDIA 1060TI 3GB GPU. Trained system is tested on indigenous recorded video data of 8 hours for two routes at a traffic signal. Results demonstrated that the overall detection accuracy of Faster R-CNN and Mask R-CNN is >80%, whereas detection accuracy of ResNet-50 is >75%. The counting accuracies of Faster R-CNN, Mask R-CNN and ResNet-50 are >75%, >70% and >62% respectively. Various error analysis have been carried out to validate the performance of the aforementioned frameworks. Furthermore, a prototype has also been developed by interconnecting the DNN results with Arduino via Serial communication.",
+        "article_number": "9397079",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9397079",
+        "html_url": "https://ieeexplore.ieee.org/document/9397079/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/9397079/",
+        "publication_title": "2021 International Conference on Computing, Communication, and Intelligent Systems (ICCCIS)",
+        "conference_location": "Greater Noida, India",
+        "conference_dates": "19-20 Feb. 2021",
+        "publication_number": 9396788,
+        "is_number": 9397059,
+        "publication_year": 2021,
+        "publication_date": "19-20 Feb. 2021",
+        "start_page": "587",
+        "end_page": "594",
+        "citing_paper_count": 1,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Training",
+                    "Error analysis",
+                    "Vehicle detection",
+                    "Graphics processing units",
+                    "Prototypes",
+                    "Streaming media",
+                    "Traffic control"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "deep neural network",
+                    "Faster R-CNN",
+                    "Mask R-CNN",
+                    "ResNet-50",
+                    "intelligent traffic control"
+                ]
+            }
+        },
+        "isbn_formats": {
+            "isbns": [
+                {
+                    "format": "Print on Demand(PoD) ISBN",
+                    "value": "978-1-7281-8530-9",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "Electronic ISBN",
+                    "value": "978-1-7281-8529-3",
+                    "isbnType": "New-2005"
+                }
+            ]
+        }
+    },
+    {
+        "doi": "10.1109/INCET54531.2022.9824725",
+        "title": "Detection of Brain Tumor Using CNN and CNN-SVM",
+        "publisher": "IEEE",
+        "isbn": "978-1-6654-9500-4",
+        "rank": 12,
+        "authors": "Kavya Duvvuri;Harshitha Kanisettypalli;Sarada Jayan",
+        "access_type": 0,
+        "content_type": "Conferences",
+        "abstract": "Brain tumor is a type of cancerous growth that may occur in the brain. Early diagnosis of the disease is crucial for proper treatment. Diagnosis of brain tumors is usually done using images obtained through magnetic resonance imaging (MRI). MRI images can be classified using a Convolutional Neural Network (CNN), which is a technique in deep learning. It is suitable for classifying large image datasets. Support Vector Machine (SVM) is a technique in machine learning that is predominantly used for classification and in various regression problems. In this paper, we classified brain MRI images using pre-trained models like AlexNet, VGG16, InceptionV3, and ResNet50. Finally, a CNN model and an SVM model are trained with the same dataset. Using the results thus obtained a hybrid CNN-SVM model has been built to get better accuracy and prediction results.",
+        "article_number": "9824725",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9824725",
+        "html_url": "https://ieeexplore.ieee.org/document/9824725/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/9824725/",
+        "publication_title": "2022 3rd International Conference for Emerging Technology (INCET)",
+        "conference_location": "Belgaum, India",
+        "conference_dates": "27-29 May 2022",
+        "publication_number": 9823393,
+        "is_number": 9823966,
+        "publication_year": 2022,
+        "publication_date": "27-29 May 2022",
+        "start_page": "1",
+        "end_page": "7",
+        "citing_paper_count": 0,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Support vector machines",
+                    "Deep learning",
+                    "Magnetic resonance imaging",
+                    "Predictive models",
+                    "Brain modeling",
+                    "Convolutional neural networks",
+                    "Tumors"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "Brain Tumor",
+                    "CNN",
+                    "VGG16",
+                    "AlexNet",
+                    "InceptionV3",
+                    "ResNet50",
+                    "SVM",
+                    "CNN-SVM"
+                ]
+            }
+        },
+        "isbn_formats": {
+            "isbns": [
+                {
+                    "format": "Print on Demand(PoD) ISBN",
+                    "value": "978-1-6654-9500-4",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "DVD ISBN",
+                    "value": "978-1-6654-9498-4",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "CD",
+                    "value": "978-1-6654-9497-7",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "Electronic ISBN",
+                    "value": "978-1-6654-9499-1",
+                    "isbnType": "New-2005"
+                }
+            ]
+        }
+    },
+    {
+        "doi": "10.1109/FG47880.2020.00085",
+        "title": "Slim-CNN: A Light-Weight CNN for Face Attribute Prediction",
+        "publisher": "IEEE",
+        "isbn": "978-1-7281-3080-4",
+        "rank": 13,
+        "authors": "Ankit Kumar Sharma;Hassan Foroosh",
+        "access_type": 0,
+        "content_type": "Conferences",
+        "abstract": "We introduce a computationally-efficient CNN micro-architecture Slim Module to design a lightweight deep neural network, Slim-CNN, for face attribute prediction. Slim Modules are constructed by assembling depthwise separable convolutions with pointwise convolution to produce a computationally efficient module. The problem of facial attribute prediction is challenging because of the large variations in pose, background, illumination, and dataset imbalance. We stack multiple Slim Modules to devise a compact CNN, which still maintains very high accuracy. Additionally, Slim-CNN has a very low memory footprint, which makes it suitable for mobile and embedded applications. Experiments on the CelebA dataset show that Slim-CNN achieve an accuracy of 91.24% with 25x fewer parameters compared to MCNN-AUX and 100x fewer parameters when compared to DTML. This reduces the memory storage requirement of Slim-CNN by at least 87%. Furthermore, we compare Slim Modules with other well-known micro-architectures, such as Inception modules, residual blocks, Shuffle-Unit, and Inverted Residual units, and show it outperforms them in performance and in memory size, making it suitable for face-related tasks in embedded applications.",
+        "article_number": "9320288",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9320288",
+        "html_url": "https://ieeexplore.ieee.org/document/9320288/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/9320288/",
+        "publication_title": "2020 15th IEEE International Conference on Automatic Face and Gesture Recognition (FG 2020)",
+        "conference_location": "Buenos Aires, Argentina",
+        "conference_dates": "16-20 Nov. 2020",
+        "publication_number": 9320148,
+        "is_number": 9320149,
+        "publication_year": 2020,
+        "publication_date": "16-20 Nov. 2020",
+        "start_page": "329",
+        "end_page": "335",
+        "citing_paper_count": 17,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Face recognition",
+                    "Task analysis",
+                    "Kernel",
+                    "Neural networks",
+                    "Facial features",
+                    "Computer architecture",
+                    "Training"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "Light Weight CNN",
+                    "Face Attributes"
+                ]
+            }
+        },
+        "isbn_formats": {
+            "isbns": [
+                {
+                    "format": "Print on Demand(PoD) ISBN",
+                    "value": "978-1-7281-3080-4",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "Electronic ISBN",
+                    "value": "978-1-7281-3079-8",
+                    "isbnType": "New-2005"
+                }
+            ]
+        }
+    },
+    {
+        "doi": "10.1109/ICBATS54253.2022.9759007",
+        "title": "Privacy-Preserving Classification Method for Neural-Biomarkers using Homomorphic Residue Number System CNN: HoRNS-CNN",
+        "publisher": "IEEE",
+        "isbn": "978-1-6654-8841-9",
+        "rank": 14,
+        "authors": "Opeyemi Lateef Usman;Ravie Chandren Muniyandi;Khairuddin Omar;Mazlyfarina Mohamad",
+        "access_type": 0,
+        "content_type": "Conferences",
+        "abstract": "The increasing generation of MRI dataset and the recent cloud deployment of deep learning (DL) algorithms have enabled timely remote classifications of discrepancies in neural-biomarkers of critical health conditions such as dyslexia. Using these untrusted platforms to implement a secure DL algorithm will identify and resolve potential security attacks or patient data theft, hence, the need for a privacy-preserving method. However, existing homomorphic (FHE) privacy-preserving methods are still inefficient in terms of accuracy, latency, and feature extraction time with significantly large cipher-image expansion problem. This study proposes homomorphic residue number system-CNN (HoRNS-CNN) model for the privacy-preserving classification of dyslexia neural-biomarkers. The HoRNS-CNN architecture is composed of the RNS-FHE scheme and pre-trained CNN models. The RNS-FHE scheme was used to design an encryption module for each pixel in the dataset, while pre-trained CNNs were applied directly to the encrypted data in the cloud after adapting their activation layers to homomorphic computations. Results from proposed HoRNS-CNN model demonstrated an improved performance.",
+        "article_number": "9759007",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9759007",
+        "html_url": "https://ieeexplore.ieee.org/document/9759007/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/9759007/",
+        "publication_title": "2022 International Conference on Business Analytics for Technology and Security (ICBATS)",
+        "conference_location": "Dubai, United Arab Emirates",
+        "conference_dates": "16-17 Feb. 2022",
+        "publication_number": 9758922,
+        "is_number": 9758923,
+        "publication_year": 2022,
+        "publication_date": "16-17 Feb. 2022",
+        "start_page": "1",
+        "end_page": "8",
+        "citing_paper_count": 0,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Neuroimaging",
+                    "Deep learning",
+                    "Adaptation models",
+                    "Computational modeling",
+                    "Education",
+                    "Feature extraction",
+                    "Complexity theory"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "Privacy-preserving methods",
+                    "fully homomorphic encryption",
+                    "residue number system",
+                    "HoRNS-CNN",
+                    "dyslexia detection"
+                ]
+            }
+        },
+        "isbn_formats": {
+            "isbns": [
+                {
+                    "format": "Print on Demand(PoD) ISBN",
+                    "value": "978-1-6654-8841-9",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "Electronic ISBN",
+                    "value": "978-1-6654-0920-9",
+                    "isbnType": "New-2005"
+                }
+            ]
+        }
+    },
+    {
+        "doi": "10.1109/ICIP.2018.8451142",
+        "title": "SSF-CNN: Spatial and Spectral Fusion with CNN for Hyperspectral Image Super-Resolution",
+        "publisher": "IEEE",
+        "isbn": "978-1-4799-7062-9",
+        "issn": "2381-8549",
+        "rank": 15,
+        "authors": "Xian-Hua Han;Boxin Shi;YinQiang Zheng",
+        "access_type": 0,
+        "content_type": "Conferences",
+        "abstract": "Fusing a low-resolution hyperspectral image with the corresponding high-resolution RGB image to obtain a high-resolution hyperspectral image is usually solved as an optimization problem with prior-knowledge such as sparsity representation and spectral physical properties as constraints, which have limited applicability. Deep convolutional neural network extracts more comprehensive features and is proved to be effective in upsampling RGB images. However, directly applying CNNs to upsample either the spatial or spectral dimension alone may not produce pleasing results due to the neglect of complementary information from both low resolution hyper spectral and high resolution RGB images. This paper proposes two types of novel CNN architectures to take advantages of spatial and spectral fusion for hyperspectral image superresolution. Experiment results on benchmark datasets validate that the proposed spatial and spectral fusion CNNs outperforms the state-of-the-art methods and baseline CNN architectures in both quantitative values and visual qualities.",
+        "article_number": "8451142",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8451142",
+        "html_url": "https://ieeexplore.ieee.org/document/8451142/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/8451142/",
+        "publication_title": "2018 25th IEEE International Conference on Image Processing (ICIP)",
+        "conference_location": "Athens, Greece",
+        "conference_dates": "7-10 Oct. 2018",
+        "publication_number": 8436606,
+        "is_number": 8451009,
+        "publication_year": 2018,
+        "publication_date": "7-10 Oct. 2018",
+        "start_page": "2506",
+        "end_page": "2510",
+        "citing_paper_count": 25,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Spatial resolution",
+                    "Hyperspectral imaging",
+                    "Databases",
+                    "Feature extraction",
+                    "Computer architecture"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "Spatial and spectral fusion CNN",
+                    "super resolution",
+                    "hyperspectral image",
+                    "SSF-CNN"
+                ]
+            }
+        },
+        "isbn_formats": {
+            "isbns": [
+                {
+                    "format": "Print on Demand(PoD) ISBN",
+                    "value": "978-1-4799-7062-9",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "Electronic ISBN",
+                    "value": "978-1-4799-7061-2",
+                    "isbnType": "New-2005"
+                }
+            ]
+        }
+    },
+    {
+        "doi": "10.1109/EIRCON52903.2021.9613659",
+        "title": "Comparison of CNN and CNN-LSTM Architectures for Tool Wear Estimation",
+        "publisher": "IEEE",
+        "isbn": "978-1-6654-4446-0",
+        "rank": 16,
+        "authors": "Fabio C. Zegarra;Juan Vargas-Machuca;Alberto M. Coronado",
+        "access_type": 0,
+        "content_type": "Conferences",
+        "abstract": "Modern manufacturing needs to guarantee product quality and reduce operating costs. These can be achieved through the use of analytical tools, which depend on the collection of large amounts of data, in this particular case in the form of time series. During the last few years, various conventional and neural network-based methods have shown great promise in problems related to estimating milling cutter wear. Among neural networks, recurrent networks are especially promising due to the memory mechanism they use. In the present work, a comparison is made between a CNN network and a CNN-LSTM network. Both networks extract information directly from the time series of a widely used database. Unlike similar works in the existing literature, two simple preprocessing techniques are used: to remove the tendency of the time series and to equalize the initial values of the tool wear. Additionally, Bayesian optimization of hyperparameters is used. Mean square errors are obtained that are consistently around 10, results equivalent to the state of the art.",
+        "article_number": "9613659",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9613659",
+        "html_url": "https://ieeexplore.ieee.org/document/9613659/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/9613659/",
+        "publication_title": "2021 IEEE Engineering International Research Conference (EIRCON)",
+        "conference_location": "Lima, Peru",
+        "conference_dates": "27-29 Oct. 2021",
+        "publication_number": 9613138,
+        "is_number": 9613145,
+        "publication_year": 2021,
+        "publication_date": "27-29 Oct. 2021",
+        "start_page": "1",
+        "end_page": "4",
+        "citing_paper_count": 1,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Time series analysis",
+                    "Neural networks",
+                    "Computer architecture",
+                    "Milling",
+                    "Tools",
+                    "Product design",
+                    "Quality assessment"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "CNC machine tool",
+                    "tool wear prediction",
+                    "CNN",
+                    "CNN-LSTM",
+                    "hyperparameter optimization"
+                ]
+            }
+        },
+        "isbn_formats": {
+            "isbns": [
+                {
+                    "format": "Print on Demand(PoD) ISBN",
+                    "value": "978-1-6654-4446-0",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "USB ISBN",
+                    "value": "978-1-6654-4444-6",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "Electronic ISBN",
+                    "value": "978-1-6654-4445-3",
+                    "isbnType": "New-2005"
+                }
+            ]
+        }
+    },
+    {
+        "doi": "10.1109/ISOCC50952.2020.9333049",
+        "title": "Prototype of Low Complexity CNN Hardware Accelerator with FPGA-based PYNQ Platform for Dual-Mode Biometrics Recognition",
+        "publisher": "IEEE",
+        "isbn": "978-1-7281-8332-9",
+        "issn": "2163-9612",
+        "rank": 17,
+        "authors": "Yu-Hsiang Chen;Chih-Peng Fan;Robert Chen-Hao Chang",
+        "access_type": 0,
+        "content_type": "Conferences",
+        "abstract": "In this study, the effective low-complexity convolutional neural network (CNN) inference network is implemented by the FPGA-based hardware accelerator for dual-mode biometric authentications. After the pre-processing processes, the selected datasets, which include the finger vein images and eye images with partial iris and sclera zones, are used for training and testing the LeNet-5 based CNN lite model. Then the lite CNN classifier will be rapidly prototyped by FPGA for hardware acceleration. By tests, the proposed lite CNN model achieves the recognition accuracy up to 97% with the ROI-based eye images. Besides, the proposed model achieves the recognition accuracy up to 95% with the finger vein images. Compared with the pure software based implementation, the proposed lite CNN hardware acceleration design provides the same recognition accuracy, and the inferential calculations are accelerated by about 50 times on the PYNQ FPGA platform.",
+        "article_number": "9333049",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9333049",
+        "html_url": "https://ieeexplore.ieee.org/document/9333049/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/9333049/",
+        "publication_title": "2020 International SoC Design Conference (ISOCC)",
+        "conference_location": "Yeosu, Korea (South)",
+        "conference_dates": "21-24 Oct. 2020",
+        "publication_number": 9332802,
+        "is_number": 9332909,
+        "publication_year": 2020,
+        "publication_date": "21-24 Oct. 2020",
+        "start_page": "189",
+        "end_page": "190",
+        "citing_paper_count": 5,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Image recognition",
+                    "Veins",
+                    "Fingers",
+                    "Software",
+                    "Acceleration",
+                    "Hardware acceleration",
+                    "Field programmable gate arrays"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "Deep learning",
+                    "CNN",
+                    "hardware accelerator",
+                    "FPGA",
+                    "finger vein",
+                    "iris and sclera",
+                    "biometrics"
+                ]
+            }
+        },
+        "isbn_formats": {
+            "isbns": [
+                {
+                    "format": "Print on Demand(PoD) ISBN",
+                    "value": "978-1-7281-8332-9",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "USB ISBN",
+                    "value": "978-1-7281-8330-5",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "Electronic ISBN",
+                    "value": "978-1-7281-8331-2",
+                    "isbnType": "New-2005"
+                }
+            ]
+        }
+    },
+    {
+        "doi": "10.1109/APCC.2018.8633447",
+        "title": "Demo: FPGA-Cloud Architecture For CNN",
+        "publisher": "IEEE",
+        "isbn": "978-1-5386-6929-7",
+        "issn": "2163-0771",
+        "rank": 18,
+        "authors": "Guangju Wei;Yanzhao Hou;Zhao Zhao;Qimei Cui;Gang Deng;Xiaofeng Tao",
+        "access_type": 0,
+        "content_type": "Conferences",
+        "abstract": "In recent years, convolutional neural network (CNN) has made a breakthrough development and been widely used in various fields, such as image recognition, target classification and natural language processing. However, with the continuous development of CNN, the complexity of CNN is gradually increasing. The ordinary hardware processors cannot meet the speed requirements of CNN. The hardware platform about CNN based on FPGA has gradually become the focus of research because of its parallel computing advantages. However, it is difficult and not friendly to implement CNN on FPGA for software developers. In this paper, we propose a FPGA-Cloud architecture for CNN. We implement CNN platform based on FPGA, and deploy the platform in the cloud. CNN resources based on FPGA can be utilized by local users through the network, which is language-friendly for software developers in hardware development and satisfies the user's requirement for CNN processing task.",
+        "article_number": "8633447",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8633447",
+        "html_url": "https://ieeexplore.ieee.org/document/8633447/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/8633447/",
+        "publication_title": "2018 24th Asia-Pacific Conference on Communications (APCC)",
+        "conference_location": "Ningbo, China",
+        "conference_dates": "12-14 Nov. 2018",
+        "publication_number": 8630814,
+        "is_number": 8633446,
+        "publication_year": 2018,
+        "publication_date": "12-14 Nov. 2018",
+        "start_page": "7",
+        "end_page": "8",
+        "citing_paper_count": 3,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Cloud computing",
+                    "Field programmable gate arrays",
+                    "Servers",
+                    "Computer architecture",
+                    "Hardware",
+                    "Control systems",
+                    "Training"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "FPGA",
+                    "CNN",
+                    "CLOUD"
+                ]
+            }
+        },
+        "isbn_formats": {
+            "isbns": [
+                {
+                    "format": "Print on Demand(PoD) ISBN",
+                    "value": "978-1-5386-6929-7",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "USB ISBN",
+                    "value": "978-1-5386-6927-3",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "Electronic ISBN",
+                    "value": "978-1-5386-6928-0",
+                    "isbnType": "New-2005"
+                }
+            ]
+        }
+    },
+    {
+        "doi": "10.1109/SPIN.2018.8474196",
+        "title": "Ensemble of Hybrid CNN-ELM Model for Image Classification",
+        "publisher": "IEEE",
+        "isbn": "978-1-5386-3046-4",
+        "rank": 19,
+        "authors": "Suresh Prasad Kannojia;Gaurav Jaiswal",
+        "access_type": 0,
+        "content_type": "Conferences",
+        "abstract": "To leverage feature representation of CNN and fast classification learning of ELM, Ensemble of Hybrid CNN-ELM model is proposed for image classification. In this model, image representation features are learned by Convolutional Neural Network (CNN) and fed to Extreme Learning Machine (ELM) for classification. Three hybrid CNN-ELMs are ensemble in parallel and final output is computed by majority voting ensemble of these classifier\u2019s outputs. The experiments show this ensemble model improves the classifier\u2019s classification confidence and accuracy. This model has been benchmarked on MNIST benchmark dataset and effectively improved the accuracy in comparison of single hybrid CNN-ELM classifier with accuracy upto 99.33%. Proposed ensemble model has been also compared with Core CNN, Core ELM, Hybrid CNN-ELM and achieves competitive accuracy.",
+        "article_number": "8474196",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8474196",
+        "html_url": "https://ieeexplore.ieee.org/document/8474196/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/8474196/",
+        "publication_title": "2018 5th International Conference on Signal Processing and Integrated Networks (SPIN)",
+        "conference_location": "Noida, India",
+        "conference_dates": "22-23 Feb. 2018",
+        "publication_number": 8447178,
+        "is_number": 8474030,
+        "publication_year": 2018,
+        "publication_date": "22-23 Feb. 2018",
+        "start_page": "538",
+        "end_page": "541",
+        "citing_paper_count": 16,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Feature extraction",
+                    "Convolution",
+                    "Convolutional neural networks",
+                    "Computational modeling",
+                    "Image classification",
+                    "Computer architecture",
+                    "Benchmark testing"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "Enesemble model",
+                    "CNN-ELM",
+                    "Convolutional neural network",
+                    "Extreme learning machine",
+                    "Image classification"
+                ]
+            }
+        },
+        "isbn_formats": {
+            "isbns": [
+                {
+                    "format": "Print on Demand(PoD) ISBN",
+                    "value": "978-1-5386-3046-4",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "CD",
+                    "value": "978-1-5386-3044-0",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "Electronic ISBN",
+                    "value": "978-1-5386-3045-7",
+                    "isbnType": "New-2005"
+                }
+            ]
+        }
+    },
+    {
+        "doi": "10.1109/ISBI45749.2020.9098574",
+        "title": "Optimize CNN Model for FMRI Signal Classification Via Adanet-Based Neural Architecture Search",
+        "publisher": "IEEE",
+        "isbn": "978-1-5386-9331-5",
+        "issn": "1945-7928",
+        "rank": 20,
+        "authors": "Haixing Dai;Fangfei Ge;Qing Li;Wei Zhang;Tianming Liu",
+        "access_type": 0,
+        "content_type": "Conferences",
+        "abstract": "Recent studies showed that convolutional neural network (CNN) models possess remarkable capability of differentiating and characterizing fMRI signals from cortical gyri and sulci. In addition, visualization and analysis of the filters in the learned CNN models suggest that sulcal fMRI signals are more diverse and have higher frequency than gyral signals. However, it is not clear whether the gyral fMRI signals can be further divided into sub-populations, e.g., 3-hinge areas vs 2-hinge areas. It is also unclear whether the CNN models of two classes (gyral vs sulcal) classification can be further optimized for three classes (3-hinge gyral vs 2-hinge gyral vs sulcal) classification. To answer these questions, in this paper, we employed the AdaNet framework to design a neural architecture search (NAS) system for optimizing CNN models for three classes fMRI signal classification. The core idea is that AdaNet adaptively learns both the optimal structure of the CNN network and its weights so that the learnt CNN model can effectively extract discriminative features that maximize the classification accuracies of three classes of 3-hinge gyral, 2-hinge gyral and sulcal fMRI signals. We evaluated our framework on the Autism Brain Imaging Data Exchange (ABIDE) dataset, and experiments showed that our framework can obtained significantly better results, in terms of both classification accuracy and extracted features.",
+        "article_number": "9098574",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9098574",
+        "html_url": "https://ieeexplore.ieee.org/document/9098574/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/9098574/",
+        "publication_title": "2020 IEEE 17th International Symposium on Biomedical Imaging (ISBI)",
+        "conference_location": "Iowa City, IA, USA",
+        "conference_dates": "3-7 April 2020",
+        "publication_number": 9091448,
+        "is_number": 9098313,
+        "publication_year": 2020,
+        "publication_date": "3-7 April 2020",
+        "start_page": "1399",
+        "end_page": "1403",
+        "citing_paper_count": 2,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Functional magnetic resonance imaging",
+                    "Feature extraction",
+                    "Optimization",
+                    "Testing",
+                    "Computer architecture",
+                    "Pattern classification",
+                    "Fasteners"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "Neural Architecture Search",
+                    "Auto ML",
+                    "CNN",
+                    "3-hinge",
+                    "2-hinge"
+                ]
+            }
+        },
+        "isbn_formats": {
+            "isbns": [
+                {
+                    "format": "Print on Demand(PoD) ISBN",
+                    "value": "978-1-5386-9331-5",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "Electronic ISBN",
+                    "value": "978-1-5386-9330-8",
+                    "isbnType": "New-2005"
+                }
+            ]
+        }
+    },
+    {
+        "doi": "10.1109/VCIP53242.2021.9675417",
+        "title": "CNN-based Super Resolution for Video Coding Using Decoded Information",
+        "publisher": "IEEE",
+        "isbn": "978-1-7281-7322-1",
+        "issn": "1018-8770",
+        "rank": 21,
+        "authors": "Chaoyi Lin;Yue Li;Kai Zhang;Zhaobin Zhang;Li Zhang",
+        "access_type": 0,
+        "content_type": "Conferences",
+        "abstract": "Down-sampling followed by an up-sampling is a well-known strategy to compress high-resolution pictures given a limited bandwidth in image as well as video coding. Recently, inspired by the latest advances of image super resolution (SR) technologies using convolutional neural network (CNN), CNN-based SR has been explored for resampling-based coding. However, the side information generated during the compression process is not utilized efficiently by the SR network in prior arts. In this paper, we propose a CNN-based SR method for video coding, where more side information is leveraged as a supplement to reconstruction samples. Specifically, we introduce prediction samples to be the auxiliary information, as it can provide the texture and directional information about the original picture. Considering the different characteristics, we design different networks for the luma and chroma components. When designing the chroma up-sampling CNN, the luma reconstruction is used as the auxiliary information of the chroma network, which exploits the cross-component correlation. Experimental results show that the proposed method achieves 11.07% BD-rate savings in all-intra configuration compared with VTM-11.0. Further experiments validate the effectiveness of using luma information to aid the chroma up-sampling process.",
+        "article_number": "9675417",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9675417",
+        "html_url": "https://ieeexplore.ieee.org/document/9675417/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/9675417/",
+        "publication_title": "2021 International Conference on Visual Communications and Image Processing (VCIP)",
+        "conference_location": "Munich, Germany",
+        "conference_dates": "5-8 Dec. 2021",
+        "publication_number": 9675283,
+        "is_number": 9675313,
+        "publication_year": 2021,
+        "publication_date": "5-8 Dec. 2021",
+        "start_page": "1",
+        "end_page": "5",
+        "citing_paper_count": 1,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Video coding",
+                    "Image coding",
+                    "Image resolution",
+                    "Correlation",
+                    "Visual communication",
+                    "Bit rate",
+                    "Bandwidth"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "resampling-based video coding",
+                    "CNN-based super resolution",
+                    "auxiliary information",
+                    "prediction",
+                    "cross-component CNN"
+                ]
+            }
+        },
+        "isbn_formats": {
+            "isbns": [
+                {
+                    "format": "Print on Demand(PoD) ISBN",
+                    "value": "978-1-7281-7322-1",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "Electronic ISBN",
+                    "value": "978-1-7281-8551-4",
+                    "isbnType": "New-2005"
+                }
+            ]
+        }
+    },
+    {
+        "doi": "10.1109/ASPCON49795.2020.9276672",
+        "title": "A Depthwise Separable Convolution Architecture for CNN Accelerator",
+        "publisher": "IEEE",
+        "isbn": "978-1-7281-6883-8",
+        "rank": 22,
+        "authors": "Harsh Srivastava;Kishor Sarawadekar",
+        "access_type": 0,
+        "content_type": "Conferences",
+        "abstract": "Convolutional Neural Network (CNN) give an unmatched performance in image classification, object detection and object tracking. As many of the modern embedded systems for portable devices deals with similar tasks, they often deploy CNN based algorithms. The intensive computational workload associated with CNN inference demands powerful computing platforms like Graphics Processing Units. However, deploying CNN on mobile devices demands low power, application specific computing platforms like Field-Programmable Gate Array (FPGA) and Application-Specific Integrated Circuit (ASIC) which can work as computation accelerator units. Moreover, using certain algorithmic optimizations like using Depthwise Separable Convolution instead of standard convolution, significantly reduces the computational burden of CNN inference. This paper discusses a pipelined architecture of Depthwise Separable Convolution followed by activation and pooling operations for a single layer of CNN. The architecture is implemented on Xilinx 7 series FPGA and works at a clock period of 40ns. It can be used as a building block for an integrated system of CNN accelerator for implementation on FPGAs of different sizes. This work focuses on speeding up the convolution process, instead of implementing large design of an integrated system of CNN accelerator which makes it difficult to focus on performance of the subsystems. To the best of the knowledge of the authors, earlier works have implemented an integrated system of CNN accelerator but the blueprint for architecture of a single layer of CNN is not discussed individually, which can be a great support for the beginners in understanding FPGA based computing accelerators for CNN.",
+        "article_number": "9276672",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9276672",
+        "html_url": "https://ieeexplore.ieee.org/document/9276672/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/9276672/",
+        "publication_title": "2020 IEEE Applied Signal Processing Conference (ASPCON)",
+        "conference_location": "Kolkata, India",
+        "conference_dates": "7-9 Oct. 2020",
+        "publication_number": 9276206,
+        "is_number": 9276653,
+        "publication_year": 2020,
+        "publication_date": "7-9 Oct. 2020",
+        "start_page": "1",
+        "end_page": "5",
+        "citing_paper_count": 3,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Convolution",
+                    "Field programmable gate arrays",
+                    "Computer architecture",
+                    "Standards",
+                    "Engines",
+                    "Kernel",
+                    "Hardware"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "Depthwise Separable",
+                    "Convolutional Neural Network (CNN)",
+                    "Field Programmable Gate Array (FPGA)",
+                    "Mobile Devices",
+                    "Embedded Systems"
+                ]
+            }
+        },
+        "isbn_formats": {
+            "isbns": [
+                {
+                    "format": "Print on Demand(PoD) ISBN",
+                    "value": "978-1-7281-6883-8",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "USB ISBN",
+                    "value": "978-1-7281-6881-4",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "Electronic ISBN",
+                    "value": "978-1-7281-6882-1",
+                    "isbnType": "New-2005"
+                }
+            ]
+        }
+    },
+    {
+        "doi": "10.1109/MM.2015.121",
+        "title": "SP-CNN: A Scalable and Programmable CNN-Based Accelerator",
+        "publisher": "IEEE",
+        "issue": "5",
+        "issn": "1937-4143",
+        "rank": 23,
+        "volume": "35",
+        "authors": "Dilan Manatunga;Hyesoon Kim;Saibal Mukhopadhyay",
+        "access_type": 0,
+        "content_type": "Magazines",
+        "abstract": "Specialized accelerators have become prevalent in many mobile computing platforms for their ability to perform certain tasks, such as image processing, at a lower power cost than a generalized CPU or GPU. In this article, the authors focus on using cellular neural networks (CNNs) as a specialized accelerator. CNN is a neural computing paradigm that is well suited for image processing applications. However, hardware implementations were originally developed to handle only relatively small image sizes. The authors propose SP-CNN, an architecture and a multiplexing algorithm that provides scalability to CNN applications. The authors demonstrate the proposed multiplexing algorithms over a set of six image processing benchmarks and present a performance analysis of SP-CNN.",
+        "article_number": "7310929",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7310929",
+        "html_url": "https://ieeexplore.ieee.org/document/7310929/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/7310929/",
+        "publication_title": "IEEE Micro",
+        "publication_number": 40,
+        "is_number": 7310924,
+        "publication_year": 2015,
+        "publication_date": "Sept.-Oct. 2015",
+        "start_page": "42",
+        "end_page": "50",
+        "citing_paper_count": 13,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Multiplexing",
+                    "Neural networks",
+                    "Partitioning algorithms",
+                    "Program processors",
+                    "Image processing"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "CNN",
+                    "cellular neural networks",
+                    "accelerators",
+                    "image processing",
+                    "neuromorphic computing"
+                ]
+            }
+        }
+    },
+    {
+        "doi": "10.1109/LGRS.2019.2918719",
+        "title": "HybridSN: Exploring 3-D\u20132-D CNN Feature Hierarchy for Hyperspectral Image Classification",
+        "publisher": "IEEE",
+        "issue": "2",
+        "issn": "1558-0571",
+        "rank": 24,
+        "volume": "17",
+        "authors": "Swalpa Kumar Roy;Gopal Krishna;Shiv Ram Dubey;Bidyut B. Chaudhuri",
+        "access_type": 0,
+        "content_type": "Journals",
+        "abstract": "Hyperspectral image (HSI) classification is widely used for the analysis of remotely sensed images. Hyperspectral imagery includes varying bands of images. Convolutional neural network (CNN) is one of the most frequently used deep learning-based methods for visual data processing. The use of CNN for HSI classification is also visible in recent works. These approaches are mostly based on 2-D CNN. On the other hand, the HSI classification performance is highly dependent on both spatial and spectral information. Very few methods have used the 3-D-CNN because of increased computational complexity. This letter proposes a hybrid spectral CNN (HybridSN) for HSI classification. In general, the HybridSN is a spectral-spatial 3-D-CNN followed by spatial 2-D-CNN. The 3-D-CNN facilitates the joint spatial-spectral feature representation from a stack of spectral bands. The 2-D-CNN on top of the 3-D-CNN further learns more abstract-level spatial representation. Moreover, the use of hybrid CNNs reduces the complexity of the model compared to the use of 3-D-CNN alone. To test the performance of this hybrid approach, very rigorous HSI classification experiments are performed over Indian Pines, University of Pavia, and Salinas Scene remote sensing data sets. The results are compared with the state-of-the-art hand-crafted as well as end-to-end deep learning-based methods. A very satisfactory performance is obtained using the proposed HybridSN for HSI classification. The source code can be found at https://github.com/gokriznastic/HybridSN.",
+        "article_number": "8736016",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8736016",
+        "html_url": "https://ieeexplore.ieee.org/document/8736016/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/8736016/",
+        "publication_title": "IEEE Geoscience and Remote Sensing Letters",
+        "publication_number": 8859,
+        "is_number": 8964504,
+        "publication_year": 2020,
+        "publication_date": "Feb. 2020",
+        "start_page": "277",
+        "end_page": "281",
+        "citing_paper_count": 313,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Kernel",
+                    "Feature extraction",
+                    "Hyperspectral imaging",
+                    "Principal component analysis",
+                    "Computational modeling",
+                    "IP networks"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "2-D-convolutional neural network (CNN)",
+                    "3-D-CNN",
+                    "deep learning",
+                    "CNNs",
+                    "hybrid spectral CNN (HybridSN)",
+                    "hyperspectral image (HSI) classification",
+                    "remote sensing",
+                    "spectral\u2013spatial"
+                ]
+            }
+        }
+    },
+    {
+        "doi": "10.1109/CYBERNETICSCOM.2017.8311689",
+        "title": "Learning temporal representation of transaction amount for fraudulent transaction recognition using CNN, Stacked LSTM, and CNN-LSTM",
+        "publisher": "IEEE",
+        "isbn": "978-1-5386-0785-5",
+        "rank": 25,
+        "authors": "Yaya Heryadi;Harco Leslie Hendric Spits Warnars",
+        "access_type": 0,
+        "content_type": "Conferences",
+        "abstract": "This paper aims to explore deep learning model to learn short-term and long-term patterns from imbalanced input dataset. Data for this study are imbalanced card transactions from an Indonesia bank in period 2016\u20132017 with binary labels (nonfraud or fraud). From 50 features of the dataset, 30 principal components of data contribute to 87 % of the cumulative Eigenvalues. This study explores the effect of nonfraud to fraud sample ratio from 1 to 4 and three models: Convolutional Neural Network (CNN), Stacked Long Short-term Memory (SLSTM), and Hybrid of CNN-LSTM. Using Area Under the ROC Curve (AUC) as model performance, CNN achieved the highest AUC for R=1,2,3,4 followed by SLSTM and CNN-LSTM.",
+        "article_number": "8311689",
+        "pdf_url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8311689",
+        "html_url": "https://ieeexplore.ieee.org/document/8311689/",
+        "abstract_url": "https://ieeexplore.ieee.org/document/8311689/",
+        "publication_title": "2017 IEEE International Conference on Cybernetics and Computational Intelligence (CyberneticsCom)",
+        "conference_location": "Phuket, Thailand",
+        "conference_dates": "20-22 Nov. 2017",
+        "publication_number": 8304916,
+        "is_number": 8311676,
+        "publication_year": 2017,
+        "publication_date": "20-22 Nov. 2017",
+        "start_page": "84",
+        "end_page": "89",
+        "citing_paper_count": 25,
+        "citing_patent_count": 0,
+        "index_terms": {
+            "ieee_terms": {
+                "terms": [
+                    "Hidden Markov models",
+                    "Feature extraction",
+                    "Computational modeling",
+                    "Robustness",
+                    "Training",
+                    "Logic gates",
+                    "Data models"
+                ]
+            },
+            "author_terms": {
+                "terms": [
+                    "fraudulent recognition",
+                    "imbalanced data classification",
+                    "CNN",
+                    "LSTM",
+                    "CNN-LSTM"
+                ]
+            }
+        },
+        "isbn_formats": {
+            "isbns": [
+                {
+                    "format": "Print on Demand(PoD) ISBN",
+                    "value": "978-1-5386-0785-5",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "USB ISBN",
+                    "value": "978-1-5386-0783-1",
+                    "isbnType": "New-2005"
+                },
+                {
+                    "format": "Electronic ISBN",
+                    "value": "978-1-5386-0784-8",
+                    "isbnType": "New-2005"
+                }
+            ]
+        }
+    }
+]
