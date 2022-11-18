@@ -74,9 +74,7 @@ def process_ai_result(ai_result, list_papers):
         doi = doc["id"]
         list_papers = add_topic_paper(prune_topics(doc["topics"]), list_papers, doi)
 
-    ai_result["documents"] = list_papers
-
-    return ai_result
+    return list_papers
 
 
 def format_data_ai(list_papers, key_doi, key_abstract):
@@ -112,7 +110,7 @@ def remove_duplicated(results, key):
     return transformed_results
 
 
-def mapping_feature_names(results, start_features, end_features):
+def mapping_feature_names(results, start_features, end_features, source):
 
     transformed_results = list()
 
@@ -223,8 +221,8 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
 
     debug_log("arxiv done")
 
-    aggregated_results = aggregator(ieee_results, scopus_results, arxiv_results)[:10]
-
+    aggregated_results = aggregator(ieee_results, scopus_results, arxiv_results)
+    
     debug_log("aggregation done")
 
     # take simple subset, to be fast
@@ -260,7 +258,7 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
 
     debug_log("processed rank results done")
 
-    return jsonify(processed_result[:NUMBER_RETURN_PAPERS])
+    return jsonify({"documents" : processed_result[:NUMBER_RETURN_PAPERS]})
 
 
 class Aggregator(Resource):
