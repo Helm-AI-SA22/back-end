@@ -9,7 +9,7 @@ IEEE_SITE = 'https://ieeexploreapi.ieee.org/api/v1/search/articles'
 IEEE_HEADERS = 'apikey=' + IEEE_API_KEY
 
 ARXIV_SITE = "http://export.arxiv.org/api/query"
-ARXIV_MAX_RESULTS = 2000
+ARXIV_MAX_RESULTS = 20
 
 AI_URL_DEPLOY = "helmai"
 AI_PORT_DEPLOY = 5000
@@ -22,3 +22,5 @@ ENDING_STRING_SCOPUS = "%29"
 
 SPACE_IEEE = "%20"
 QUOTES_IEEE = "%22"
+
+NUMBER_RETURN_PAPERS = 100

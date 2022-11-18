@@ -5,3 +5,5 @@ requests
 Flask-Log-Request-ID
 pandas
 xmltodict
+scikit-learn
+numpy

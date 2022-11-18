@@ -8,8 +8,12 @@ from utils.utils import debug_log
 from utils.AI_request import make_post_request_to_AI
 from utils.filtering import filtering
 from utils.ranking import rank
+from utils.constants import NUMBER_RETURN_PAPERS
 from flask_cors import CORS
 from flask_log_request_id import RequestID
+import numpy as np
+from sklearn.feature_extraction.text import TfidfVectorizer
+import re
 
 import sys
 from logging.config import dictConfig
@@ -130,6 +134,73 @@ def aggregator(ieee_results, scopus_results, arxiv_results):
     return transformed_results
 
 
+def format_data_rank(papers, id_feature, title_feature, abstract_feature):
+    return_papers = list()
+
+    for paper in papers:
+        return_papers.append({
+            "id": paper[id_feature], 
+            "text" : paper[title_feature] + paper[abstract_feature]
+            })
+    
+    return return_papers
+
+
+def build_regex(query):
+
+    regex = r"(?u)"
+
+    for keyword in query:
+        regex = regex + r"\b" + keyword + r"\b|" # Select the keywords
+    
+    regex += r"\b\w\w+\b" # Select all single words
+    
+    return regex
+
+
+def apply_query_rank(papers, keywords):
+    # papers list of of dict {"id": _, "text": _}
+    title_abstract_list = list()
+
+    for paper in papers:
+        title_abstract_list.append(paper["text"])
+
+    # Inserisci query tra i doc
+    title_abstract_list.insert(0, ' '.join(keywords))
+
+    # Calcola tf-idf (with stopword elimination and custom regex to select multi word keywords)
+    tfidf = TfidfVectorizer(token_pattern=build_regex(keywords), stop_words='english')
+
+    tfidf_matrix = tfidf.fit_transform(title_abstract_list)
+
+    # Prendi tf-idf corrispondente alla query (prima row)
+    tfidf_query = tfidf_matrix[0]
+
+    # Calcola similarity tra tfidf di tutti i doc e tf-idf della query
+    pairwise_similarity = tfidf_matrix * tfidf_query.T
+
+    # setta similarity della query con se stessa a 0
+    pairwise_similarity[0] = 0
+
+    # converti a array
+    np_similarity = pairwise_similarity.toarray()
+    np_similarity = np.reshape(np_similarity, ((len(np_similarity))))
+
+    return_dict = dict()
+
+    for tfidf, paper in zip(np_similarity[1:], papers):
+        return_dict[paper["id"]] = tfidf
+
+    return return_dict
+
+
+def process_rank_result(rank_result, list_papers, id_feature):
+    # apply tf-idf to the list of papers and sort them
+    list_papers.sort(key=lambda paper : rank_result[paper[id_feature]], reverse=True)
+
+    return list_papers
+
+
 def execute_aggregation_topic_modeling(keywords, topic_modeling):
     
     ieee_results = make_ieee_request(keywords)
@@ -145,7 +216,7 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
 
     debug_log("arxiv done")
 
-    aggregated_results = aggregator(ieee_results, scopus_results, arxiv_results)
+    aggregated_results = aggregator(ieee_results, scopus_results, arxiv_results)[:10]
 
     debug_log("aggregation done")
 
@@ -156,8 +227,14 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
         aggregation_features = json.load(f)
 
     # apply filtering
-
     # apply ranking, parallelizable wrt call AI module
+    data_to_rank = format_data_rank(aggregated_results, aggregation_features["aggregated_key"], aggregation_features["aggregated_title"], aggregation_features["aggregated_abstract"])
+
+    debug_log("formatted to rank done")
+
+    rank_result = apply_query_rank(data_to_rank, keywords)
+
+    debug_log("rank done")
 
     # call AI module
     data_to_ai = format_data_ai(aggregated_results, aggregation_features["aggregated_key"], aggregation_features["aggregated_abstract"])
@@ -172,7 +249,11 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
 
     debug_log("processed ai results done")
 
-    return jsonify(processed_result)
+    processed_result = process_rank_result(rank_result, processed_result, aggregation_features["aggregated_key"])
+
+    debug_log("processed rank results done")
+
+    return jsonify(processed_result[:NUMBER_RETURN_PAPERS])
 
 
 class Aggregator(Resource):
@@ -189,7 +270,7 @@ class Aggregator(Resource):
     def post(self):
 
         data = request.get_json()
-        keywords = data["keywords"]
+        keywords = data["keywords"].split(";")
         topic_modeling = data["type"]
 
         return execute_aggregation_topic_modeling(keywords, topic_modeling)

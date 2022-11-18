@@ -4,5 +4,6 @@
     "arxiv": ["author", "title", "published", "citationCount", "id", "link", "summary", "openaccess"],
     "aggregated": ["authors", "title", "publicationDate", "citationCount", "id", "pdfLink", "abstract", "openaccess"],
     "aggregated_key":  "id",
+    "aggregated_title":  "title",
     "aggregated_abstract":  "abstract"
 }
