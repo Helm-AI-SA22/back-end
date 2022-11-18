@@ -13,6 +13,7 @@ from flask_cors import CORS
 from flask_log_request_id import RequestID
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.preprocessing import MinMaxScaler
 import re
 
 import sys
@@ -184,12 +185,22 @@ def apply_query_rank(papers, keywords):
 
     # converti a array
     np_similarity = pairwise_similarity.toarray()
+    
     np_similarity = np.reshape(np_similarity, ((len(np_similarity))))
 
     return_dict = dict()
 
+   
+
     for tfidf, paper in zip(np_similarity[1:], papers):
         return_dict[paper["id"]] = tfidf
+
+    print('#### LENGTH OF SORTED TFIDF ####', len(return_dict.values()))
+
+    
+    arr_to_scale = np.array(list(return_dict.values()))
+    scaled_tfidf = (arr_to_scale - arr_to_scale.min()) / (arr_to_scale.max() - arr_to_scale.min())
+    print(np.sort(scaled_tfidf)*100)
 
     return return_dict
 
@@ -216,7 +227,14 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
 
     debug_log("arxiv done")
 
-    aggregated_results = aggregator(ieee_results, scopus_results, arxiv_results)[:10]
+    aggregated_results = aggregator(ieee_results, scopus_results, arxiv_results)[:200]
+    print('#### LENGTH OF AGGREGATED DOCS ####', len(aggregated_results))
+    print('#### LENGTH OF IEEE DOCS ####', len(ieee_results))
+
+    print('#### LENGTH OF SCOPUS DOCS ####', len(scopus_results))
+
+    print('#### LENGTH OF ARXIV DOCS ####', len(arxiv_results))
+
 
     debug_log("aggregation done")
 
