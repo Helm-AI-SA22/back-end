@@ -1,33 +1,7 @@
 import requests
-from utils.constants import *
+from constants import *
 import json
-
-
-def remove_uncompleted_papers(list_papers):
-
-    with open("aggregation_features.json", "r") as f:
-        aggregated_features = json.load(f)
-
-    features = aggregated_features["scopus"]
-
-    return_list = list()
-
-    for paper in list_papers:
-        accepted_paper = True
-        
-        for feature in features:
-            if not feature in paper.keys():
-                accepted_paper = False
-                break
-            else: 
-                if paper[feature] is None:
-                    accepted_paper = False
-                    break
-
-        if accepted_paper:
-            return_list.append(paper)        
-
-    return return_list
+from utils.utils import remove_uncompleted_papers, error_log
 
 
 def clear_author(author_paper):
@@ -83,9 +57,10 @@ def make_scopus_request(keywords):
                 result += scopus_entries
 
     except Exception as e:
+        error_log("Scopus retrieving error")
         return []
     
     # clear features to make them consistent with other sources
     result = clear_features(result)
 
-    return remove_uncompleted_papers(result)
+    return remove_uncompleted_papers(result, "scopus")

@@ -1,38 +1,7 @@
 from utils.constants import *
 import requests
-import json
-from collections import defaultdict
 import xmltodict
-from functools import reduce
-import pandas as pd
-from utils.utils import info_log
-
-
-def remove_uncompleted_papers(list_papers):
-
-    with open("aggregation_features.json", "r") as f:
-        aggregated_features = json.load(f)
-
-    features = aggregated_features["arxiv"]
-
-    return_list = list()
-
-    for paper in list_papers:
-        accepted_paper = True
-
-        for feature in features:
-            if not feature in paper.keys():
-                accepted_paper = False
-                break
-            else: 
-                if paper[feature] is None:
-                    accepted_paper = False
-                    break
-
-        if accepted_paper:
-            return_list.append(paper)        
-
-    return return_list
+from utils.utils import remove_uncompleted_papers, error_log
     
 
 def clear_link(paper):
@@ -128,10 +97,9 @@ def make_arxiv_request(keywords):
 
         results = data_dict["feed"]["entry"]
     except:
+        error_log("Arxiv retrieving error")
         return []
 
     results = clear_features(results)
 
-    return remove_uncompleted_papers(results)
-
-    
+    return remove_uncompleted_papers(results, "arxiv")
