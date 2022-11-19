@@ -34,7 +34,9 @@ def process_ai_result(ai_result, list_papers):
         doi = doc["id"]
         list_papers = add_topic_paper(prune_topics(doc["topics"]), list_papers, doi)
 
-    return list_papers
+    ai_result["documents"] = list_papers
+
+    return ai_result
 
 
 def format_data_ai(list_papers, key_doi, key_abstract):
@@ -165,6 +167,8 @@ def process_rank_result(rank_result, list_papers, id_feature):
 def execute_aggregation_topic_modeling(keywords, topic_modeling):    
     ieee_results = make_ieee_request(keywords)
 
+    print(len(ieee_results))
+
     debug_log("ieee done")
 
     scopus_results = make_scopus_request(keywords)
@@ -172,6 +176,8 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
     debug_log("scopus done")
 
     arxiv_results = make_arxiv_request(keywords)
+
+    print(len(arxiv_results))
 
     debug_log("arxiv done")
 
@@ -189,6 +195,10 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
 
     debug_log("rank done")
 
+    ranked_papers = process_rank_result(rank_result, aggregated_results, AGGREGATION_FEATURES["aggregated_key"])
+
+    debug_log("processed rank results done")
+
     # call AI module
     data_to_ai = format_data_ai(aggregated_results, AGGREGATION_FEATURES["aggregated_key"], AGGREGATION_FEATURES["aggregated_abstract"])
 
@@ -198,12 +208,12 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
 
     debug_log("ai done")
 
-    processed_result = process_ai_result(ai_result, aggregated_results)
+    processed_result = process_ai_result(ai_result, ranked_papers)
 
     debug_log("processed ai results done")
 
-    processed_result = process_rank_result(rank_result, processed_result, AGGREGATION_FEATURES["aggregated_key"])
+    print(processed_result.keys())
 
-    debug_log("processed rank results done")
+    processed_result["documents"] = processed_result["documents"][:NUMBER_RETURN_PAPERS]
 
-    return {"documents" : processed_result[:NUMBER_RETURN_PAPERS]}
+    return processed_result
