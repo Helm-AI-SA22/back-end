@@ -52,9 +52,9 @@ def citation_filtering(data_df, crit):
 
 #FILTER FOR PREPRINT DOCUMENT
 # null = all documents
-# 0 = non preprint (only)
-# 1 = preprint only
-def preprint_filtering(data_df, crit):
+# 0 = arxiv (only)
+# 1 = non-arxiv only
+def arxiv_filtering(data_df, crit):
     if (crit == 1):
         data_df = data_df[data_df['citationCount'] == -1]
     else:
