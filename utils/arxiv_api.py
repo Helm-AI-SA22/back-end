@@ -78,7 +78,6 @@ def clear_authors(paper):
     return paper
 
 
-
 def clear_features(list_papers):
     for paper in list_papers:
         paper["citationCount"] = -1
