@@ -1,4 +1,3 @@
-import json
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 
@@ -7,8 +6,7 @@ from utils.ieee_api import make_ieee_request
 from utils.arxiv_api import make_arxiv_request
 from utils.utils import debug_log
 from utils.AI_request import make_post_request_to_AI
-from utils.ranking import rank
-from utils.constants import NUMBER_RETURN_PAPERS
+from constants import NUMBER_RETURN_PAPERS, AGGREGATION_FEATURES
 
 
 def add_topic_paper(topics, papers, doi):
@@ -85,18 +83,14 @@ def mapping_feature_names(results, start_features, end_features, source):
 
 
 def aggregator(ieee_results, scopus_results, arxiv_results):
-
-    with open("aggregation_features.json") as f:
-        aggregation_features = json.load(f)
-
-    ieee_transformed_results = mapping_feature_names(ieee_results, aggregation_features["ieee"], aggregation_features["aggregated"], "ieee")
-    scopus_transformed_results = mapping_feature_names(scopus_results, aggregation_features["scopus"], aggregation_features["aggregated"], "scopus")
-    arxiv_transformed_results = mapping_feature_names(arxiv_results, aggregation_features["arxiv"], aggregation_features["aggregated"], "arxiv")
+    ieee_transformed_results = mapping_feature_names(ieee_results, AGGREGATION_FEATURES["ieee"], AGGREGATION_FEATURES["aggregated"], "ieee")
+    scopus_transformed_results = mapping_feature_names(scopus_results, AGGREGATION_FEATURES["scopus"], AGGREGATION_FEATURES["aggregated"], "scopus")
+    arxiv_transformed_results = mapping_feature_names(arxiv_results, AGGREGATION_FEATURES["arxiv"], AGGREGATION_FEATURES["aggregated"], "arxiv")
 
     results = ieee_transformed_results + scopus_transformed_results + arxiv_transformed_results
 
     # remove duplicate
-    transformed_results = remove_duplicated(results, aggregation_features["aggregated_key"])
+    transformed_results = remove_duplicated(results, AGGREGATION_FEATURES["aggregated_key"])
 
     return transformed_results
 
@@ -168,10 +162,8 @@ def process_rank_result(rank_result, list_papers, id_feature):
     return list_papers
 
 
-def execute_aggregation_topic_modeling(keywords, topic_modeling):
-    
+def execute_aggregation_topic_modeling(keywords, topic_modeling):    
     ieee_results = make_ieee_request(keywords)
-
 
     debug_log("ieee done")
 
@@ -187,15 +179,9 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
     
     debug_log("aggregation done")
 
-    # take simple subset, to be fast
-    # aggregated_results = aggregated_results[:200]
-
-    with open("aggregation_features.json") as f:
-        aggregation_features = json.load(f)
-
     # apply filtering
     # apply ranking, parallelizable wrt call AI module
-    data_to_rank = format_data_rank(aggregated_results, aggregation_features["aggregated_key"], aggregation_features["aggregated_title"], aggregation_features["aggregated_abstract"])
+    data_to_rank = format_data_rank(aggregated_results, AGGREGATION_FEATURES["aggregated_key"], AGGREGATION_FEATURES["aggregated_title"], AGGREGATION_FEATURES["aggregated_abstract"])
 
     debug_log("formatted to rank done")
 
@@ -204,7 +190,7 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
     debug_log("rank done")
 
     # call AI module
-    data_to_ai = format_data_ai(aggregated_results, aggregation_features["aggregated_key"], aggregation_features["aggregated_abstract"])
+    data_to_ai = format_data_ai(aggregated_results, AGGREGATION_FEATURES["aggregated_key"], AGGREGATION_FEATURES["aggregated_abstract"])
 
     debug_log("formatted to ai done")
 
@@ -216,7 +202,7 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
 
     debug_log("processed ai results done")
 
-    processed_result = process_rank_result(rank_result, processed_result, aggregation_features["aggregated_key"])
+    processed_result = process_rank_result(rank_result, processed_result, AGGREGATION_FEATURES["aggregated_key"])
 
     debug_log("processed rank results done")
 

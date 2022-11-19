@@ -1,4 +1,4 @@
-from utils.constants import *
+from constants import *
 import requests
 from utils.utils import remove_uncompleted_papers, error_log
 

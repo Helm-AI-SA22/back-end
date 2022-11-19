@@ -1,5 +1,5 @@
 import requests
-from utils.constants import *
+from constants import *
 import json
 
 

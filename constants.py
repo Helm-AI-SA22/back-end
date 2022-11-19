@@ -24,3 +24,13 @@ SPACE_IEEE = "%20"
 QUOTES_IEEE = "%22"
 
 NUMBER_RETURN_PAPERS = 100
+
+AGGREGATION_FEATURES = {
+    "scopus": ["author", "dc:title", "prism:coverDate", "citedby-count", "prism:doi", "link", "dc:description", "openaccess"],
+    "ieee": ["authors", "title", "publication_date", "citing_paper_count", "doi", "pdf_url", "abstract", "access_type"],
+    "arxiv": ["author", "title", "published", "citationCount", "id", "link", "summary", "openaccess"],
+    "aggregated": ["authors", "title", "publicationDate", "citationCount", "id", "pdfLink", "abstract", "openaccess"],
+    "aggregated_key":  "id",
+    "aggregated_title":  "title",
+    "aggregated_abstract":  "abstract"
+}

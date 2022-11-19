@@ -1,4 +1,4 @@
-import json
+from constants import AGGREGATION_FEATURES
 import logging
 from flask_log_request_id import current_request_id
 
@@ -22,11 +22,7 @@ def warning_log(message):
 
 
 def remove_uncompleted_papers(list_papers, source):
-
-    with open("aggregation_features.json", "r") as f:
-        aggregated_features = json.load(f)
-
-    features = aggregated_features[source]
+    features = AGGREGATION_FEATURES[source]
 
     return_list = list()
 
