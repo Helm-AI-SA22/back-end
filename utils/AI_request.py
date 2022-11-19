@@ -1,10 +1,19 @@
 import requests
 from constants import *
 import json
+import os
 
 
 def make_post_request_to_AI(list_papers, type):
-    AI_response = requests.post(AI_URL + ':' + str(AI_PORT) + f"/{type}", json = {"documents" : list_papers})
+
+    if 'DEPLOY' in os.environ and os.environ['DEPLOY'].lower() == "true":
+        url = AI_URL_DEPLOY
+        port = AI_PORT_DEPLOY
+    else:
+        url = AI_URL
+        port = AI_PORT
+
+    AI_response = requests.post(url + ':' + str(port) + f"/{type}", json = {"documents" : list_papers})
 
     return AI_response.json()
 

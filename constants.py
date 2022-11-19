@@ -11,7 +11,7 @@ IEEE_HEADERS = 'apikey=' + IEEE_API_KEY
 ARXIV_SITE = "http://export.arxiv.org/api/query"
 ARXIV_MAX_RESULTS = 20
 
-AI_URL_DEPLOY = "helmai"
+AI_URL_DEPLOY = "http://helmai"
 AI_PORT_DEPLOY = 5000
 
 AI_URL = "http://172.17.0.3"
