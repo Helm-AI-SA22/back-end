@@ -50,7 +50,22 @@ def citation_filtering(data_df, crit):
 
     return data_df
 
+#FILTER FOR PREPRINT DOCUMENT
+# null = all documents
+# 0 = non preprint (only)
+# 1 = preprint only
+def preprint_filtering(data_df, crit):
+    if (crit == 1):
+        data_df = data_df[data_df['citationCount'] == -1]
+    else:
+        data_df = data_df[data_df['citationCount'] >= -1]
 
+    return data_df
+
+#Take documents with 'openaccess' = 'availability' (null for both)
+#   null = all documents
+#   0 = free access (only)
+#   1 = pay access (only)
 def availability_filtering(data_df, flag):
     data_df = data_df[data_df['openaccess'] == flag]
     return data_df
@@ -61,7 +76,8 @@ filtering_functions = {
     "date": date_filtering,
     "author": author_filtering,
     "citationCount": citation_filtering,
-    "availability": availability_filtering
+    "availability": availability_filtering,
+    "preprint": preprint_filtering
 }
 
 
@@ -71,11 +87,12 @@ def filtering(data_dict):
     # convert data_dict[ "documents" ] to dataframe
     data_df = pd.DataFrame(data_dict["documents"])
 
-    print(data_df.info())
+    # print(data_df.info())
     
     for key in criteria:
-        print(f"key: {key}; criteria: {criteria[key]}")
-        data_df = filtering_functions[key](data_df, criteria[key])
+        # print(f"key: {key}; criteria: {criteria[key]}")
+        if (criteria[key] is not None):
+            data_df = filtering_functions[key](data_df, criteria[key])
     
     # convert data_df to dictionary
     documents = data_df.to_dict(orient='records')
