@@ -74,7 +74,7 @@ def availability_filtering(data_df, flag):
 filtering_functions = {
     "topic": topic_filtering,
     "date": date_filtering,
-    "author": author_filtering,
+    "authors": author_filtering,
     "citationCount": citation_filtering,
     "availability": availability_filtering,
     "arxiv": arxiv_filtering
