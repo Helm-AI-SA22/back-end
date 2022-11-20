@@ -171,7 +171,7 @@ def process_rank_result(rank_result, list_papers, id_feature):
     # apply tf-idf to the list of papers and sort them
     list_papers.sort(key=lambda paper : paper["tfidf"], reverse=True)
 
-    return list_papers
+    return max(rank_result.values()), list_papers
 
 
 def execute_aggregation_topic_modeling(keywords, topic_modeling):    
@@ -201,7 +201,7 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
 
     debug_log("rank done")
 
-    ranked_papers = process_rank_result(rank_result, aggregated_results, AGGREGATION_FEATURES["aggregated_key"])
+    max_tfidf, ranked_papers = process_rank_result(rank_result, aggregated_results, AGGREGATION_FEATURES["aggregated_key"])
 
     debug_log("processed rank results done")
 
@@ -219,5 +219,6 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
     debug_log("processed ai results done")
 
     processed_result["documents"] = processed_result["documents"][:NUMBER_RETURN_PAPERS]
+    processed_result["max_tfidf"] = max_tfidf
 
     return processed_result
