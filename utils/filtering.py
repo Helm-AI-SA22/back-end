@@ -77,7 +77,7 @@ filtering_functions = {
     "author": author_filtering,
     "citationCount": citation_filtering,
     "availability": availability_filtering,
-    "preprint": preprint_filtering
+    "arxiv": arxiv_filtering
 }
 
 
