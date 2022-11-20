@@ -284,26 +284,28 @@ class RankRequest(Resource):
 
     def get(self):
 
-        sort_key = request.args["sort_key"]
+        criteria = request.args["criteria"]
+        ascending = request.args["ascending"]
 
-        debug_log(f"starting mock sorting request type : {sort_key}")
+        debug_log(f"starting mock sorting request type : {criteria}")
 
         with open('mocks/fast_be_fe.json', "r") as json_file:
             data = json.load(json_file)
 
         documents_list = data["documents"]
-        return {"documents": rank(documents_list, sort_key)}
+        return {"documents": rank(documents_list, criteria, ascending)}
 
     def post(self):
 
         data = request.get_json()
 
-        sort_key = data["sort_key"]
+        criteria = data["criteria"]
+        ascending = data["ascending"]
 
-        debug_log(f"starting sorting request type : {sort_key}")
+        debug_log(f"starting sorting request type : {criteria}")
 
         documents_list = data["documents"]
-        return {"documents": rank(documents_list, sort_key)}
+        return {"documents": rank(documents_list, criteria, ascending)}
     
 def mock_retrieving(topic_modeling):
     if topic_modeling == "slow":
