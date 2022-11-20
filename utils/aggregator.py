@@ -218,8 +218,6 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
 
     debug_log("processed ai results done")
 
-    print(processed_result.keys())
-
     processed_result["documents"] = processed_result["documents"][:NUMBER_RETURN_PAPERS]
 
     return processed_result
