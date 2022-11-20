@@ -6,7 +6,8 @@ SCOPUS_MAX_COUNT = 25
 SCOPUS_HEADERS = 'apiKey=' + SCOPUS_API_KEY + '&httpAccept=application/json&view=COMPLETE' + '&count=' + str(SCOPUS_COUNT)
 
 IEEE_SITE = 'https://ieeexploreapi.ieee.org/api/v1/search/articles'
-IEEE_HEADERS = 'apikey=' + IEEE_API_KEY
+IEEE_MAX_RECORDS = 200
+IEEE_HEADERS = 'apikey=' + IEEE_API_KEY + "&max_records=" + str(IEEE_MAX_RECORDS)
 
 ARXIV_SITE = "http://export.arxiv.org/api/query"
 ARXIV_MAX_RESULTS = 2000

@@ -167,8 +167,6 @@ def process_rank_result(rank_result, list_papers, id_feature):
 def execute_aggregation_topic_modeling(keywords, topic_modeling):    
     ieee_results = make_ieee_request(keywords)
 
-    print(len(ieee_results))
-
     debug_log("ieee done")
 
     scopus_results = make_scopus_request(keywords)
@@ -176,8 +174,6 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
     debug_log("scopus done")
 
     arxiv_results = make_arxiv_request(keywords)
-
-    print(len(arxiv_results))
 
     debug_log("arxiv done")
 
