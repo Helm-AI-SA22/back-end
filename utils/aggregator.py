@@ -157,9 +157,19 @@ def apply_query_rank(papers, keywords):
     return return_dict
 
 
+def attach_tfidf_papers(rank_result, list_papers, id_feature):
+    for paper in list_papers:
+        paper["tfidf"] = rank_result[paper[id_feature]]
+
+    return list_papers
+
+
 def process_rank_result(rank_result, list_papers, id_feature):
+
+    list_papers = attach_tfidf_papers(rank_result, list_papers, id_feature)
+
     # apply tf-idf to the list of papers and sort them
-    list_papers.sort(key=lambda paper : rank_result[paper[id_feature]], reverse=True)
+    list_papers.sort(key=lambda paper : paper["tfidf"], reverse=True)
 
     return list_papers
 
