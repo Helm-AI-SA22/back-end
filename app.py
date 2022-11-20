@@ -72,7 +72,7 @@ class RankRequest(Resource):
             data = json.load(json_file)
 
         documents_list = data["documents"]
-        return jsonify({"documents": rank(documents_list, sort_key)})
+        return jsonify({"documents": rank(documents_list, criteria, ascending)})
 
     def post(self):
 
