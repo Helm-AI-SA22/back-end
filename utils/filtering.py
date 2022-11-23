@@ -35,10 +35,11 @@ def date_filtering(data_df, crit):
 
 def author_filtering(data_df, crit):
     # drop rows of data_df where crit_string is not in data_df['authors']
+    data_df['authors']=data_df['authors'].str.lower()
     for author in crit:
         print(author)
-        data_df = data_df[data_df['authors'].str.contains(author)]
-    
+        data_df = data_df[data_df['authors'].str.contains(author.lower())]
+    data_df['authors']=data_df['authors'].str.title()
     return data_df
 
 
