@@ -179,7 +179,7 @@ def remove_excluded_topics(processed_result):
     for doc in processed_result["documents"]:
         for topic in doc["topics"]:
             selected_topics.add(topic["id"])
-    processed_result["topics"] = list(filter(lambda topic: topic["id"] in selected_topics), processed_result["topics"])
+    processed_result["topics"] = list(filter(lambda topic: topic["id"] in selected_topics, processed_result["topics"]))
 
 def execute_aggregation_topic_modeling(keywords, topic_modeling):    
     ieee_results = make_ieee_request(keywords)
