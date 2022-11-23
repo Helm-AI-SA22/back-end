@@ -68,7 +68,7 @@ class RankRequest(Resource):
 
         debug_log(f"starting mock sorting request type : {criteria}")
 
-        with open('mocks/fast_be_fe.json', "r") as json_file:
+        with open('mocks/aggregated_fast.json', "r") as json_file:
             data = json.load(json_file)
 
         documents_list = data["documents"]
@@ -90,14 +90,14 @@ class RankRequest(Resource):
 def mock_retrieving(topic_modeling):
     if topic_modeling == "slow":
 
-        with open('mocks/slow_be_fe.json', "r") as json_file:
+        with open('mocks/aggregated_slow.json', "r") as json_file:
             data = json.load(json_file)
 
         debug_log("retrieved slow mock data")
 
     elif topic_modeling == "fast":
 
-        with open('mocks/fast_be_fe.json', "r") as json_file:
+        with open('mocks/aggregated_fast.json', "r") as json_file:
             data = json.load(json_file)
 
         debug_log("retrieved fast mock data")
