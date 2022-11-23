@@ -173,6 +173,13 @@ def process_rank_result(rank_result, list_papers, id_feature):
 
     return max(rank_result.values()), list_papers
 
+def remove_excluded_topics(processed_result):
+
+    selected_topics = set()
+    for doc in processed_result["documents"]:
+        for topic in doc["topics"]:
+            selected_topics.add(topic["id"])
+    processed_result["topics"] = list(filter(lambda topic: topic["id"] in selected_topics), processed_result["topics"])
 
 def execute_aggregation_topic_modeling(keywords, topic_modeling):    
     ieee_results = make_ieee_request(keywords)
@@ -219,6 +226,7 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
     debug_log("processed ai results done")
 
     processed_result["documents"] = processed_result["documents"][:NUMBER_RETURN_PAPERS]
+    remove_excluded_topics(processed_result)
     processed_result["max_tfidf"] = max_tfidf
 
     return processed_result
