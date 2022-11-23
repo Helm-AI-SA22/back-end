@@ -1,4 +1,5 @@
 import numpy as np
+from flask import abort
 from sklearn.feature_extraction.text import TfidfVectorizer
 from utils.scopus_api import make_scopus_request
 from utils.ieee_api import make_ieee_request
@@ -200,12 +201,11 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
     scopus_results = thread_scopus.result
     arxiv_results = thread_arxiv.result
 
-    debug_log(thread_ieee.is_alive())
-
     debug_log("requests done")
 
     aggregated_results = aggregator(ieee_results, scopus_results, arxiv_results)
-    
+    if not aggregated_results:
+        abort(404)
     debug_log("aggregation done")
 
     # apply filtering
