@@ -1,6 +1,5 @@
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
-
 from utils.scopus_api import make_scopus_request
 from utils.ieee_api import make_ieee_request
 from utils.arxiv_api import make_arxiv_request
@@ -8,6 +7,7 @@ from utils.utils import debug_log
 from utils.AI_request import make_post_request_to_AI
 from constants import NUMBER_RETURN_PAPERS, AGGREGATION_FEATURES
 
+from save_thread_result import ThreadWithResult
 
 def add_topic_paper(topics, papers, doi):
     for paper in papers:
@@ -85,10 +85,11 @@ def mapping_feature_names(results, start_features, end_features, source):
 
 
 def aggregator(ieee_results, scopus_results, arxiv_results):
+
     ieee_transformed_results = mapping_feature_names(ieee_results, AGGREGATION_FEATURES["ieee"], AGGREGATION_FEATURES["aggregated"], "ieee")
     scopus_transformed_results = mapping_feature_names(scopus_results, AGGREGATION_FEATURES["scopus"], AGGREGATION_FEATURES["aggregated"], "scopus")
     arxiv_transformed_results = mapping_feature_names(arxiv_results, AGGREGATION_FEATURES["arxiv"], AGGREGATION_FEATURES["aggregated"], "arxiv")
-
+   
     results = ieee_transformed_results + scopus_transformed_results + arxiv_transformed_results
 
     # remove duplicate
@@ -174,18 +175,27 @@ def process_rank_result(rank_result, list_papers, id_feature):
     return max(rank_result.values()), list_papers
 
 
-def execute_aggregation_topic_modeling(keywords, topic_modeling):    
-    ieee_results = make_ieee_request(keywords)
+def execute_aggregation_topic_modeling(keywords, topic_modeling):      
 
-    debug_log("ieee done")
+    thread_ieee = ThreadWithResult(target=make_ieee_request, args=(keywords))
+    thread_scopus = ThreadWithResult(target=make_scopus_request, args=(keywords))
+    thread_arxiv = ThreadWithResult(target=make_arxiv_request, args=(keywords))
+    
+    thread_ieee.start()
+    thread_scopus.start()
+    thread_arxiv.start()
 
-    scopus_results = make_scopus_request(keywords)
+    thread_ieee.join()
+    thread_scopus.join()
+    thread_arxiv.join()
 
-    debug_log("scopus done")
+    ieee_results = thread_ieee.result
+    scopus_results = thread_scopus.result
+    arxiv_results = thread_arxiv.result
 
-    arxiv_results = make_arxiv_request(keywords)
+    debug_log(thread_ieee.is_alive())
 
-    debug_log("arxiv done")
+    debug_log("requests done")
 
     aggregated_results = aggregator(ieee_results, scopus_results, arxiv_results)
     
