@@ -185,9 +185,9 @@ def remove_excluded_topics(processed_result):
 
 def execute_aggregation_topic_modeling(keywords, topic_modeling):      
 
-    thread_ieee = ThreadWithResult(target=make_ieee_request, args=(keywords))
-    thread_scopus = ThreadWithResult(target=make_scopus_request, args=(keywords))
-    thread_arxiv = ThreadWithResult(target=make_arxiv_request, args=(keywords))
+    thread_ieee = ThreadWithResult(target=make_ieee_request, args=[keywords])
+    thread_scopus = ThreadWithResult(target=make_scopus_request, args=[keywords])
+    thread_arxiv = ThreadWithResult(target=make_arxiv_request, args=[keywords])
     
     thread_ieee.start()
     thread_scopus.start()
