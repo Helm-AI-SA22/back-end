@@ -227,7 +227,7 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
 
     debug_log("formatted to ai done")
 
-    ai_result = make_post_request_to_AI(data_to_ai, topic_modeling)
+    ai_result = make_post_request_to_AI(keywords, data_to_ai, topic_modeling)
 
     debug_log("ai done")
 
