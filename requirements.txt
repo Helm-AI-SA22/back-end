@@ -8,3 +8,4 @@ xmltodict
 scikit-learn
 numpy
 save-thread-result
+doi2bib
