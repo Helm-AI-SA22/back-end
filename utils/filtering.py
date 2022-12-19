@@ -83,7 +83,7 @@ filtering_functions = {
     "citationCount": citation_filtering,
     "availability": availability_filtering,
     "arxiv": arxiv_filtering,
-    "source": source_filtering
+    "sources": source_filtering
 }
 
 

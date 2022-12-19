@@ -176,11 +176,7 @@ def process_rank_result(rank_result, list_papers, id_feature):
     return max(rank_result.values()), list_papers
 
 def find_all_sources(processed_results):
-    result = {source for doc in processed_results["documents"] for source in doc["source"]}
-    arr_result = []
-    for i, source in enumerate(result):
-        source_idx = {"id":i, "name":source}
-        arr_result.append(source_idx)
+    arr_result = list({source for doc in processed_results["documents"] for source in doc["source"]})
     print(arr_result)
     return arr_result
 
