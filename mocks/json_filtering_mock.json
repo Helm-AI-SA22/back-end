@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "topic": [0,1],
+        "topic": {"mode": 1, "topics": [0,1]},
         "availability": 0,
         "citationCount": {"min": 2, "max": 100},
         "date": {"min": 2018, "max": 2022},
@@ -9,62 +9,271 @@
     
     "documents": [
         {
-            "abstract": "Nowadays, it is a challenging task of recognizing the emotions, gender, and age of a person at the same time. Researchers are working hard to develop techniques and code to extract features from faces. Different types of architecture are already exploited using deep learning to get better outcomes. The main goal of this research is to identify the emotions, gender, and age of children, men, women, and common gender of different ages together which gives better results than the current systems. In this research, we proposed a methodology using SURF and BRISK and Modified Convolutional Neural Network (M-CNN) model to extract features where classification is followed by a Multi-support Vector Machine (M-SVM). In our prediction part, we use the head detection technique instead of face detection to get a better outcome. We created a features dataset that will match the features of the test image and will detect the head from the test image. We created three datasets named Face Emotion Recognition (FER-2022) dataset, Gender Recognition (GR-2022) dataset and Age Recognition (AR-2022) dataset respectively which applied to evaluate the perfection of the proposed system. Where the accuracy of classification of emotion, gender and age are 95.45% 99.25% and 95.69% respectively.",
-            "authors": "Juel Sikder;Nippon Datta;Sajib Tripura;Utpol Kanti Das",
-            "citationCount": 0,
-            "id": "10.1109/ICECET55527.2022.9872771",
-            "openaccess": 0,
-            "pdfLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9872771",
-            "publicationDate": "20-22 July 2022",
-            "title": "Emotion, Age and Gender Recognition using SURF, BRISK, M-SVM and Modified CNN",
-            "topics": [
-                {
-                    "affinity": 0.9935797452926636,
-                    "id": 0
-                },
-                {
-                    "affinity": 0.006420282647013664,
-                    "id": 1
-                }
-            ]
-        },
-        {
-            "abstract": "Describes an analogue hardware implementation of a programmable full-range CNN. The used technology is the MIETEC 0.5 /spl mu/m CMOS process. The most important building blocks in each cell are its multipliers and an integrator with a hard-limited output. For the multipliers it is shown that the application of 2-quadrant types suffices, without loss of generality of the resulting network. As the number of multipliers per cell can be quite large, this means an important reduction of the circuit complexity. The integrator is implemented as a single capacitor. Hard-limiting is incorporated by a small clamper circuit. The resulting low-power and low-voltage circuit stands out for its low number of components and dense implementation. Its usefulness is illustrated with simulation results of this CNN used as a connected component detector.",
-            "authors": "J.A. Hegt;D.M.W. Leenaerts;R.T. Wilmans",
-            "citationCount": 6,
-            "id": "10.1109/CNNA.1998.685389",
+            "abstract": "In recent years, deep learning poses a deep technical revolution in almost every field and attracts great attentions from industry and academia. Especially, the convolutional neural network (CNN), one representative model of deep learning, achieves great successes in computer vision and natural language processing. However, simply or blindly applying CNN to the other fields results in lower training effects or makes it quite difficult to adjust the model parameters. In this poster, we propose a general methodology named V-CNN by introducing data visualizing for CNN. V-CNN introduces a data visualization model prior to CNN modeling to make sure the data after processing is fit for the features of images as well as CNN modeling. We apply V-CNN to the network intrusion detection problem based on a famous practical dataset: AWID. Simulation results confirm V-CNN significantly outperforms other studies and the recall rate of each invasion category is more than 99.8%.",
+            "authors": "Mao Yang;Bo Li;Guanxiong Feng;Zhongjiang Yan",
+            "citationCount": -1,
+            "id": "http://arxiv.org/abs/1807.02164v1",
             "openaccess": 1,
-            "pdfLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=685389",
-            "publicationDate": "14-17 April 1998",
-            "title": "A novel compact architecture for a programmable full-range CNN in 0.5 /spl mu/m CMOS technology",
+            "pdfLink": "http://arxiv.org/pdf/1807.02164v1",
+            "publicationDate": "2018-06-12T10:57:57Z",
+            "source": [
+                "arxiv"
+            ],
+            "tfidf": 0.23256704435701123,
+            "title": "V-CNN: When Convolutional Neural Network encounters Data Visualization",
             "topics": [
                 {
-                    "affinity": 0.0075553832575678825,
+                    "affinity": 0.17752324044704437,
                     "id": 0
                 },
                 {
-                    "affinity": 0.992444634437561,
+                    "affinity": 0.8182066082954407,
+                    "id": 2
+                }
+            ]
+        },
+        {
+            "abstract": "Hyperspectral remote sensing plays role in the field of earth observation research because of rich spatial, radiation and spectral information. With the rapid development of deep learning, deep neural networks are widely used in hyperspectral remote sensing image classification tasks, but at the same time, a series of difficulties have arisen, such as high demand for training samples, time-consuming model training. Convolutional neural network (CNN) is well known for its capability of feature learning and has demonstrated excellent performance in hyperspectral image classification. In this paper, the one-dimension CNN (1D-CNN) modules was added after the two-dimension CNN (2D-CNN), so the complete network structure contains two different dimension CNN, called multi-dimension CNN (MD-CNN). The proposed 1D-CNN blocks can continue to learn contextual features and is expected to have more discriminative power. Experimental results with hyperspectral image benchmark datasets demonstrate that the proposed method can outperform the state-of-the-art CNN-based classification methods.",
+            "authors": "Haojie Cai;Tao Chen",
+            "citationCount": 1,
+            "id": "10.1109/IGARSS39084.2020.9323561",
+            "openaccess": 0,
+            "pdfLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9323561",
+            "publicationDate": "26 Sept.-2 Oct. 2020",
+            "source": [
+                "ieee"
+            ],
+            "tfidf": 0.2249825317521736,
+            "title": "Multi-Dimension CNN for Hyperspectral Image Classificaton",
+            "topics": [
+                {
+                    "affinity": 0.4710131883621216,
+                    "id": 0
+                },
+                {
+                    "affinity": 0.5251523852348328,
+                    "id": 2
+                }
+            ]
+        },
+        {
+            "abstract": "Deep Convolutional Neural Networks (CNN) have exhibited superior performance in many visual recognition tasks including image classification, object detection, and scene label- ing, due to their large learning capacity and resistance to overfit. For the image classification task, most of the current deep CNN- based approaches take the whole size-normalized image as input and have achieved quite promising results. Compared with the previously dominating approaches based on feature extraction, pooling, and classification, the deep CNN-based approaches mainly rely on the learning capability of deep CNN to achieve superior results: the burden of minimizing intra-class variation while maximizing inter-class difference is entirely dependent on the implicit feature learning component of deep CNN; we rely upon the implicitly learned filters and pooling component to select the discriminative regions, which correspond to the activated neurons. However, if the irrelevant regions constitute a large portion of the image of interest, the classification performance of the deep CNN, which takes the whole image as input, can be heavily affected. To solve this issue, we propose a novel latent CNN framework, which treats the most discriminate region as a latent variable. We can jointly learn the global CNN with the latent CNN to avoid the aforementioned big irrelevant region issue, and our experimental results show the evident advantage of the proposed latent CNN over traditional deep CNN: latent CNN outperforms the state-of-the-art performance of deep CNN on standard benchmark datasets including the CIFAR-10, CIFAR- 100, MNIST and PASCAL VOC 2007 Classification dataset.",
+            "authors": "Miao Sun;Tony X. Han;Xun Xu;Ming-Chang Liu;Ahmad Khodayari-Rostamabad",
+            "citationCount": -1,
+            "id": "http://arxiv.org/abs/1604.04333v2",
+            "openaccess": 1,
+            "pdfLink": "http://arxiv.org/pdf/1604.04333v2",
+            "publicationDate": "2016-04-15T02:07:42Z",
+            "source": [
+                "arxiv"
+            ],
+            "tfidf": 0.20687995550141433,
+            "title": "Latent Model Ensemble with Auto-localization",
+            "topics": [
+                {
+                    "affinity": 0.5589706301689148,
+                    "id": 0
+                },
+                {
+                    "affinity": 0.43851685523986816,
+                    "id": 2
+                }
+            ]
+        },
+        {
+            "abstract": "In this paper, we present the result of sparsity increase by CNN compression on 6 representative CNN networks including a famous localization CNN network VGG16-SSD-300. We will also show activation analysis result by applying the compressed CNN networks to a CNN HW accelerator model. Finally, this paper will be ended up with processing time estimation result of the CNN HW accelerator model which reflects the reduced transmission time of sparse weights.",
+            "authors": "Mi-Young Lee;Joo-Hyun Lee;Jin-Kyu Kim;Byung-Jo Kim;Ju-Yeob Kim",
+            "citationCount": 5,
+            "id": "10.1109/ISOCC47750.2019.9027643",
+            "openaccess": 0,
+            "pdfLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9027643",
+            "publicationDate": "6-9 Oct. 2019",
+            "source": [
+                "ieee"
+            ],
+            "tfidf": 0.20624370631916503,
+            "title": "The Sparsity and Activation Analysis of Compressed CNN Networks in a HW CNN Accelerator Model",
+            "topics": [
+                {
+                    "affinity": 0.9803771376609802,
+                    "id": 2
+                }
+            ]
+        },
+        {
+            "abstract": "In recent years, convolutional neural network (CNN) has made a breakthrough development and been widely used in various fields, such as image recognition, target classification and natural language processing. However, with the continuous development of CNN, the complexity of CNN is gradually increasing. The ordinary hardware processors cannot meet the speed requirements of CNN. The hardware platform about CNN based on FPGA has gradually become the focus of research because of its parallel computing advantages. However, it is difficult and not friendly to implement CNN on FPGA for software developers. In this paper, we propose a FPGA-Cloud architecture for CNN. We implement CNN platform based on FPGA, and deploy the platform in the cloud. CNN resources based on FPGA can be utilized by local users through the network, which is language-friendly for software developers in hardware development and satisfies the user's requirement for CNN processing task.",
+            "authors": "Guangju Wei;Yanzhao Hou;Zhao Zhao;Qimei Cui;Gang Deng;Xiaofeng Tao",
+            "citationCount": 3,
+            "id": "10.1109/APCC.2018.8633447",
+            "openaccess": 0,
+            "pdfLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8633447",
+            "publicationDate": "12-14 Nov. 2018",
+            "source": [
+                "ieee"
+            ],
+            "tfidf": 0.19211028951644238,
+            "title": "Demo: FPGA-Cloud Architecture For CNN",
+            "topics": [
+                {
+                    "affinity": 0.2717796862125397,
+                    "id": 0
+                },
+                {
+                    "affinity": 0.7233000993728638,
                     "id": 1
                 }
             ]
         },
         {
-            "abstract": "Identification of brain tumors at an early stage is crucial in cancer diagnosis, as a timely diagnosis can increase the chances of survival. Considering the challenges of tumor biopsies, three dimensional (3D) Magnetic Resonance Imaging (MRI) are extensively used in analyzing brain tumors using deep learning. In this study, three BraTS datasets are employed to classify brain tumor into two classes where each of the datasets contains four 3D MRI sequences for a single patient. This research is composed of two approaches. In the first part, we propose a hybrid model named TimeDistributed-CNN-LSTM (TD- CNN-LSTM) combining 3D Convolutional Neural Network (CNN) and Long Short Term Memory (LSTM) where each layer is wrapped with a TimeDistributed function. The objective is to consider all the four MRI sequences of each patient as a single input data because every sequence contains necessary information of tumor. Therefore, the model is developed with optimal configuration performing ablation study for layer architecture and hyper-parameters. In the second part, a 3D CNN model is trained respectively with each of the MRI sequences to compare the performance. Moreover, the datasets are preprocessed to ensure highest performance. Results demonstrate that the TD-CNN-LSTM network outperforms 3D CNN achieving the highest test accuracy of 98.90%. Later, to evaluate the performance consistency, the TD-CNN-LSTM model is evaluated with K-fold cross validation. The approach of putting together all the MRI sequences at a time with good generalization capability can be used in future medical research which can aid radiologists in tumor diagnostics effectively.",
-            "authors": "Sidratul Montaha;Sami Azam;A. K. M. Rakibul Haque Rafid;Md. Zahid Hasan;Asif Karim;Ashraful Islam",
-            "citationCount": 8,
-            "id": "10.1109/ACCESS.2022.3179577",
+            "abstract": "With the rapid development of deep learning technology, CNN and LSTM have become two of the most popular neural networks. This paper combines CNN and LSTM or its variant and makes a slight change. It proposes a text classification model named NA-CNN-LSTM or NA-CNN-COIF-LSTM, which has no activation function in CNN. The experimental results on the subjective and objective text categorization dataset [1] show that the proposed model has better performance than the standard CNN or LSTM.",
+            "authors": "Yuandong Luan;Shaofu Lin",
+            "citationCount": 27,
+            "id": "10.1109/ICAICA.2019.8873454",
             "openaccess": 0,
-            "pdfLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9786658",
-            "publicationDate": "2022",
-            "title": "TimeDistributed-CNN-LSTM: A Hybrid Approach Combining CNN and LSTM to Classify Brain Tumor on 3D MRI Scans Performing Ablation Study",
+            "pdfLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8873454",
+            "publicationDate": "29-31 March 2019",
+            "source": [
+                "ieee"
+            ],
+            "tfidf": 0.18899070687828898,
+            "title": "Research on Text Classification Based on CNN and LSTM",
             "topics": [
                 {
-                    "affinity": 0.9961712956428528,
+                    "affinity": 0.9838643670082092,
+                    "id": 0
+                }
+            ]
+        },
+        {
+            "abstract": "We present O-CNN, an Octree-based Convolutional Neural Network (CNN) for 3D shape analysis. Built upon the octree representation of 3D shapes, our method takes the average normal vectors of a 3D model sampled in the finest leaf octants as input and performs 3D CNN operations on the octants occupied by the 3D shape surface. We design a novel octree data structure to efficiently store the octant information and CNN features into the graphics memory and execute the entire O-CNN training and evaluation on the GPU. O-CNN supports various CNN structures and works for 3D shapes in different representations. By restraining the computations on the octants occupied by 3D surfaces, the memory and computational costs of the O-CNN grow quadratically as the depth of the octree increases, which makes the 3D CNN feasible for high-resolution 3D models. We compare the performance of the O-CNN with other existing 3D CNN solutions and demonstrate the efficiency and efficacy of O-CNN in three shape analysis tasks, including object classification, shape retrieval, and shape segmentation.",
+            "authors": "Peng-Shuai Wang;Yang Liu;Yu-Xiao Guo;Chun-Yu Sun;Xin Tong",
+            "citationCount": -1,
+            "id": "10.1145/3072959.3073608",
+            "openaccess": 1,
+            "pdfLink": "http://arxiv.org/pdf/1712.01537v1",
+            "publicationDate": "2017-12-05T09:25:19Z",
+            "source": [
+                "arxiv"
+            ],
+            "tfidf": 0.18183423190987502,
+            "title": "O-CNN: Octree-based Convolutional Neural Networks for 3D Shape Analysis",
+            "topics": [
+                {
+                    "affinity": 0.9781863689422607,
+                    "id": 2
+                }
+            ]
+        },
+        {
+            "abstract": "Convolutional Neural Network (CNN) give an unmatched performance in image classification, object detection and object tracking. As many of the modern embedded systems for portable devices deals with similar tasks, they often deploy CNN based algorithms. The intensive computational workload associated with CNN inference demands powerful computing platforms like Graphics Processing Units. However, deploying CNN on mobile devices demands low power, application specific computing platforms like Field-Programmable Gate Array (FPGA) and Application-Specific Integrated Circuit (ASIC) which can work as computation accelerator units. Moreover, using certain algorithmic optimizations like using Depthwise Separable Convolution instead of standard convolution, significantly reduces the computational burden of CNN inference. This paper discusses a pipelined architecture of Depthwise Separable Convolution followed by activation and pooling operations for a single layer of CNN. The architecture is implemented on Xilinx 7 series FPGA and works at a clock period of 40ns. It can be used as a building block for an integrated system of CNN accelerator for implementation on FPGAs of different sizes. This work focuses on speeding up the convolution process, instead of implementing large design of an integrated system of CNN accelerator which makes it difficult to focus on performance of the subsystems. To the best of the knowledge of the authors, earlier works have implemented an integrated system of CNN accelerator but the blueprint for architecture of a single layer of CNN is not discussed individually, which can be a great support for the beginners in understanding FPGA based computing accelerators for CNN.",
+            "authors": "Harsh Srivastava;Kishor Sarawadekar",
+            "citationCount": 3,
+            "id": "10.1109/ASPCON49795.2020.9276672",
+            "openaccess": 0,
+            "pdfLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9276672",
+            "publicationDate": "7-9 Oct. 2020",
+            "source": [
+                "ieee"
+            ],
+            "tfidf": 0.18145568481012792,
+            "title": "A Depthwise Separable Convolution Architecture for CNN Accelerator",
+            "topics": [
+                {
+                    "affinity": 0.10285790264606476,
                     "id": 0
                 },
                 {
-                    "affinity": 0.0038287630304694176,
+                    "affinity": 0.22056636214256287,
                     "id": 1
+                },
+                {
+                    "affinity": 0.6765757203102112,
+                    "id": 2
+                }
+            ]
+        },
+        {
+            "abstract": "Convolutional neural network (CNN) models have been widely used for fault diagnosis of complex systems. However, traditional CNN models rely on small kernel filters to obtain local features from images. Thus, an excessively deep CNN is required to capture global features, which are critical for fault diagnosis of dynamical systems. In this work, we present an improved CNN that embeds global features (GF-CNN). Our method uses a multi-layer perceptron (MLP) for dimension reduction to directly extract global features and integrate them into the CNN. The advantage of this method is that both local and global patterns in images can be captured by a simple model architecture instead of establishing deep CNN models. The proposed method is applied to the fault diagnosis of the Tennessee Eastman process. Simulation results show that the GF-CNN can significantly improve the fault diagnosis performance compared to traditional CNN. The proposed method can also be applied to other areas such as computer vision and image processing.",
+            "authors": "Qiugang Lu;Saif S. S. Al-Wahaibi",
+            "citationCount": -1,
+            "id": "http://arxiv.org/abs/2210.01727v1",
+            "openaccess": 1,
+            "pdfLink": "http://arxiv.org/pdf/2210.01727v1",
+            "publicationDate": "2022-10-04T16:31:21Z",
+            "source": [
+                "arxiv"
+            ],
+            "tfidf": 0.18083222574200727,
+            "title": "Enhanced CNN with Global Features for Fault Diagnosis of Complex   Chemical Processes",
+            "topics": [
+                {
+                    "affinity": 0.6079731583595276,
+                    "id": 0
+                },
+                {
+                    "affinity": 0.38794636726379395,
+                    "id": 2
+                }
+            ]
+        },
+        {
+            "abstract": "For millimeter wave (mmWave) massive multiple-input multiple-output (MIMO) systems, hybrid processing architecture is usually used to reduce the complexity and cost, which poses a very challenging issue in channel estimation. In this paper, deep convolutional neural network (CNN) is employed to address this problem. We first propose a spatial-frequency CNN (SF-CNN) based channel estimation exploiting both the spatial and frequency correlation, where the corrupted channel matrices at adjacent subcarriers are input into the CNN simultaneously. Then, exploiting the temporal correlation in time-varying channels, a spatial-frequency-temporal CNN (SFT-CNN) based approach is developed to further improve the accuracy. Moreover, we design a spatial pilot-reduced CNN (SPR-CNN) to save spatial pilot overhead for channel estimation, where channels in several successive coherence intervals are grouped and estimated by a channel estimation unit with memory. Numerical results show that the proposed SF-CNN and SFT-CNN based approaches outperform the non-ideal minimum mean-squared error (MMSE) estimator but with reduced complexity, and achieve the performance close to the ideal MMSE estimator that is very difficult to be implemented in practical situations. They are also robust to different propagation scenarios. The SPR-CNN based approach achieves comparable performance to SF-CNN and SFT-CNN based approaches while only requires about one-third of spatial pilot overhead at the cost of complexity. The results in this paper clearly demonstrate that deep CNN can efficiently exploit channel correlation to improve the estimation performance for mmWave massive MIMO systems.",
+            "authors": "Peihao Dong;Hua Zhang;Geoffrey Ye Li;Ivan Sim\u00f5es Gaspar;Navid NaderiAlizadeh",
+            "citationCount": 112,
+            "id": "10.1109/JSTSP.2019.2925975",
+            "openaccess": 0,
+            "pdfLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8752012",
+            "publicationDate": "Sept. 2019",
+            "source": [
+                "ieee",
+                "arxiv"
+            ],
+            "tfidf": 0.18053579629091496,
+            "title": "Deep CNN-Based Channel Estimation for mmWave Massive MIMO Systems",
+            "topics": [
+                {
+                    "affinity": 0.9949624538421631,
+                    "id": 2
+                }
+            ]
+        },
+        {
+            "abstract": "Faster R-CNN (R corresponds to \u201cRegion\u201d) which combined the RPN network and the Fast R-CNN network is one of the best ways to object detection of R-CNN series based on deep learning. The proposal obtained by RPN is directly connected to the ROI Pooling layer, which is a framework for CNN to achieve end-to-end object detection. The feasibility of Faster R-CNN implementation of ResNet101 network and PVANET network is discussed based on the implementation of Faster R-CNN in VGG16 network. Different Faster R-CNN models can be obtained by training with deep learning framework of Caffe. A better model can be obtained by comparing the experimental results using mean average precision (mAP) as an evaluation index. Numerical results show that Faster R-CNN trained by PVANET network obtained the highest mAP.",
+            "authors": "Bin Liu;Wencang Zhao;Qiaoqiao Sun",
+            "citationCount": 19,
+            "id": "10.1109/CAC.2017.8243900",
+            "openaccess": 0,
+            "pdfLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8243900",
+            "publicationDate": "20-22 Oct. 2017",
+            "source": [
+                "ieee"
+            ],
+            "tfidf": 0.1792899782807232,
+            "title": "Study of object detection based on Faster R-CNN",
+            "topics": [
+                {
+                    "affinity": 0.9716699123382568,
+                    "id": 2
+                }
+            ]
+        },
+        {
+            "abstract": "Deep learning is a powerful means to recognize remote sensing image scene categories. In this study, a deep convolutional neural network (CNN) based ensemble method is proposed. Firstly, a CNN architecture composed of the feature layer and the classifier layer is designed. Then the classifier layer of CNN is treated as base-learner and integrated with the AdaBoost technique to construct a CNN-AdaBoost ensemble framework. The proposed method is compared with the CNN-SVM and fine-tuned VGG16. The experiment results on UC Merced land-use dataset show that the CNN-AdaBoost achieves an improved overall accuracy by 4.46% against the sole CNN. Also, our method outperforms another two paradigms. Therefore, the proposed CNN based ensemble method is promising for image representations regarding remote sensing image scene classification.",
+            "authors": "Xudong Hu;Penglin Zhang;Qi Zhang",
+            "citationCount": 4,
+            "id": "10.1109/IGARSS39084.2020.9324261",
+            "openaccess": 0,
+            "pdfLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9324261",
+            "publicationDate": "26 Sept.-2 Oct. 2020",
+            "source": [
+                "ieee"
+            ],
+            "tfidf": 0.17885280098180822,
+            "title": "A Novel Framework of CNN Integrated with Adaboost for Remote Sensing Scene Classification",
+            "topics": [
+                {
+                    "affinity": 0.9903144836425781,
+                    "id": 2
                 }
             ]
         }
@@ -73,11 +282,15 @@
     "topics": [
         {
             "id": 0,
-            "name": "cnn-lstm-mri-sequence-model"
+            "name": "cnn cnns network model image"
         },
         {
             "id": 1,
-            "name": "result-cnn-low-multipliers-circuit"
+            "name": "cnn network cnns train model"
+        },
+        {
+            "id": 2,
+            "name": "cnn image network model propose"
         }
     ]
 }

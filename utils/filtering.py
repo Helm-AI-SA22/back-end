@@ -3,19 +3,40 @@ import pandas as pd
 MIN = 'min'
 MAX = 'max'
 
+UNION = 'union'
+INTERSECTION = 'intersection'
 
-def topic_filtering(data_df, topic_list):
-    for i, row in data_df.iterrows():
-        drop = True
-        for topic in row.topics:
-            print(topic)
-            if topic['id'] in topic_list and topic['affinity'] >= 0.5:
-                drop = False
-        
-        if drop:
-            data_df.drop(i, inplace=True)
-            
-            
+
+# mode = 'union' --> OR
+# mode = 'intersection' --> AND
+
+def topic_filtering(data_df, topic_dict):
+    # def row_drop(row):
+    #     for topic in row.topics:
+    #         if topic['id'] in topic_dict["topics"] and topic['affinity'] >= 0.5:
+    #             return True
+
+    # OR case
+    if topic_dict["mode"] == UNION:
+        for i, row in data_df.iterrows():
+            drop = True
+            for topic in row.topics:
+                if topic['id'] in topic_dict["topics"]:
+                    drop = False
+                    break
+
+            if drop:
+                data_df.drop(i, inplace=True)  
+
+    # AND case
+    elif topic_dict["mode"] == INTERSECTION:
+        for i, row in data_df.iterrows():
+            print(f"Intersection with topics {topic_dict['topics']}")
+            for topic in topic_dict["topics"]:
+                if topic not in [t['id'] for t in row.topics]:
+                    data_df.drop(i, inplace=True)  
+                    break
+                
     return data_df
 
 
