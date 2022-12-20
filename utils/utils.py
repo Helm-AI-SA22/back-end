@@ -42,3 +42,22 @@ def remove_uncompleted_papers(list_papers, source):
             return_list.append(paper)
 
     return return_list
+
+
+# input: json with (at least) documents and topics
+# output: same json with field "ratio" added to each topic
+def add_topic_ratio(processed_result):
+    # count number of documents with each topic and add that ratio to the field "ratio"
+    topic_count = dict()
+    for topic in processed_result["topics"]:
+        topic_count[topic["id"]] = 0
+
+    for doc in processed_result["documents"]:
+        for topic in doc["topics"]:
+            if topic["id"] in topic_count:
+                topic_count[topic["id"]] += 1
+
+    for topic in processed_result["topics"]:
+        topic["ratio"] = topic_count[topic["id"]]/len(processed_result["documents"])
+
+    return processed_result

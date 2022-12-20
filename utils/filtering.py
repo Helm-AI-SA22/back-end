@@ -1,4 +1,5 @@
 import pandas as pd
+from utils.utils import add_topic_ratio
 
 MIN = 'min'
 MAX = 'max'
@@ -9,7 +10,6 @@ INTERSECTION = 'intersection'
 
 # mode = 'union' --> OR
 # mode = 'intersection' --> AND
-
 def topic_filtering(data_df, topic_dict):
     # OR case
     if topic_dict["mode"] == UNION:
@@ -117,4 +117,6 @@ def filtering(data_dict):
     data_dict.pop("criteria")
     data_dict["documents"] = documents
     
+    data_dict = add_topic_ratio(data_dict)
+
     return data_dict

@@ -1,6 +1,6 @@
 {
     "criteria": {
-        "topic": {"mode": 1, "topics": [0,1]},
+        "topic": {"mode": "union", "topics": [0,1]},
         "availability": 0,
         "citationCount": {"min": 2, "max": 100},
         "date": {"min": 2018, "max": 2022},

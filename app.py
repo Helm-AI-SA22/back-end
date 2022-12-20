@@ -137,20 +137,12 @@ class FilteringRequest(Resource):
         return jsonify(filtering(request.get_json()))
 
 
-class Prova(Resource):
-
-    def post(self):
-        return jsonify(add_topic_ratio(request.get_json())) 
-
-
 if __name__ == "__main__":
     # routes
     api.add_resource(Aggregator, "/aggregator")
     api.add_resource(FrontEndRequest, "/mock")
     api.add_resource(FilteringRequest, "/filtering")
     api.add_resource(RankRequest, "/ranking")
-
-    api.add_resource(Prova, "/prova")
 
     # set host to gateway to handle route
     app.run(host = "0.0.0.0")

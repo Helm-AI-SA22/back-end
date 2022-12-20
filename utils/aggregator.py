@@ -4,7 +4,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from utils.scopus_api import make_scopus_request
 from utils.ieee_api import make_ieee_request
 from utils.arxiv_api import make_arxiv_request
-from utils.utils import debug_log
+from utils.utils import debug_log, add_topic_ratio
 from utils.AI_request import make_post_request_to_AI
 from constants import NUMBER_RETURN_PAPERS, AGGREGATION_FEATURES
 
@@ -182,22 +182,6 @@ def remove_excluded_topics(processed_result):
         for topic in doc["topics"]:
             selected_topics.add(topic["id"])
     processed_result["topics"] = list(filter(lambda topic: topic["id"] in selected_topics, processed_result["topics"]))
-
-
-def add_topic_ratio(processed_result):
-    # count number of documents with each topic and add that ratio to the field "ratio"
-    topic_count = dict()
-    for doc in processed_result["documents"]:
-        for topic in doc["topics"]:
-            if topic["id"] in topic_count:
-                topic_count[topic["id"]] += 1
-            else:
-                topic_count[topic["id"]] = 1
-
-    for topic in processed_result["topics"]:
-        topic["ratio"] = topic_count[topic["id"]]/len(processed_result["documents"])
-
-    return processed_result
 
 
 def execute_aggregation_topic_modeling(keywords, topic_modeling):      
