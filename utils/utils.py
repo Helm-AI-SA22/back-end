@@ -58,6 +58,6 @@ def add_topic_ratio(processed_result):
                 topic_count[topic["id"]] += 1
 
     for topic in processed_result["topics"]:
-        topic["ratio"] = topic_count[topic["id"]]/len(processed_result["documents"])
+        topic["ratio"] = round(topic_count[topic["id"]]/len(processed_result["documents"]), 2)
 
     return processed_result

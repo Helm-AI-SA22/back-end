@@ -2223,15 +2223,18 @@
     "topics": [
         {
             "id": 0,
-            "name": "cnn cnns network model image"
+            "name": "cnn cnns network model image",
+            "ratio": 0.8
         },
         {
             "id": 1,
-            "name": "cnn network cnns train model"
+            "name": "cnn network cnns train model",
+            "ratio": 0.3
         },
         {
             "id": 2,
-            "name": "cnn image network model propose"
+            "name": "cnn image network model propose",
+            "ratio": 0.2
         }
     ],
     "topicsVisualization": {
