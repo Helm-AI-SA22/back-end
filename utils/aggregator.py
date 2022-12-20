@@ -183,6 +183,23 @@ def remove_excluded_topics(processed_result):
             selected_topics.add(topic["id"])
     processed_result["topics"] = list(filter(lambda topic: topic["id"] in selected_topics, processed_result["topics"]))
 
+
+def add_topic_ratio(processed_result):
+    # count number of documents with each topic and add that ratio to the field "ratio"
+    topic_count = dict()
+    for doc in processed_result["documents"]:
+        for topic in doc["topics"]:
+            if topic["id"] in topic_count:
+                topic_count[topic["id"]] += 1
+            else:
+                topic_count[topic["id"]] = 1
+
+    for topic in processed_result["topics"]:
+        topic["ratio"] = topic_count[topic["id"]]/len(processed_result["documents"])
+
+    return processed_result
+
+
 def execute_aggregation_topic_modeling(keywords, topic_modeling):      
 
     thread_ieee = ThreadWithResult(target=make_ieee_request, args=[keywords])
@@ -238,5 +255,7 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
     processed_result["documents"] = processed_result["documents"][:NUMBER_RETURN_PAPERS]
     remove_excluded_topics(processed_result)
     processed_result["max_tfidf"] = max_tfidf
+
+    processed_result = add_topic_ratio(processed_result)
 
     return processed_result

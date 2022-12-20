@@ -2,7 +2,7 @@ import json
 from flask import Flask, request, jsonify
 from flask_restx import Api, Resource
 from utils.utils import debug_log
-from utils.aggregator import execute_aggregation_topic_modeling
+from utils.aggregator import execute_aggregation_topic_modeling, add_topic_ratio
 from utils.filtering import filtering
 from utils.ranking import rank
 from flask_cors import CORS
@@ -50,12 +50,12 @@ class Aggregator(Resource):
         
         return jsonify(execute_aggregation_topic_modeling(keywords, topic_modeling))
 
+
     def post(self):
 
         data = request.get_json()
         keywords = data["keywords"].split(";")
         topic_modeling = data["type"]
-
         return jsonify(execute_aggregation_topic_modeling(keywords, topic_modeling))
 
 
@@ -137,12 +137,20 @@ class FilteringRequest(Resource):
         return jsonify(filtering(request.get_json()))
 
 
+class Prova(Resource):
+
+    def post(self):
+        return jsonify(add_topic_ratio(request.get_json())) 
+
+
 if __name__ == "__main__":
     # routes
     api.add_resource(Aggregator, "/aggregator")
     api.add_resource(FrontEndRequest, "/mock")
     api.add_resource(FilteringRequest, "/filtering")
     api.add_resource(RankRequest, "/ranking")
+
+    api.add_resource(Prova, "/prova")
 
     # set host to gateway to handle route
     app.run(host = "0.0.0.0")
