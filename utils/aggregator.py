@@ -97,7 +97,7 @@ def aggregator(ieee_results, scopus_results, arxiv_results):
     transformed_results = remove_duplicated(results, AGGREGATION_FEATURES["aggregated_key"])
 
     return transformed_results
-
+ 
 
 def format_data_rank(papers, id_feature, title_feature, abstract_feature):
     return_papers = list()
@@ -188,6 +188,13 @@ def remove_excluded_topics(processed_result):
             selected_topics.add(topic["id"])
     processed_result["topics"] = list(filter(lambda topic: topic["id"] in selected_topics, processed_result["topics"]))
 
+
+def add_keywords_to_docs(doc_list, keywords_list):
+    for doc in doc_list:
+        doc["keywords"] = keywords_list #da cambiare!!!
+   
+    return doc_list
+
 def execute_aggregation_topic_modeling(keywords, topic_modeling):      
 
     thread_ieee = ThreadWithResult(target=make_ieee_request, args=[keywords])
@@ -241,6 +248,10 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
     debug_log("processed ai results done")
 
     sources = find_all_sources(processed_result)
+    
+    processed_result["documents"] = add_keywords_to_docs(processed_result["documents"], keywords)
+
+    debug_log("added keywords to results done")
 
     processed_result["documents"] = processed_result["documents"][:NUMBER_RETURN_PAPERS]
     remove_excluded_topics(processed_result)
