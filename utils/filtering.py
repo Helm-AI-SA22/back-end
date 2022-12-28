@@ -76,6 +76,10 @@ def citation_filtering(data_df, crit):
 
     return data_df
 
+def source_filtering(data_df, crit):
+    data_df = data_df[data_df["source"].isin(crit)]
+    return data_df
+
 #FILTER FOR PREPRINT DOCUMENT
 # null = all documents
 # 0 = arxiv (only)
@@ -106,7 +110,8 @@ filtering_functions = {
     "authors": author_filtering,
     "citationCount": citation_filtering,
     "availability": availability_filtering,
-    "arxiv": arxiv_filtering
+    "arxiv": arxiv_filtering,
+    "sources": source_filtering
 }
 
 

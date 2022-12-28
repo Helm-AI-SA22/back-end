@@ -175,6 +175,11 @@ def process_rank_result(rank_result, list_papers, id_feature):
 
     return max(rank_result.values()), list_papers
 
+def find_all_sources(processed_results):
+    arr_result = list({source for doc in processed_results["documents"] for source in doc["source"]})
+    print(arr_result)
+    return arr_result
+
 def remove_excluded_topics(processed_result):
 
     selected_topics = set()
@@ -236,9 +241,12 @@ def execute_aggregation_topic_modeling(keywords, topic_modeling):
 
     debug_log("processed ai results done")
 
+    sources = find_all_sources(processed_result)
+
     processed_result["documents"] = processed_result["documents"][:NUMBER_RETURN_PAPERS]
     remove_excluded_topics(processed_result)
     processed_result["max_tfidf"] = max_tfidf
+    processed_result["sources"] = sources
 
     processed_result = add_topic_ratio(processed_result)
 
