@@ -1,4 +1,5 @@
 import pandas as pd
+
 from utils.utils import add_topic_ratio
 
 
@@ -33,6 +34,8 @@ def topic_filtering(data_df, topic_dict):
                 
     return data_df
 
+
+import logging
 
 MIN = 'min'
 MAX = 'max'
@@ -77,6 +80,19 @@ def citation_filtering(data_df, crit):
     return data_df
 
 def source_filtering(data_df, crit):
+
+    def powerset(fullset):
+        listsub = list(fullset)
+        subsets = []
+        for i in range(2**len(listsub)):
+            subset = []
+            for k in range(len(listsub)):
+                if i & 1<<k:
+                    subset.append(listsub[k])
+            subsets.append(subset)        
+        return subsets
+
+    crit = powerset(crit)
     data_df = data_df[data_df["source"].isin(crit)]
     return data_df
 
@@ -120,12 +136,13 @@ def filtering(data_dict):
 
     # convert data_dict[ "documents" ] to dataframe
     data_df = pd.DataFrame(data_dict["documents"])
-
+    logging.debug(f"In feltring: criteria = {criteria}")
     # print(data_df.info())
     
     for key in criteria:
         # print(f"key: {key}; criteria: {criteria[key]}")
         if (criteria[key] is not None):
+            logging.debug(f"{key}: {criteria[key]}")
             data_df = filtering_functions[key](data_df, criteria[key])
     
     # convert data_df to dictionary
