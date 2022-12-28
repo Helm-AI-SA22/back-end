@@ -4,7 +4,7 @@ import json
 import os
 
 
-def make_post_request_to_AI(list_papers, type):
+def make_post_request_to_AI(keywords, list_papers, type):
 
     if 'DEPLOY' in os.environ and os.environ['DEPLOY'].lower() == "true":
         url = AI_URL_DEPLOY
@@ -13,7 +13,7 @@ def make_post_request_to_AI(list_papers, type):
         url = AI_URL
         port = AI_PORT
 
-    AI_response = requests.post(url + ':' + str(port) + f"/{type}", json = {"documents" : list_papers})
+    AI_response = requests.post(url + ':' + str(port) + f"/{type}", json = {"documents" : list_papers, "keywords": keywords})
 
     return AI_response.json()
 

@@ -2225,16 +2225,19 @@
             "id": 0,
             "name": "cnn cnns network model image",
             "ratio": 0.8
+            "summary": ["Lorem ipsum dolor sit amet.", "Lorem ipsum dolor sit amet.", "Lorem ipsum dolor sit amet."]
         },
         {
             "id": 1,
             "name": "cnn network cnns train model",
             "ratio": 0.3
+            "summary": ["Lorem ipsum dolor sit amet.", "Lorem ipsum dolor sit amet.", "Lorem ipsum dolor sit amet."]
         },
         {
             "id": 2,
             "name": "cnn image network model propose",
             "ratio": 0.2
+            "summary": ["Lorem ipsum dolor sit amet.", "Lorem ipsum dolor sit amet.", "Lorem ipsum dolor sit amet."]
         }
     ],
     "topicsVisualization": {

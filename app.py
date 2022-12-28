@@ -1,6 +1,8 @@
 import json
 from flask import Flask, request, jsonify
 from flask_restx import Api, Resource
+from doi2bib.crossref import get_bib
+from arxiv2bib import arxiv2bib
 from utils.utils import debug_log
 from utils.aggregator import execute_aggregation_topic_modeling, add_topic_ratio
 from utils.filtering import filtering
@@ -137,12 +139,25 @@ class FilteringRequest(Resource):
         return jsonify(filtering(request.get_json()))
 
 
+class BibRequest(Resource):
+    
+    def get(self):
+        doi = request.args["DOI"]
+
+        if "http" == doi[:4].lower():
+            bib = arxiv2bib([doi.split('/')[-1]])
+            return jsonify(bib[0].bibtex())
+        else:
+            return jsonify(get_bib(doi)[1])
+
+
 if __name__ == "__main__":
     # routes
     api.add_resource(Aggregator, "/aggregator")
     api.add_resource(FrontEndRequest, "/mock")
     api.add_resource(FilteringRequest, "/filtering")
     api.add_resource(RankRequest, "/ranking")
+    api.add_resource(BibRequest, "/bibfile")
 
     # set host to gateway to handle route
     app.run(host = "0.0.0.0")
